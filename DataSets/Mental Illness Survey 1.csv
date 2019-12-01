@@ -1,0 +1,335 @@
+Start Date;End Date;I identify as having a mental illness;Education;I have my own computer separate from a smart phone;I have been hospitalized before for my mental illness;How many days were you hospitalized for your mental illness;I am currently employed at least part-time;I am legally disabled;I have my regular access to the internet;I live with my parents;I have a gap in my resume;Total length of any gaps in my resume in months.;Annual income (including any social welfare programs) in USD;I am unemployed;I read outside of work and school;Annual income from social welfare programs;I receive food stamps;I am on section 8 housing;How many times were you hospitalized for your mental illness;Lack of concentration;Anxiety;Depression;Obsessive thinking;Mood swings;Panic attacks;Compulsive behavior;Tiredness;Age;Gender;Household Income;Region;Device Type
+2018-01-15 03:45;2018-01-15 03:48;No;High School or GED;No;No;0;No;No;Yes;No;Yes;24;35;Yes;Yes;0;No;No;0;Lack of concentration;Anxiety;Depression;Obsessive thinking;;Panic attacks;;;30-44;Male;$25,000-$49,999;Mountain;Android Phone / Tablet
+2018-01-15 03:17;2018-01-15 03:18;Yes;Some Phd;Yes;No;0;Yes;No;Yes;No;No;1;22;No;Yes;0;No;No;0;Lack of concentration;Anxiety;Depression;;;Panic attacks;;Tiredness;18-29;Male;$50,000-$74,999;East South Central;MacOS Desktop / Laptop
+2018-01-15 03:10;2018-01-15 03:12;No;Completed Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;100;No;Yes;0;No;No;0;;;;;;;;;30-44;Male;$150,000-$174,999;Pacific;MacOS Desktop / Laptop
+2018-01-15 02:11;2018-01-15 02:12;No;Some Undergraduate;Yes;No;;No;No;Yes;Yes;Yes;11;0;Yes;Yes;0;No;No;0;;;;;;;;;30-44;Male;$25,000-$49,999;New England;Windows Desktop / Laptop
+2018-01-15 01:24;2018-01-15 01:26;Yes;Completed Undergraduate;Yes;Yes;35;Yes;Yes;Yes;No;Yes;33;32;No;Yes;30;No;No;4;Lack of concentration;Anxiety;Depression;Obsessive thinking;Mood swings;Panic attacks;Compulsive behavior;Tiredness;30-44;Male;$25,000-$49,999;East North Central;iOS Phone / Tablet
+2018-01-15 00:40;2018-01-15 00:42;No;High School or GED;Yes;No;0;Yes;No;Yes;Yes;No;0;0;No;Yes;0;No;No;0;;;;;;;;;30-44;Male;$0-$9,999;South Atlantic;Android Phone / Tablet
+2018-01-15 00:30;2018-01-15 00:31;No;Some Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;1;No;Yes;0;No;No;0;;;;;;;;;18-29;Male;$100,000-$124,999;Middle Atlantic;Windows Desktop / Laptop
+2018-01-15 00:08;2018-01-15 00:11;Yes;Some Undergraduate;Yes;No;0;Yes;No;Yes;Yes;No;0;11;No;Yes;0;No;No;0;Lack of concentration;Anxiety;Depression;;;Panic attacks;Compulsive behavior;Tiredness;18-29;Male;$100,000-$124,999;Middle Atlantic;Windows Desktop / Laptop
+2018-01-14 23:50;2018-01-14 23:52;No;Completed Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;73;No;Yes;0;No;No;0;Lack of concentration;Anxiety;Depression;;;;;Tiredness;30-44;Male;$50,000-$74,999;South Atlantic;iOS Phone / Tablet
+2018-01-14 23:34;2018-01-14 23:36;Yes;Some Masters;Yes;No;0;Yes;No;Yes;No;No;0;12;No;Yes;0;No;No;0;;Anxiety;Depression;;;;;Tiredness;30-44;Male;$125,000-$149,999;South Atlantic;Android Phone / Tablet
+2018-01-14 23:21;2018-01-14 23:26;No;Completed Undergraduate;Yes;No;;No;No;Yes;No;Yes;47;0;Yes;Yes;0;No;No;0;;;;;;;;;30-44;Male;$0-$9,999;Mountain;Windows Desktop / Laptop
+2018-01-14 23:22;2018-01-14 23:23;Yes;Completed Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;0;No;Yes;0;No;No;0;;Anxiety;;Obsessive thinking;;;Compulsive behavior;;18-29;Male;Prefer not to answer;Pacific;iOS Phone / Tablet
+2018-01-14 23:01;2018-01-14 23:03;Yes;Completed Undergraduate;Yes;No;0;Yes;No;Yes;No;Yes;12;50;No;Yes;0;No;No;0;;Anxiety;Depression;;;;;;30-44;Male;$50,000-$74,999;Middle Atlantic;Windows Desktop / Laptop
+2018-01-14 22:35;2018-01-14 22:36;No;Completed Masters;Yes;No;0;Yes;No;Yes;No;Yes;6;25;No;Yes;0;No;No;0;;;;;;;;;30-44;Male;$25,000-$49,999;Pacific;Windows Desktop / Laptop
+2018-01-14 22:19;2018-01-14 22:20;Yes;High School or GED;Yes;No;0;Yes;No;Yes;No;No;0;59;No;Yes;0;No;No;0;;;Depression;;;;;;30-44;Male;$50,000-$74,999;New England;iOS Phone / Tablet
+2018-01-14 22:09;2018-01-14 22:11;No;Completed Undergraduate;Yes;No;;Yes;No;Yes;No;No;0;100;No;Yes;0;No;No;0;;;;;;;;Tiredness;30-44;Male;$150,000-$174,999;South Atlantic;iOS Phone / Tablet
+2018-01-14 21:56;2018-01-14 22:01;Yes;Some Masters;Yes;Yes;65;No;Yes;Yes;Yes;Yes;44;48;Yes;No;47;No;No;43;;;Depression;Obsessive thinking;;Panic attacks;;;30-44;Male;$10,000-$24,999;East South Central;Android Phone / Tablet
+2018-01-14 21:55;2018-01-14 21:58;No;Some Undergraduate;Yes;No;0;No;No;Yes;No;No;0;16;No;No;0;No;No;0;;;;;Mood swings;;;;18-29;Male;$0-$9,999;New England;Windows Desktop / Laptop
+2018-01-14 21:53;2018-01-14 21:54;Yes;Some Masters;Yes;No;0;Yes;No;Yes;No;No;0;55;No;Yes;0;No;No;0;;Anxiety;;;;;;Tiredness;30-44;Male;$50,000-$74,999;Mountain;Windows Desktop / Laptop
+2018-01-14 21:48;2018-01-14 21:54;No;Completed Phd;No;No;;Yes;No;Yes;No;No;21;1;Yes;Yes;1;Yes;No;0;;;;;;;;;30-44;Male;$0-$9,999;Pacific;Android Phone / Tablet
+2018-01-14 21:51;2018-01-14 21:52;Yes;Some Undergraduate;Yes;No;0;Yes;No;No;No;No;0;100;No;Yes;0;No;No;0;Lack of concentration;Anxiety;Depression;Obsessive thinking;Mood swings;;;Tiredness;30-44;Male;$100,000-$124,999;Pacific;iOS Phone / Tablet
+2018-01-14 21:50;2018-01-14 21:51;Yes;Completed Masters;No;No;20;Yes;No;No;No;No;32;24;No;No;66;No;No;19;;;;;Mood swings;;;;18-29;Male;$25,000-$49,999;Pacific;Android Phone / Tablet
+2018-01-14 21:10;2018-01-14 21:13;No;Completed Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;43;No;Yes;0;No;No;0;Lack of concentration;Anxiety;;;;Panic attacks;;;30-44;Male;$75,000-$99,999;South Atlantic;Android Phone / Tablet
+2018-01-14 21:08;2018-01-14 21:10;No;Some Undergraduate;Yes;No;0;Yes;No;Yes;No;Yes;15;38;No;Yes;0;No;No;0;;;;;;;;Tiredness;30-44;Male;$25,000-$49,999;West South Central;Windows Desktop / Laptop
+2018-01-14 21:07;2018-01-14 21:10;No;Some Masters;Yes;No;0;Yes;No;Yes;No;Yes;18;75;No;Yes;1;No;No;0;;;;;;;;Tiredness;30-44;Male;$125,000-$149,999;Pacific;Windows Desktop / Laptop
+2018-01-14 21:06;2018-01-14 21:07;No;Completed Masters;Yes;No;0;Yes;No;Yes;No;No;0;5;No;Yes;0;No;No;0;;;;;;;;;30-44;Male;$25,000-$49,999;West North Central;MacOS Desktop / Laptop
+2018-01-14 20:53;2018-01-14 20:55;No;High School or GED;Yes;No;0;Yes;No;Yes;No;No;0;49;No;Yes;0;No;No;0;;Anxiety;;;;;;;30-44;Male;$50,000-$74,999;South Atlantic;Android Phone / Tablet
+2018-01-14 20:49;2018-01-14 20:53;No;Some Undergraduate;Yes;No;;Yes;No;Yes;No;No;0;45;No;Yes;0;No;No;0;;;;;;;;Tiredness;30-44;Male;$75,000-$99,999;New England;Android Phone / Tablet
+2018-01-14 20:34;2018-01-14 20:35;No;Some Undergraduate;Yes;No;0;No;No;Yes;Yes;No;0;0;Yes;Yes;0;No;No;0;;;;;;Panic attacks;;;18-29;Male;Prefer not to answer;East North Central;Windows Desktop / Laptop
+2018-01-14 20:25;2018-01-14 20:27;No;Completed Masters;No;No;;Yes;No;Yes;No;No;0;40;No;Yes;0;No;No;0;;;;;;;;;30-44;Male;$100,000-$124,999;South Atlantic;iOS Phone / Tablet
+2018-01-14 20:23;2018-01-14 20:25;No;Some Undergraduate;Yes;No;0;No;No;Yes;Yes;No;0;0;Yes;Yes;0;No;No;0;;;;;;;;;18-29;Male;$150,000-$174,999;Mountain;Windows Desktop / Laptop
+2018-01-14 20:17;2018-01-14 20:18;No;Completed Undergraduate;Yes;No;;Yes;No;Yes;No;No;0;100;No;Yes;0;No;No;0;;;;;;;;;30-44;Male;$200,000+;Pacific;MacOS Desktop / Laptop
+2018-01-14 20:07;2018-01-14 20:09;No;High School or GED;Yes;No;0;No;No;Yes;No;No;1;25;Yes;Yes;0;No;No;0;Lack of concentration;;;;;;;;18-29;Male;$25,000-$49,999;East North Central;iOS Phone / Tablet
+2018-01-14 19:59;2018-01-14 20:00;No;High School or GED;Yes;No;0;Yes;No;Yes;No;No;0;30;No;No;0;No;No;0;;;;;;;;;18-29;Male;$25,000-$49,999;South Atlantic;iOS Phone / Tablet
+2018-01-14 19:40;2018-01-14 19:42;No;Some Undergraduate;Yes;No;0;Yes;No;Yes;No;Yes;36;20;No;Yes;2;No;No;1;;;;;;;;;30-44;Male;$0-$9,999;West North Central;Windows Desktop / Laptop
+2018-01-14 19:36;2018-01-14 19:39;Yes;Some Undergraduate;Yes;No;;Yes;No;Yes;No;Yes;7;38;No;Yes;0;No;No;0;Lack of concentration;Anxiety;Depression;Obsessive thinking;;Panic attacks;Compulsive behavior;Tiredness;30-44;Male;$25,000-$49,999;East North Central;iOS Phone / Tablet
+2018-01-14 19:28;2018-01-14 19:29;Yes;Completed Undergraduate;Yes;No;0;Yes;Yes;Yes;No;No;0;18;No;Yes;0;No;No;0;Lack of concentration;Anxiety;Depression;;;;;Tiredness;18-29;Male;$200,000+;South Atlantic;iOS Phone / Tablet
+2018-01-14 19:15;2018-01-14 19:17;No;Some highschool;Yes;No;0;No;No;Yes;Yes;No;0;0;Yes;Yes;0;No;Yes;0;;Anxiety;;;;;;;30-44;Male;Prefer not to answer;Pacific;Windows Desktop / Laptop
+2018-01-14 19:11;2018-01-14 19:16;No;Some Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;8;No;Yes;0;No;No;0;;;;;;;;;30-44;Male;$75,000-$99,999;West South Central;Windows Desktop / Laptop
+2018-01-14 19:09;2018-01-14 19:12;No;High School or GED;Yes;No;0;Yes;No;Yes;No;No;0;7;No;Yes;0;No;No;0;Lack of concentration;Anxiety;Depression;Obsessive thinking;;Panic attacks;;Tiredness;30-44;Male;$50,000-$74,999;Pacific;iOS Phone / Tablet
+2018-01-14 18:20;2018-01-14 18:21;Yes;Completed Undergraduate;No;No;78;No;Yes;Yes;Yes;No;22;0;Yes;No;0;No;No;0;;Anxiety;Depression;;Mood swings;;;;30-44;Male;$0-$9,999;Middle Atlantic;Android Phone / Tablet
+2018-01-14 17:44;2018-01-14 17:45;No;Some Undergraduate;No;No;44;No;No;No;No;No;43;49;No;Yes;3;No;No;3;;Anxiety;;;;;;;30-44;Male;$0-$9,999;South Atlantic;Windows Desktop / Laptop
+2018-01-14 17:31;2018-01-14 17:33;No;Some Undergraduate;No;No;0;Yes;No;Yes;No;No;0;45;No;Yes;0;No;No;0;;Anxiety;;;;;;;30-44;Male;$25,000-$49,999;South Atlantic;iOS Phone / Tablet
+2018-01-14 17:15;2018-01-14 17:18;No;Completed Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;47;No;Yes;0;No;No;0;Lack of concentration;;;;;;;Tiredness;30-44;Male;$25,000-$49,999;West South Central;Android Phone / Tablet
+2018-01-14 17:05;2018-01-14 17:07;No;High School or GED;Yes;No;0;No;No;Yes;Yes;No;0;39;Yes;No;0;No;No;0;;;;;;;;Tiredness;18-29;Male;Prefer not to answer;Pacific;Android Phone / Tablet
+2018-01-14 16:55;2018-01-14 16:56;No;Completed Masters;Yes;No;;No;No;No;No;No;6;27;No;Yes;2;No;No;1;;;;;;;;;18-29;Male;Prefer not to answer;Middle Atlantic;Windows Desktop / Laptop
+2018-01-14 15:51;2018-01-14 15:53;No;Completed Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;93;No;Yes;93;No;No;0;;;;;;;;Tiredness;30-44;Male;$75,000-$99,999;East North Central;iOS Phone / Tablet
+2018-01-14 15:15;2018-01-14 15:17;Yes;Completed Phd;Yes;No;0;No;No;Yes;No;Yes;100;100;Yes;Yes;0;No;No;0;Lack of concentration;;Depression;;;;;Tiredness;30-44;Male;$200,000+;Pacific;MacOS Desktop / Laptop
+2018-01-14 15:06;2018-01-14 15:08;Yes;High School or GED;Yes;No;0;Yes;No;Yes;No;Yes;52;10;No;No;0;No;No;0;;Anxiety;;;;Panic attacks;;;30-44;Male;Prefer not to answer;East South Central;Windows Desktop / Laptop
+2018-01-14 14:44;2018-01-14 14:46;Yes;Completed Undergraduate;Yes;No;0;Yes;No;Yes;No;No;6;46;No;Yes;0;No;No;0;;Anxiety;Depression;;;Panic attacks;;;18-29;Male;$25,000-$49,999;East North Central;iOS Phone / Tablet
+2018-01-14 14:31;2018-01-14 14:33;Yes;Some Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;28;No;Yes;0;No;No;0;;Anxiety;Depression;Obsessive thinking;;Panic attacks;;;30-44;Male;$10,000-$24,999;Mountain;Windows Desktop / Laptop
+2018-01-14 14:01;2018-01-14 14:07;Yes;High School or GED;No;Yes;60;No;Yes;Yes;Yes;Yes;10;7;Yes;Yes;7;No;No;7;;Anxiety;Depression;Obsessive thinking;;Panic attacks;;Tiredness;30-44;Male;$0-$9,999;Middle Atlantic;Android Phone / Tablet
+2018-01-14 13:59;2018-01-14 14:02;Yes;High School or GED;Yes;No;0;Yes;No;Yes;No;No;0;27;No;Yes;0;No;No;0;;;Depression;;;;;;18-29;Male;$25,000-$49,999;East South Central;Android Phone / Tablet
+2018-01-14 13:46;2018-01-14 13:47;No;Completed Undergraduate;Yes;No;0;No;No;Yes;No;Yes;32;0;Yes;Yes;0;No;No;0;;;;;;;;;30-44;Male;$0-$9,999;Mountain;iOS Phone / Tablet
+2018-01-14 13:41;2018-01-14 13:44;No;Some Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;100;No;Yes;0;No;No;0;;;;;;;;;45-60;Male;$100,000-$124,999;South Atlantic;iOS Phone / Tablet
+2018-01-14 13:39;2018-01-14 13:41;No;Completed Masters;Yes;No;0;Yes;No;Yes;No;Yes;10;32;No;Yes;0;No;No;0;;;;;;;;Tiredness;> 60;Male;$25,000-$49,999;Middle Atlantic;iOS Phone / Tablet
+2018-01-14 13:36;2018-01-14 13:38;No;Completed Undergraduate;Yes;Yes;13;Yes;No;Yes;No;Yes;23;39;No;Yes;0;No;No;1;;;;;;;;;> 60;Male;$25,000-$49,999;Middle Atlantic;Windows Desktop / Laptop
+2018-01-14 13:34;2018-01-14 13:37;No;Some Masters;Yes;No;0;Yes;No;Yes;No;No;1;2;No;Yes;4;No;No;0;;;;;;;;;> 60;Male;$125,000-$149,999;Middle Atlantic;Windows Desktop / Laptop
+2018-01-14 13:32;2018-01-14 13:34;Yes;Completed Masters;Yes;Yes;8;Yes;No;Yes;No;No;0;100;No;Yes;100;No;No;1;;;Depression;;;;;;45-60;Male;$200,000+;Pacific;MacOS Desktop / Laptop
+2018-01-14 13:32;2018-01-14 13:34;No;Completed Undergraduate;Yes;No;0;No;Yes;Yes;No;No;0;28;No;Yes;10;No;No;0;Lack of concentration;;;;;;;;45-60;Male;$150,000-$174,999;Pacific;Windows Desktop / Laptop
+2018-01-14 13:25;2018-01-14 13:26;No;Completed Masters;Yes;No;0;Yes;No;Yes;No;No;0;61;No;Yes;0;No;No;0;;;;;;;;;45-60;Male;$200,000+;Pacific;iOS Phone / Tablet
+2018-01-14 13:23;2018-01-14 13:25;No;Completed Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;50;No;Yes;0;No;No;0;;;;;;;;Tiredness;45-60;Male;$200,000+;South Atlantic;Windows Desktop / Laptop
+2018-01-14 13:21;2018-01-14 13:22;No;Completed Masters;Yes;No;0;Yes;No;Yes;No;No;0;75;No;Yes;0;No;No;0;;;;;;;;;45-60;Male;$75,000-$99,999;Middle Atlantic;Windows Desktop / Laptop
+2018-01-14 13:13;2018-01-14 13:22;No;Completed Undergraduate;Yes;No;;No;No;Yes;No;No;0;100;No;Yes;0;No;No;0;;;;;;;;;> 60;Male;$200,000+;Middle Atlantic;Windows Desktop / Laptop
+2018-01-14 13:13;2018-01-14 13:15;No;Some Phd;Yes;No;0;Yes;No;Yes;No;No;0;11;No;Yes;0;No;No;0;;;;;;;;;45-60;Male;$100,000-$124,999;Pacific;MacOS Desktop / Laptop
+2018-01-14 13:08;2018-01-14 13:10;No;Completed Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;35;No;Yes;0;No;No;0;;;;;;;;Tiredness;> 60;Male;$75,000-$99,999;East North Central;Windows Desktop / Laptop
+2018-01-14 13:04;2018-01-14 13:09;No;Some Phd;Yes;No;0;Yes;No;Yes;No;No;0;90;No;Yes;0;No;No;0;;;;;;;;;> 60;Male;$100,000-$124,999;Pacific;iOS Phone / Tablet
+2018-01-14 13:02;2018-01-14 13:04;No;Completed Phd;Yes;No;1;No;Yes;Yes;No;No;1;40;Yes;Yes;1;No;No;0;Lack of concentration;;;;;;;;30-44;Male;$25,000-$49,999;West South Central;Windows Desktop / Laptop
+2018-01-14 12:47;2018-01-14 12:48;No;Completed Phd;Yes;No;0;Yes;No;Yes;No;No;0;30;No;Yes;0;Yes;No;0;;;;;;;;;45-60;Male;$25,000-$49,999;East North Central;Windows Desktop / Laptop
+2018-01-14 12:39;2018-01-14 12:44;Yes;Some Undergraduate;No;Yes;91;No;Yes;Yes;No;Yes;4;62;Yes;Yes;0;No;No;5;;Anxiety;Depression;Obsessive thinking;;Panic attacks;;;> 60;Male;$75,000-$99,999;Pacific;MacOS Desktop / Laptop
+2018-01-14 12:38;2018-01-14 12:39;No;Completed Undergraduate;Yes;No;1;Yes;No;Yes;No;No;1;14;No;Yes;2;No;No;0;;;;;;;;;> 60;Male;$50,000-$74,999;East North Central;Windows Desktop / Laptop
+2018-01-14 12:28;2018-01-14 12:32;Yes;Completed Masters;Yes;No;0;No;No;Yes;No;No;0;78;No;Yes;0;No;No;1;;Anxiety;Depression;;;;;Tiredness;> 60;Male;$50,000-$74,999;New England;Windows Desktop / Laptop
+2018-01-14 12:27;2018-01-14 12:29;No;Completed Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;6;No;Yes;60;No;No;0;;;;;;;;;45-60;Male;$50,000-$74,999;Mountain;Windows Desktop / Laptop
+2018-01-14 12:26;2018-01-14 12:27;No;Some Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;91;No;Yes;0;No;No;0;;Anxiety;;;;;;;30-44;Male;$75,000-$99,999;Mountain;Android Phone / Tablet
+2018-01-14 12:14;2018-01-14 12:20;No;Completed Undergraduate;Yes;No;0;Yes;No;Yes;No;Yes;100;44;No;Yes;0;No;No;0;;Anxiety;;;;;;;> 60;Male;$75,000-$99,999;New England;Windows Desktop / Laptop
+2018-01-14 12:08;2018-01-14 12:10;No;Some Undergraduate;Yes;No;0;Yes;No;Yes;No;Yes;53;73;No;No;0;No;No;0;;;;;;;;;45-60;Male;$125,000-$149,999;Middle Atlantic;Windows Desktop / Laptop
+2018-01-14 12:05;2018-01-14 12:08;Yes;Completed Masters;Yes;No;0;No;No;Yes;No;No;0;100;Yes;Yes;0;No;No;0;;;Depression;;;;;;> 60;Male;$150,000-$174,999;East North Central;Windows Desktop / Laptop
+2018-01-14 12:00;2018-01-14 12:05;No;Completed Undergraduate;Yes;No;0;No;No;Yes;Yes;No;0;16;No;Yes;0;No;No;0;;;;;;;;Tiredness;30-44;Male;$10,000-$24,999;;Windows Desktop / Laptop
+2018-01-14 11:50;2018-01-14 11:53;No;Some Undergraduate;Yes;No;0;Yes;No;Yes;No;No;9;28;No;Yes;0;No;No;0;;;Depression;;;;;Tiredness;45-60;Male;$25,000-$49,999;Pacific;Windows Desktop / Laptop
+2018-01-14 11:40;2018-01-14 11:41;No;Completed Masters;Yes;No;0;Yes;No;Yes;No;No;0;14;No;Yes;0;No;No;0;;;;;;;;;> 60;Male;$125,000-$149,999;Mountain;Windows Desktop / Laptop
+2018-01-14 11:33;2018-01-14 11:36;No;Some Masters;Yes;No;0;No;No;Yes;No;No;0;100;No;Yes;0;No;No;0;;;;;;;;;> 60;Male;$100,000-$124,999;South Atlantic;Windows Desktop / Laptop
+2018-01-14 11:31;2018-01-14 11:34;Yes;Some Undergraduate;Yes;Yes;14;No;No;Yes;No;Yes;100;15;Yes;Yes;0;No;No;1;;Anxiety;Depression;Obsessive thinking;;Panic attacks;Compulsive behavior;;45-60;Male;$100,000-$124,999;South Atlantic;MacOS Desktop / Laptop
+2018-01-14 11:27;2018-01-14 11:29;Yes;Completed Phd;Yes;No;0;Yes;No;Yes;No;No;0;100;No;Yes;0;No;No;0;;Anxiety;Depression;;;;;;45-60;Male;$200,000+;Middle Atlantic;iOS Phone / Tablet
+2018-01-14 11:25;2018-01-14 11:26;No;High School or GED;Yes;No;0;Yes;No;Yes;No;No;0;0;No;Yes;0;No;No;0;;;;;;;;;30-44;Male;Prefer not to answer;Pacific;iOS Phone / Tablet
+2018-01-14 11:20;2018-01-14 11:22;No;Completed Masters;Yes;No;0;No;No;Yes;No;No;0;12;No;Yes;0;No;No;0;;;;;;;;Tiredness;> 60;Male;$75,000-$99,999;Pacific;Windows Desktop / Laptop
+2018-01-14 11:18;2018-01-14 11:21;No;High School or GED;Yes;No;0;Yes;No;Yes;No;Yes;1;0;No;Yes;0;Yes;No;0;;;;;;;;;30-44;Male;$10,000-$24,999;West South Central;Android Phone / Tablet
+2018-01-14 11:11;2018-01-14 11:12;No;Completed Undergraduate;Yes;No;0;No;No;Yes;No;No;0;95;No;Yes;0;No;No;0;;;;;;Panic attacks;;;> 60;Male;$75,000-$99,999;West North Central;Android Phone / Tablet
+2018-01-14 11:09;2018-01-14 11:12;No;Completed Masters;Yes;No;0;Yes;No;Yes;Yes;Yes;6;33;No;Yes;0;No;No;0;;;;;;;;;30-44;Male;$25,000-$49,999;East North Central;Android Phone / Tablet
+2018-01-14 11:07;2018-01-14 11:09;No;Completed Undergraduate;Yes;No;1;No;Yes;Yes;No;No;0;10;Yes;Yes;25;No;No;0;;;;;;;;Tiredness;> 60;Male;$25,000-$49,999;South Atlantic;Windows Desktop / Laptop
+2018-01-14 11:05;2018-01-14 11:07;No;Completed Phd;Yes;No;0;No;No;Yes;No;No;0;11;Yes;Yes;0;No;No;0;;;;;;;;;> 60;Male;$75,000-$99,999;South Atlantic;Other
+2018-01-14 11:04;2018-01-14 11:05;No;High School or GED;Yes;No;;Yes;No;Yes;No;No;0;65;No;Yes;0;No;No;0;;;;;;;;;18-29;Male;$50,000-$74,999;Pacific;iOS Phone / Tablet
+2018-01-14 11:02;2018-01-14 11:04;No;Completed Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;86;No;Yes;0;No;No;0;;;;;;;;;45-60;Male;$150,000-$174,999;New England;iOS Phone / Tablet
+2018-01-14 11:02;2018-01-14 11:04;No;Completed Masters;Yes;No;0;Yes;No;Yes;No;No;0;50;No;Yes;0;No;No;0;;;;;;;;;> 60;Male;$50,000-$74,999;East North Central;Windows Desktop / Laptop
+2018-01-14 11:01;2018-01-14 11:03;No;Completed Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;92;No;No;0;No;No;0;;;;;;;;;45-60;Male;$100,000-$124,999;Middle Atlantic;Windows Desktop / Laptop
+2018-01-14 11:01;2018-01-14 11:03;Yes;Some Undergraduate;Yes;Yes;5;Yes;No;Yes;No;No;0;75;No;Yes;0;No;No;1;Lack of concentration;;Depression;;;;;;45-60;Male;$100,000-$124,999;Middle Atlantic;Windows Desktop / Laptop
+2018-01-14 10:59;2018-01-14 11:00;No;Some Undergraduate;Yes;No;0;No;No;Yes;No;No;0;0;Yes;Yes;0;No;No;0;;;;;;;;;45-60;Male;$75,000-$99,999;Pacific;Windows Desktop / Laptop
+2018-01-14 10:57;2018-01-14 11:00;Yes;Completed Undergraduate;Yes;No;0;Yes;Yes;Yes;No;Yes;48;8;No;Yes;0;No;No;0;;;Depression;;;;Compulsive behavior;;45-60;Male;$50,000-$74,999;Mountain;Windows Desktop / Laptop
+2018-01-14 10:48;2018-01-14 10:54;No;Some Undergraduate;Yes;No;;Yes;No;Yes;No;No;0;27;No;Yes;0;No;No;0;;;;;;;;;45-60;Female;$25,000-$49,999;East North Central;Windows Desktop / Laptop
+2018-01-14 10:45;2018-01-14 10:52;No;Completed Undergraduate;Yes;No;0;Yes;Yes;Yes;No;No;1;100;No;Yes;0;No;No;0;;;;;;;;;> 60;Male;$125,000-$149,999;Middle Atlantic;Windows Desktop / Laptop
+2018-01-14 10:49;2018-01-14 10:51;Yes;Some Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;95;No;Yes;0;No;No;0;Lack of concentration;Anxiety;Depression;;;;;;45-60;Female;$75,000-$99,999;Mountain;iOS Phone / Tablet
+2018-01-14 10:49;2018-01-14 10:51;No;Some Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;72;No;Yes;0;No;No;0;;;;;;;;;> 60;Male;$50,000-$74,999;West South Central;iOS Phone / Tablet
+2018-01-14 10:49;2018-01-14 10:51;No;Some Masters;Yes;No;0;No;No;Yes;No;No;0;65;Yes;Yes;0;No;No;0;;;;;;;;;> 60;Female;$50,000-$74,999;South Atlantic;Windows Desktop / Laptop
+2018-01-14 10:45;2018-01-14 10:47;No;Some Undergraduate;Yes;No;0;Yes;No;Yes;No;No;1;25;No;Yes;0;No;No;1;;;;;;;;;45-60;Male;Prefer not to answer;West South Central;Windows Desktop / Laptop
+2018-01-14 10:45;2018-01-14 10:46;No;High School or GED;Yes;No;0;No;No;Yes;No;Yes;100;0;Yes;Yes;0;No;No;0;;;;;;;;Tiredness;45-60;Female;$50,000-$74,999;East South Central;iOS Phone / Tablet
+2018-01-14 10:43;2018-01-14 10:44;No;Completed Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;61;No;Yes;0;No;No;0;;;;;;;;;> 60;Female;$50,000-$74,999;South Atlantic;iOS Phone / Tablet
+2018-01-14 10:38;2018-01-14 10:41;No;Some Undergraduate;No;No;0;Yes;No;Yes;No;Yes;2;10;Yes;Yes;0;Yes;No;0;;;Depression;;;;;;18-29;Male;$0-$9,999;East North Central;Android Phone / Tablet
+2018-01-14 10:37;2018-01-14 10:38;Yes;Completed Masters;Yes;No;0;Yes;No;Yes;No;No;0;71;No;Yes;0;No;No;0;;;Depression;;;;;;30-44;Male;$200,000+;Middle Atlantic;Windows Desktop / Laptop
+2018-01-14 10:35;2018-01-14 10:38;No;Some Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;80;No;Yes;0;No;No;0;Lack of concentration;;;;;;;;45-60;Male;$75,000-$99,999;Mountain;Android Phone / Tablet
+2018-01-14 10:35;2018-01-14 10:37;No;Completed Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;15;No;Yes;0;No;No;0;Lack of concentration;;;;;;;Tiredness;45-60;Male;$125,000-$149,999;Middle Atlantic;Android Phone / Tablet
+2018-01-14 10:32;2018-01-14 10:38;No;High School or GED;Yes;No;;Yes;No;Yes;No;No;1;38;No;Yes;0;No;Yes;0;;;;;;;;;> 60;Female;$25,000-$49,999;Middle Atlantic;Windows Desktop / Laptop
+2018-01-14 10:31;2018-01-14 10:35;No;Some highschool;No;No;0;No;No;Yes;No;No;0;0;Yes;No;0;Yes;No;0;;;;;;;;Tiredness;45-60;Female;Prefer not to answer;New England;Android Phone / Tablet
+2018-01-14 10:32;2018-01-14 10:34;No;Completed Undergraduate;Yes;No;;Yes;No;Yes;No;Yes;14;57;No;Yes;4;No;No;0;;;;;;;;;> 60;Female;$50,000-$74,999;Mountain;iOS Phone / Tablet
+2018-01-14 10:32;2018-01-14 10:34;No;Completed Masters;Yes;No;0;No;No;Yes;No;No;0;29;No;Yes;0;No;No;0;;;;;;;;;> 60;Male;$200,000+;West South Central;iOS Phone / Tablet
+2018-01-14 10:30;2018-01-14 10:33;No;Completed Undergraduate;Yes;No;1;Yes;No;Yes;No;No;0;35;No;Yes;11;No;No;0;;;;;;;;;> 60;Female;$25,000-$49,999;Mountain;iOS Phone / Tablet
+2018-01-14 10:29;2018-01-14 10:32;No;Completed Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;22;No;No;59;No;No;0;;;;;;;;;> 60;Male;$200,000+;West South Central;iOS Phone / Tablet
+2018-01-14 10:28;2018-01-14 10:30;No;Completed Masters;Yes;No;0;Yes;No;Yes;No;No;0;100;No;Yes;0;No;No;0;;;;;;;;Tiredness;45-60;Female;$200,000+;Middle Atlantic;Android Phone / Tablet
+2018-01-14 10:25;2018-01-14 10:26;No;Completed Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;49;No;Yes;0;No;No;0;;;;;;;;;> 60;Female;Prefer not to answer;South Atlantic;iOS Phone / Tablet
+2018-01-14 10:25;2018-01-14 10:26;No;Completed Masters;Yes;No;;Yes;No;Yes;No;No;0;80;No;Yes;0;No;No;0;;;;;;;;;45-60;Female;$125,000-$149,999;South Atlantic;iOS Phone / Tablet
+2018-01-14 10:21;2018-01-14 10:24;No;Some Undergraduate;No;No;0;Yes;No;Yes;No;No;0;53;No;Yes;0;No;No;0;;;;;;;;;> 60;Male;$25,000-$49,999;Middle Atlantic;iOS Phone / Tablet
+2018-01-14 10:20;2018-01-14 10:23;No;Completed Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;100;No;Yes;0;No;No;0;;;;;;;;;> 60;Male;$100,000-$124,999;Mountain;iOS Phone / Tablet
+2018-01-14 10:20;2018-01-14 10:22;No;High School or GED;Yes;No;0;Yes;No;Yes;No;No;0;97;No;Yes;0;No;No;0;;Anxiety;;;;;;;45-60;Female;Prefer not to answer;New England;iOS Phone / Tablet
+2018-01-14 10:20;2018-01-14 10:22;No;Completed Undergraduate;Yes;Yes;21;No;No;Yes;No;No;0;25;No;Yes;0;No;No;2;;;;;;;;Tiredness;> 60;Female;$10,000-$24,999;Middle Atlantic;Windows Desktop / Laptop
+2018-01-14 10:20;2018-01-14 10:22;No;Completed Masters;Yes;No;0;No;No;Yes;No;No;0;100;No;Yes;0;No;No;0;;;;;;;;;> 60;Female;$200,000+;South Atlantic;iOS Phone / Tablet
+2018-01-14 10:20;2018-01-14 10:21;No;Some Undergraduate;Yes;No;0;Yes;No;Yes;No;No;1;56;No;Yes;1;No;No;0;;;;;;;;Tiredness;45-60;Male;$75,000-$99,999;Middle Atlantic;MacOS Desktop / Laptop
+2018-01-14 10:18;2018-01-14 10:20;No;Completed Undergraduate;Yes;No;0;Yes;No;No;No;Yes;8;17;No;Yes;0;Yes;No;0;;;;;;;;;45-60;Male;$10,000-$24,999;South Atlantic;Android Phone / Tablet
+2018-01-14 10:16;2018-01-14 10:18;No;High School or GED;Yes;No;0;No;Yes;Yes;No;No;0;12;Yes;Yes;12;No;No;0;;;;;;;;;> 60;Male;$10,000-$24,999;East North Central;Windows Desktop / Laptop
+2018-01-14 10:16;2018-01-14 10:18;No;Completed Undergraduate;Yes;No;;Yes;No;Yes;No;No;0;12;No;Yes;0;No;No;0;;;;;;;;;45-60;Female;$200,000+;Mountain;MacOS Desktop / Laptop
+2018-01-14 10:16;2018-01-14 10:17;No;Some Undergraduate;Yes;No;0;Yes;No;Yes;No;Yes;18;19;No;Yes;0;No;No;1;;;Depression;;;;;Tiredness;> 60;Female;Prefer not to answer;East South Central;Windows Desktop / Laptop
+2018-01-14 10:12;2018-01-14 10:15;No;High School or GED;Yes;No;0;Yes;No;Yes;No;No;0;21;No;Yes;0;No;No;0;;Anxiety;;;;;;;45-60;Female;$150,000-$174,999;South Atlantic;Android Phone / Tablet
+2018-01-14 10:08;2018-01-14 10:10;No;High School or GED;Yes;No;1;Yes;Yes;Yes;No;No;1;35;No;Yes;0;No;No;0;;;;;;;;;> 60;Male;$25,000-$49,999;South Atlantic;Windows Desktop / Laptop
+2018-01-14 10:06;2018-01-14 10:10;No;Completed Phd;Yes;No;0;Yes;No;Yes;No;No;0;9;No;Yes;0;No;No;0;;;;;;;;Tiredness;45-60;Female;$125,000-$149,999;South Atlantic;Windows Desktop / Laptop
+2018-01-14 10:08;2018-01-14 10:10;No;Completed Undergraduate;Yes;No;0;No;No;Yes;No;No;0;31;No;Yes;0;No;No;0;;;;;;;;Tiredness;> 60;Male;Prefer not to answer;South Atlantic;Windows Desktop / Laptop
+2018-01-14 10:08;2018-01-14 10:10;No;Completed Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;1;No;Yes;0;No;No;1;Lack of concentration;;;;;;;;> 60;Male;Prefer not to answer;West North Central;Windows Desktop / Laptop
+2018-01-14 10:03;2018-01-14 10:08;No;High School or GED;No;No;0;No;No;Yes;No;Yes;13;21;No;Yes;0;No;No;0;;;;;;;;Tiredness;30-44;Male;$25,000-$49,999;East South Central;Android Phone / Tablet
+2018-01-14 10:02;2018-01-14 10:06;No;High School or GED;Yes;No;99;Yes;No;Yes;Yes;Yes;11;1;No;Yes;2;No;No;69;;;;;;Panic attacks;Compulsive behavior;;45-60;Female;$0-$9,999;West South Central;Android Phone / Tablet
+2018-01-14 09:57;2018-01-14 10:00;No;Completed Undergraduate;Yes;No;0;No;No;Yes;No;No;0;100;No;Yes;0;No;No;0;;;;;;;;;45-60;Female;Prefer not to answer;West South Central;Android Phone / Tablet
+2018-01-14 09:58;2018-01-14 09:59;No;Some Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;27;No;Yes;0;No;No;0;;Anxiety;;Obsessive thinking;;Panic attacks;Compulsive behavior;Tiredness;45-60;Female;$50,000-$74,999;East South Central;Windows Desktop / Laptop
+2018-01-14 09:54;2018-01-14 09:56;No;Completed Undergraduate;Yes;No;0;Yes;No;Yes;No;Yes;16;59;No;Yes;54;No;No;0;;;;;;;;Tiredness;45-60;Female;$25,000-$49,999;South Atlantic;Android Phone / Tablet
+2018-01-14 09:53;2018-01-14 09:55;No;Completed Masters;Yes;No;0;No;No;Yes;No;No;1;99;Yes;Yes;0;No;No;0;;;;;;;;;> 60;Female;$175,000-$199,999;Middle Atlantic;Windows Desktop / Laptop
+2018-01-14 09:52;2018-01-14 09:54;No;Some Undergraduate;Yes;No;1;No;Yes;Yes;No;No;1;88;Yes;Yes;0;No;No;0;;;;;;;;;> 60;Male;$75,000-$99,999;Middle Atlantic;Windows Desktop / Laptop
+2018-01-14 09:49;2018-01-14 09:51;No;Completed Masters;Yes;No;0;Yes;No;Yes;No;No;0;69;No;No;0;No;No;1;;;;;;;;;45-60;Female;$100,000-$124,999;Middle Atlantic;Windows Desktop / Laptop
+2018-01-14 09:49;2018-01-14 09:51;No;Completed Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;37;No;Yes;0;No;No;0;;;;;;;;;45-60;Female;$50,000-$74,999;South Atlantic;iOS Phone / Tablet
+2018-01-14 09:47;2018-01-14 09:48;No;Completed Masters;Yes;No;0;Yes;No;Yes;No;No;0;80;No;Yes;0;No;No;0;;;;;;;;;45-60;Female;$200,000+;Mountain;Windows Desktop / Laptop
+2018-01-14 09:45;2018-01-14 09:47;No;Some Undergraduate;Yes;No;0;No;No;Yes;No;Yes;24;67;Yes;Yes;0;No;No;0;;Anxiety;Depression;Obsessive thinking;;;;Tiredness;45-60;Female;$50,000-$74,999;West South Central;Windows Desktop / Laptop
+2018-01-14 09:44;2018-01-14 09:46;No;High School or GED;Yes;No;0;Yes;No;Yes;No;No;0;30;No;Yes;0;No;No;0;;;;;;;;;45-60;Female;$25,000-$49,999;South Atlantic;Windows Desktop / Laptop
+2018-01-14 09:42;2018-01-14 09:45;No;High School or GED;Yes;No;0;Yes;No;Yes;No;Yes;12;27;No;Yes;0;No;No;0;;;;;;;;;45-60;Female;$25,000-$49,999;Middle Atlantic;Android Phone / Tablet
+2018-01-14 09:42;2018-01-14 09:44;No;Some Undergraduate;Yes;No;0;No;No;Yes;No;No;1;43;Yes;Yes;0;No;No;0;;;;Obsessive thinking;;;;;> 60;Male;Prefer not to answer;East North Central;Windows Desktop / Laptop
+2018-01-14 09:42;2018-01-14 09:44;No;Completed Masters;Yes;No;0;Yes;No;Yes;No;No;0;70;No;Yes;0;No;No;0;;;;;;;;;45-60;Female;$200,000+;Mountain;Windows Desktop / Laptop
+2018-01-14 09:41;2018-01-14 09:44;No;High School or GED;Yes;No;0;Yes;No;Yes;No;No;0;16;No;Yes;0;No;No;0;;;;;;;;;45-60;Male;$150,000-$174,999;Middle Atlantic;iOS Phone / Tablet
+2018-01-14 09:42;2018-01-14 09:43;Yes;Completed Masters;Yes;No;0;Yes;No;Yes;No;No;0;75;No;Yes;0;No;No;0;;;;;;;;;45-60;Female;$50,000-$74,999;East South Central;MacOS Desktop / Laptop
+2018-01-14 09:40;2018-01-14 09:42;No;High School or GED;Yes;No;0;Yes;No;Yes;No;Yes;48;10;No;Yes;0;No;No;0;;;;;;;;;45-60;Female;$150,000-$174,999;South Atlantic;Windows Desktop / Laptop
+2018-01-14 09:37;2018-01-14 09:40;No;Some Phd;Yes;No;0;Yes;No;Yes;No;No;0;100;No;Yes;0;No;No;0;;;;;;;;Tiredness;45-60;Male;$100,000-$124,999;West South Central;iOS Phone / Tablet
+2018-01-14 09:38;2018-01-14 09:40;No;Some Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;80;No;Yes;0;No;No;0;;;;;;;;;45-60;Male;$75,000-$99,999;West South Central;Windows Desktop / Laptop
+2018-01-14 09:32;2018-01-14 09:34;No;High School or GED;Yes;No;0;Yes;No;Yes;No;No;0;0;No;Yes;0;No;No;0;;;;;;;;;45-60;Female;Prefer not to answer;West South Central;iOS Phone / Tablet
+2018-01-14 09:30;2018-01-14 09:33;No;Some Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;0;No;Yes;0;No;No;0;;;;;;;;;> 60;Male;Prefer not to answer;East North Central;MacOS Desktop / Laptop
+2018-01-14 09:26;2018-01-14 09:28;No;Some Undergraduate;Yes;No;0;Yes;Yes;Yes;No;No;0;0;No;Yes;0;No;No;0;;;;;;;;;> 60;Male;$100,000-$124,999;Middle Atlantic;Windows Desktop / Laptop
+2018-01-14 09:27;2018-01-14 09:28;No;High School or GED;Yes;No;1;Yes;No;Yes;No;No;0;0;No;Yes;0;No;No;3;;;;;;;;;45-60;Female;$25,000-$49,999;South Atlantic;Android Phone / Tablet
+2018-01-14 09:25;2018-01-14 09:27;No;Completed Masters;Yes;No;0;Yes;No;Yes;No;No;0;0;No;Yes;0;No;No;0;Lack of concentration;;;;;;;;45-60;Female;$200,000+;Pacific;iOS Phone / Tablet
+2018-01-14 09:23;2018-01-14 09:26;No;Completed Phd;No;No;0;Yes;No;Yes;No;No;0;0;No;Yes;0;No;No;0;;;;;;;;Tiredness;45-60;Female;$50,000-$74,999;East North Central;iOS Phone / Tablet
+2018-01-14 09:23;2018-01-14 09:25;No;Completed Undergraduate;Yes;No;0;No;No;Yes;No;No;0;16;No;Yes;0;No;No;0;;;;;;;;;> 60;Female;$125,000-$149,999;South Atlantic;iOS Phone / Tablet
+2018-01-14 09:20;2018-01-14 09:24;Yes;Some Undergraduate;No;Yes;2;No;Yes;No;No;Yes;100;10;Yes;Yes;10;Yes;No;5;Lack of concentration;Anxiety;Depression;Obsessive thinking;Mood swings;Panic attacks;Compulsive behavior;Tiredness;45-60;Female;$0-$9,999;New England;Android Phone / Tablet
+2018-01-14 09:20;2018-01-14 09:22;Yes;Some Undergraduate;Yes;No;0;Yes;No;Yes;Yes;No;0;59;No;Yes;0;No;No;0;Lack of concentration;Anxiety;Depression;Obsessive thinking;Mood swings;Panic attacks;Compulsive behavior;Tiredness;45-60;Female;$50,000-$74,999;South Atlantic;iOS Phone / Tablet
+2018-01-14 09:19;2018-01-14 09:22;No;Completed Undergraduate;No;No;;Yes;No;Yes;No;No;0;92;No;Yes;0;No;No;0;;;;;;;;;45-60;Female;Prefer not to answer;East North Central;iOS Phone / Tablet
+2018-01-14 09:18;2018-01-14 09:20;No;Completed Undergraduate;Yes;No;0;No;No;Yes;No;No;0;0;Yes;Yes;0;No;No;0;;;;;;;;;> 60;Female;Prefer not to answer;East North Central;Windows Desktop / Laptop
+2018-01-14 09:18;2018-01-14 09:20;No;Completed Masters;Yes;No;0;Yes;No;Yes;No;No;0;7;No;Yes;0;No;No;0;;;;;;;;;45-60;Male;$125,000-$149,999;East North Central;iOS Phone / Tablet
+2018-01-14 09:14;2018-01-14 09:18;No;High School or GED;Yes;No;0;Yes;No;Yes;No;No;0;35;No;Yes;0;No;No;0;;;;;;;;;45-60;Male;$10,000-$24,999;South Atlantic;Windows Desktop / Laptop
+2018-01-14 08:53;2018-01-14 09:17;No;Completed Masters;Yes;No;0;Yes;No;Yes;No;No;0;7;No;Yes;0;No;No;0;;;;;;;;;45-60;Female;Prefer not to answer;New England;Windows Desktop / Laptop
+2018-01-14 09:14;2018-01-14 09:17;No;Some Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;50;No;Yes;0;No;No;0;;Anxiety;;;;Panic attacks;;;30-44;Male;$25,000-$49,999;West North Central;Android Phone / Tablet
+2018-01-14 09:14;2018-01-14 09:16;No;Some Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;100;No;Yes;0;No;No;0;;;;;;;;;30-44;Male;$100,000-$124,999;South Atlantic;iOS Phone / Tablet
+2018-01-14 09:12;2018-01-14 09:14;Yes;High School or GED;No;No;0;No;Yes;Yes;No;Yes;100;0;Yes;Yes;0;Yes;Yes;0;Lack of concentration;Anxiety;;;Mood swings;;Compulsive behavior;;45-60;Male;$0-$9,999;Mountain;Android Phone / Tablet
+2018-01-14 09:11;2018-01-14 09:13;No;Completed Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;19;No;No;0;No;No;0;;;;;;;;;45-60;Female;$50,000-$74,999;Mountain;Android Phone / Tablet
+2018-01-14 09:11;2018-01-14 09:13;No;Completed Masters;Yes;No;0;No;No;Yes;No;No;0;12;Yes;Yes;0;No;No;0;;;;;;;;;> 60;Male;$75,000-$99,999;Pacific;Other
+2018-01-14 09:09;2018-01-14 09:11;No;Some Undergraduate;Yes;No;0;No;No;Yes;No;No;0;42;No;Yes;17;No;No;0;;;;;;;;;> 60;Female;Prefer not to answer;Middle Atlantic;iOS Phone / Tablet
+2018-01-14 09:08;2018-01-14 09:11;No;Completed Undergraduate;Yes;No;0;No;Yes;Yes;No;No;0;10;Yes;Yes;0;No;No;0;;;Depression;;;;;;45-60;Male;$25,000-$49,999;Mountain;Android Phone / Tablet
+2018-01-14 09:03;2018-01-14 09:08;No;Completed Undergraduate;Yes;No;0;No;No;Yes;No;No;0;53;No;Yes;0;No;No;0;;;;Obsessive thinking;;;;;> 60;Male;$25,000-$49,999;South Atlantic;Android Phone / Tablet
+2018-01-14 09:04;2018-01-14 09:07;No;Some Phd;Yes;No;;Yes;No;Yes;No;No;0;16;No;Yes;0;No;No;0;Lack of concentration;;;;;;;;45-60;Male;$10,000-$24,999;East North Central;MacOS Desktop / Laptop
+2018-01-14 09:06;2018-01-14 09:07;No;Completed Masters;Yes;No;0;No;No;Yes;No;No;0;22;No;Yes;1;No;No;0;;;;;;;;;> 60;Female;$50,000-$74,999;South Atlantic;MacOS Desktop / Laptop
+2018-01-14 09:03;2018-01-14 09:04;No;Completed Masters;Yes;No;0;Yes;No;Yes;No;No;0;13;No;Yes;0;No;No;0;;;;;;;;;45-60;Female;$50,000-$74,999;East North Central;Android Phone / Tablet
+2018-01-14 09:03;2018-01-14 09:04;No;Completed Undergraduate;Yes;No;1;Yes;No;Yes;No;No;2;0;No;Yes;0;No;No;1;;;;;;;;;45-60;Female;Prefer not to answer;South Atlantic;Windows Desktop / Laptop
+2018-01-14 08:58;2018-01-14 09:00;Yes;High School or GED;No;Yes;2;No;Yes;Yes;Yes;Yes;9;19;Yes;Yes;24;No;No;20;Lack of concentration;Anxiety;Depression;Obsessive thinking;Mood swings;;;;18-29;Male;$50,000-$74,999;Pacific;Android Phone / Tablet
+2018-01-14 08:58;2018-01-14 08:59;No;Completed Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;40;No;Yes;0;No;No;0;;;;;;;;;> 60;Male;$25,000-$49,999;South Atlantic;Windows Desktop / Laptop
+2018-01-14 08:58;2018-01-14 08:59;No;Completed Masters;Yes;No;0;Yes;No;Yes;No;No;0;96;No;Yes;0;No;No;0;;Anxiety;;;;;;;45-60;Female;$75,000-$99,999;Middle Atlantic;iOS Phone / Tablet
+2018-01-14 08:57;2018-01-14 09:00;No;Completed Undergraduate;Yes;No;;Yes;No;Yes;No;No;0;55;No;Yes;0;No;No;0;;;;;;;;;18-29;Male;$50,000-$74,999;Pacific;Android Phone / Tablet
+2018-01-14 08:56;2018-01-14 08:59;No;Completed Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;100;No;Yes;0;No;No;0;;;;;;;;Tiredness;45-60;Male;$125,000-$149,999;New England;Windows Desktop / Laptop
+2018-01-14 08:53;2018-01-14 08:54;No;Completed Undergraduate;Yes;No;6;No;No;Yes;No;No;3;44;Yes;Yes;20;No;No;0;;;;;;;;Tiredness;> 60;Female;$25,000-$49,999;New England;Windows Desktop / Laptop
+2018-01-14 08:52;2018-01-14 08:56;No;High School or GED;Yes;No;;Yes;No;Yes;No;No;7;32;No;Yes;45;No;No;0;;;;;Mood swings;;;Tiredness;30-44;Male;$0-$9,999;Pacific;Android Phone / Tablet
+2018-01-14 08:49;2018-01-14 08:50;No;Completed Masters;Yes;No;0;No;No;Yes;No;No;0;60;No;Yes;0;No;No;0;;;;;;;;;> 60;Male;$50,000-$74,999;Pacific;MacOS Desktop / Laptop
+2018-01-14 08:47;2018-01-14 08:49;No;Some Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;23;No;Yes;0;No;No;0;;;;;;;;;45-60;Female;$10,000-$24,999;West South Central;Android Phone / Tablet
+2018-01-14 08:44;2018-01-14 08:45;No;Some Masters;Yes;No;1;Yes;No;Yes;No;No;1;19;No;Yes;10;No;No;0;;Anxiety;;Obsessive thinking;Mood swings;;;Tiredness;> 60;Male;$150,000-$174,999;South Atlantic;Windows Desktop / Laptop
+2018-01-14 08:39;2018-01-14 08:41;No;Some Undergraduate;Yes;No;0;Yes;No;Yes;No;No;12;27;No;Yes;0;No;No;0;;;;Obsessive thinking;;;;;45-60;Female;$0-$9,999;Middle Atlantic;Android Phone / Tablet
+2018-01-14 08:38;2018-01-14 08:40;No;Some Phd;Yes;No;0;Yes;No;Yes;No;No;1;9;No;Yes;0;No;No;0;;;;;;;;;> 60;Female;$25,000-$49,999;Middle Atlantic;Windows Desktop / Laptop
+2018-01-14 08:36;2018-01-14 08:38;No;Completed Undergraduate;Yes;No;0;No;No;Yes;No;Yes;3;0;Yes;Yes;0;No;No;0;;;;;;;;;45-60;Male;Prefer not to answer;South Atlantic;iOS Phone / Tablet
+2018-01-14 08:35;2018-01-14 08:37;No;Completed Undergraduate;Yes;No;0;No;Yes;Yes;No;No;0;27;No;Yes;23;Yes;No;0;;;;;;;;;45-60;Female;$10,000-$24,999;West South Central;iOS Phone / Tablet
+2018-01-14 08:33;2018-01-14 08:36;No;Some Undergraduate;Yes;No;0;No;Yes;Yes;Yes;Yes;100;4;Yes;Yes;5;No;No;0;;;;;;;;;45-60;Male;$50,000-$74,999;Middle Atlantic;Windows Desktop / Laptop
+2018-01-14 08:33;2018-01-14 08:34;No;Completed Masters;No;No;0;No;No;Yes;No;No;0;46;No;Yes;0;No;No;0;;;;;;;;;> 60;Female;$50,000-$74,999;South Atlantic;Android Phone / Tablet
+2018-01-14 08:29;2018-01-14 08:32;No;Some Masters;Yes;No;0;Yes;No;Yes;No;No;0;73;No;Yes;0;No;No;0;;;;;;;;Tiredness;30-44;Female;$125,000-$149,999;New England;Windows Desktop / Laptop
+2018-01-14 08:30;2018-01-14 08:33;Yes;Some Undergraduate;Yes;Yes;100;No;No;Yes;No;Yes;18;20;Yes;Yes;0;No;No;4;;Anxiety;Depression;;;;;;18-29;Female;Prefer not to answer;Middle Atlantic;iOS Phone / Tablet
+2018-01-14 08:29;2018-01-14 08:31;Yes;Some Undergraduate;No;No;0;Yes;No;Yes;No;No;0;17;No;Yes;0;No;No;0;Lack of concentration;Anxiety;Depression;Obsessive thinking;Mood swings;Panic attacks;Compulsive behavior;Tiredness;45-60;Female;$10,000-$24,999;South Atlantic;Android Phone / Tablet
+2018-01-14 08:27;2018-01-14 08:31;No;High School or GED;No;No;;Yes;No;Yes;No;No;0;36;No;No;0;No;No;0;;;;;;;;;18-29;Female;$25,000-$49,999;East North Central;Android Phone / Tablet
+2018-01-14 08:27;2018-01-14 08:28;No;Completed Masters;Yes;No;0;Yes;No;Yes;No;No;0;75;No;Yes;0;No;No;0;;;;;;;;;> 60;Male;$75,000-$99,999;West South Central;Android Phone / Tablet
+2018-01-14 08:23;2018-01-14 08:25;No;High School or GED;Yes;No;0;No;Yes;Yes;Yes;No;2;4;Yes;No;4;No;No;0;;Anxiety;Depression;;Mood swings;;;;30-44;Female;$0-$9,999;East South Central;Android Phone / Tablet
+2018-01-14 08:23;2018-01-14 08:24;Yes;Completed Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;36;No;Yes;0;No;No;0;;;Depression;;Mood swings;;;Tiredness;45-60;Female;$100,000-$124,999;West South Central;iOS Phone / Tablet
+2018-01-14 08:21;2018-01-14 08:24;No;High School or GED;Yes;No;;No;No;Yes;Yes;No;3;23;No;No;0;Yes;No;0;;Anxiety;;;;;;;30-44;Female;$10,000-$24,999;Middle Atlantic;Android Phone / Tablet
+2018-01-14 07:34;2018-01-14 08:23;No;Completed Masters;Yes;No;0;Yes;No;Yes;No;No;0;21;No;Yes;0;No;No;0;;;;;;;;Tiredness;30-44;Male;$0-$9,999;;Windows Desktop / Laptop
+2018-01-14 08:20;2018-01-14 08:22;No;High School or GED;Yes;No;0;Yes;No;Yes;No;No;0;56;No;Yes;0;No;No;0;;;;;;;;;45-60;Female;Prefer not to answer;East South Central;Windows Desktop / Laptop
+2018-01-14 08:19;2018-01-14 08:21;No;Completed Undergraduate;Yes;No;;Yes;No;Yes;Yes;No;0;15;No;Yes;0;No;No;0;Lack of concentration;;;;;;;;18-29;Female;$10,000-$24,999;East North Central;Android Phone / Tablet
+2018-01-14 08:17;2018-01-14 08:19;No;Completed Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;96;No;Yes;0;No;No;0;;;Depression;;;;;;30-44;Female;$75,000-$99,999;South Atlantic;iOS Phone / Tablet
+2018-01-14 08:15;2018-01-14 08:18;Yes;Completed Undergraduate;Yes;No;;Yes;No;Yes;No;No;0;23;No;Yes;0;No;No;0;Lack of concentration;;Depression;;Mood swings;;;;18-29;Female;$10,000-$24,999;Pacific;Windows Desktop / Laptop
+2018-01-14 08:16;2018-01-14 08:17;No;Some Undergraduate;No;No;0;Yes;No;Yes;No;No;1;39;Yes;Yes;0;No;No;0;;;;;;;;Tiredness;30-44;Female;$25,000-$49,999;South Atlantic;Android Phone / Tablet
+2018-01-14 08:16;2018-01-14 08:17;No;High School or GED;Yes;No;0;No;No;Yes;No;Yes;97;34;No;Yes;0;Yes;Yes;0;;Anxiety;;;;;Compulsive behavior;;30-44;Female;$10,000-$24,999;New England;Android Phone / Tablet
+2018-01-14 08:11;2018-01-14 08:13;No;High School or GED;No;No;0;Yes;No;No;No;No;0;0;No;Yes;0;No;No;0;;;;;;;;;45-60;Female;Prefer not to answer;East North Central;Windows Desktop / Laptop
+2018-01-14 08:09;2018-01-14 08:11;No;Completed Phd;Yes;No;0;Yes;No;Yes;No;No;0;81;No;Yes;0;No;No;0;Lack of concentration;Anxiety;Depression;;;;;Tiredness;30-44;Female;$75,000-$99,999;South Atlantic;MacOS Desktop / Laptop
+2018-01-14 08:08;2018-01-14 08:10;No;Some Masters;Yes;No;0;Yes;No;Yes;Yes;No;0;33;No;No;0;No;No;0;;Anxiety;;;;;;;18-29;Female;$25,000-$49,999;Middle Atlantic;Android Phone / Tablet
+2018-01-14 08:07;2018-01-14 08:10;No;Completed Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;25;No;Yes;0;No;Yes;0;;;;;;;;;30-44;Female;$10,000-$24,999;East North Central;Android Phone / Tablet
+2018-01-14 08:08;2018-01-14 08:10;Yes;Some Undergraduate;Yes;Yes;42;Yes;No;Yes;No;No;0;41;No;Yes;0;No;No;1;;Anxiety;Depression;;;;;Tiredness;30-44;Female;$25,000-$49,999;New England;Windows Desktop / Laptop
+2018-01-14 08:07;2018-01-14 08:09;No;Some Masters;Yes;No;0;No;No;Yes;No;No;0;20;Yes;Yes;0;No;No;0;;;;;;;;;> 60;Female;$25,000-$49,999;West South Central;iOS Phone / Tablet
+2018-01-14 08:07;2018-01-14 08:09;Yes;Completed Masters;Yes;No;0;Yes;No;Yes;No;No;0;100;No;Yes;0;No;No;0;;;;;;;;Tiredness;30-44;Female;$150,000-$174,999;New England;iOS Phone / Tablet
+2018-01-14 08:03;2018-01-14 08:04;No;Some Undergraduate;Yes;No;0;No;No;Yes;No;No;0;0;Yes;Yes;0;No;No;0;;Anxiety;;;;;;;45-60;Female;Prefer not to answer;New England;Windows Desktop / Laptop
+2018-01-14 08:02;2018-01-14 08:04;No;Completed Undergraduate;Yes;No;0;Yes;No;Yes;No;Yes;10;21;No;Yes;0;No;No;0;;;;;;;;;45-60;Female;$25,000-$49,999;West South Central;Windows Desktop / Laptop
+2018-01-14 08:01;2018-01-14 08:02;Yes;High School or GED;Yes;Yes;100;Yes;No;Yes;No;No;0;95;No;Yes;0;No;No;100;;Anxiety;Depression;Obsessive thinking;Mood swings;Panic attacks;Compulsive behavior;;30-44;Female;$50,000-$74,999;Mountain;iOS Phone / Tablet
+2018-01-14 08:00;2018-01-14 08:01;Yes;Some Undergraduate;Yes;Yes;14;Yes;No;Yes;No;Yes;18;14;No;Yes;0;No;No;1;;Anxiety;;;;Panic attacks;;Tiredness;18-29;Female;$10,000-$24,999;East North Central;Android Phone / Tablet
+2018-01-14 08:00;2018-01-14 08:01;No;Completed Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;56;No;No;0;No;No;0;;;;;;;;;18-29;Female;$100,000-$124,999;New England;iOS Phone / Tablet
+2018-01-14 08:00;2018-01-14 08:01;No;High School or GED;Yes;No;0;Yes;No;Yes;No;No;0;0;No;Yes;0;No;No;0;;;;;;;;;45-60;Female;$75,000-$99,999;East North Central;Windows Desktop / Laptop
+2018-01-14 07:58;2018-01-14 08:00;No;Completed Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;57;No;Yes;0;No;No;0;;;;;;;;;30-44;Female;$25,000-$49,999;South Atlantic;iOS Phone / Tablet
+2018-01-14 07:57;2018-01-14 07:59;No;Completed Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;55;No;No;0;No;No;0;;;;;;;;;> 60;Male;$50,000-$74,999;Middle Atlantic;Windows Desktop / Laptop
+2018-01-14 07:56;2018-01-14 07:57;No;High School or GED;Yes;No;;Yes;No;Yes;No;No;0;42;No;Yes;0;No;No;0;;;;;;;;;30-44;Female;$25,000-$49,999;Pacific;iOS Phone / Tablet
+2018-01-14 07:51;2018-01-14 07:53;Yes;High School or GED;Yes;No;0;No;No;Yes;Yes;Yes;5;0;Yes;Yes;0;No;No;0;Lack of concentration;Anxiety;Depression;Obsessive thinking;Mood swings;Panic attacks;Compulsive behavior;Tiredness;18-29;Female;$50,000-$74,999;West South Central;Android Phone / Tablet
+2018-01-14 07:47;2018-01-14 07:49;No;Some highschool;Yes;No;0;No;No;Yes;No;No;0;25;Yes;No;0;No;No;0;;Anxiety;;;;;;;> 60;Male;$25,000-$49,999;Mountain;MacOS Desktop / Laptop
+2018-01-14 07:47;2018-01-14 07:49;No;High School or GED;Yes;No;0;Yes;No;Yes;No;No;0;25;No;Yes;0;No;No;0;;;;;;;;;30-44;Female;$25,000-$49,999;South Atlantic;Android Phone / Tablet
+2018-01-14 07:46;2018-01-14 07:48;No;Completed Undergraduate;Yes;No;0;Yes;No;Yes;No;Yes;1;19;No;Yes;0;No;No;0;;;;;;;;;> 60;Female;$125,000-$149,999;New England;Android Phone / Tablet
+2018-01-14 07:42;2018-01-14 07:44;Yes;Completed Undergraduate;Yes;No;0;No;No;Yes;No;Yes;30;7;Yes;Yes;0;No;No;0;;Anxiety;Depression;;Mood swings;Panic attacks;;Tiredness;45-60;Female;$0-$9,999;Middle Atlantic;iOS Phone / Tablet
+2018-01-14 07:43;2018-01-14 07:45;No;Some Phd;Yes;No;;Yes;No;Yes;No;No;0;0;No;No;0;No;No;0;;;;;;;;Tiredness;30-44;Female;Prefer not to answer;Middle Atlantic;iOS Phone / Tablet
+2018-01-14 07:40;2018-01-14 07:42;Yes;Completed Masters;Yes;No;0;Yes;No;Yes;No;No;0;18;No;Yes;0;No;No;0;;Anxiety;;Obsessive thinking;;;;Tiredness;45-60;Female;$75,000-$99,999;South Atlantic;Android Phone / Tablet
+2018-01-14 07:40;2018-01-14 07:43;No;Some Undergraduate;Yes;No;;No;No;Yes;No;No;0;42;No;Yes;0;No;No;0;Lack of concentration;Anxiety;Depression;Obsessive thinking;Mood swings;;Compulsive behavior;Tiredness;30-44;Female;$25,000-$49,999;Middle Atlantic;iOS Phone / Tablet
+2018-01-14 07:38;2018-01-14 07:43;No;Some highschool;No;No;3;Yes;No;Yes;No;Yes;3;100;Yes;Yes;20;No;No;1;;Anxiety;;;;;;;30-44;Female;Prefer not to answer;West North Central;Android Phone / Tablet
+2018-01-14 07:38;2018-01-14 07:40;No;Completed Undergraduate;Yes;No;0;No;No;Yes;No;No;0;100;Yes;Yes;0;No;No;0;;;;;;;;;> 60;Female;Prefer not to answer;West North Central;Windows Desktop / Laptop
+2018-01-14 07:37;2018-01-14 07:38;Yes;Some Undergraduate;Yes;No;0;Yes;No;Yes;No;Yes;12;33;No;Yes;0;No;No;0;Lack of concentration;Anxiety;Depression;;Mood swings;Panic attacks;;;30-44;Female;$25,000-$49,999;East South Central;Windows Desktop / Laptop
+2018-01-14 07:36;2018-01-14 07:37;No;High School or GED;No;No;0;No;No;Yes;No;Yes;100;19;Yes;Yes;0;No;No;0;;Anxiety;Depression;;;Panic attacks;;;30-44;Female;$0-$9,999;Pacific;Android Phone / Tablet
+2018-01-14 07:35;2018-01-14 07:37;No;Completed Masters;Yes;No;0;No;No;Yes;No;No;0;23;No;Yes;0;No;No;0;;;;;;;;;> 60;Male;$150,000-$174,999;East North Central;MacOS Desktop / Laptop
+2018-01-14 07:33;2018-01-14 07:34;No;High School or GED;Yes;No;0;No;No;Yes;No;No;0;30;Yes;Yes;0;No;No;0;;;;;;;;Tiredness;> 60;Female;$50,000-$74,999;East North Central;Windows Desktop / Laptop
+2018-01-14 07:31;2018-01-14 07:33;No;Completed Undergraduate;Yes;No;0;No;No;No;No;No;0;29;Yes;Yes;0;No;No;0;;;;;;;;;> 60;Female;$25,000-$49,999;East North Central;Windows Desktop / Laptop
+2018-01-14 07:31;2018-01-14 07:33;Yes;Completed Masters;Yes;No;0;Yes;No;Yes;No;No;0;10;No;Yes;0;No;No;1;Lack of concentration;Anxiety;Depression;;;;;Tiredness;30-44;Female;$200,000+;West South Central;Windows Desktop / Laptop
+2018-01-14 07:27;2018-01-14 07:29;No;Some Masters;Yes;No;0;Yes;No;Yes;No;Yes;5;70;No;Yes;0;No;No;0;;;;;;;;;> 60;Female;$75,000-$99,999;East North Central;Windows Desktop / Laptop
+2018-01-14 07:27;2018-01-14 07:30;No;Completed Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;45;No;Yes;0;No;No;0;;;;;;;;;30-44;Female;$25,000-$49,999;South Atlantic;iOS Phone / Tablet
+2018-01-14 07:26;2018-01-14 07:28;Yes;High School or GED;Yes;No;0;No;No;No;Yes;Yes;6;0;Yes;Yes;0;No;No;0;;Anxiety;Depression;;Mood swings;;;;30-44;Female;$10,000-$24,999;Mountain;Android Phone / Tablet
+2018-01-14 07:24;2018-01-14 07:27;No;High School or GED;Yes;No;0;Yes;No;Yes;No;No;0;20;No;Yes;0;No;No;0;;;;;;;;Tiredness;> 60;Female;$10,000-$24,999;West South Central;Android Phone / Tablet
+2018-01-14 07:23;2018-01-14 07:24;No;Completed Undergraduate;Yes;No;0;No;No;Yes;No;No;0;20;Yes;Yes;0;No;No;0;;Anxiety;;;;;;;45-60;Male;$50,000-$74,999;East North Central;MacOS Desktop / Laptop
+2018-01-14 07:15;2018-01-14 07:17;Yes;Completed Masters;Yes;No;0;No;Yes;Yes;No;No;0;23;Yes;Yes;0;No;No;0;;;Depression;;;;;Tiredness;> 60;Female;$10,000-$24,999;South Atlantic;Windows Desktop / Laptop
+2018-01-14 07:14;2018-01-14 07:16;No;Completed Undergraduate;Yes;No;0;Yes;No;Yes;No;Yes;18;40;No;Yes;0;No;No;0;Lack of concentration;;Depression;Obsessive thinking;;;Compulsive behavior;Tiredness;30-44;Female;$25,000-$49,999;South Atlantic;Android Phone / Tablet
+2018-01-14 07:13;2018-01-14 07:15;No;High School or GED;Yes;No;;Yes;No;Yes;No;No;0;74;No;Yes;0;No;No;0;;;;;;;;;> 60;Female;$50,000-$74,999;East North Central;iOS Phone / Tablet
+2018-01-14 07:10;2018-01-14 07:13;Yes;Some highschool;Yes;Yes;5;No;No;No;No;No;0;0;Yes;No;0;No;No;5;;;;;;;;;30-44;Female;$10,000-$24,999;East North Central;iOS Phone / Tablet
+2018-01-14 07:10;2018-01-14 07:12;No;Completed Masters;Yes;No;0;Yes;No;Yes;No;No;0;40;No;Yes;0;No;No;0;;;;;;;;;30-44;Male;$200,000+;East South Central;iOS Phone / Tablet
+2018-01-14 07:09;2018-01-14 07:11;No;Some Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;41;No;Yes;0;No;No;0;;Anxiety;;;;;;;45-60;Female;$150,000-$174,999;South Atlantic;iOS Phone / Tablet
+2018-01-14 07:10;2018-01-14 07:11;No;Completed Masters;Yes;No;0;No;No;Yes;No;No;0;0;No;No;0;No;No;0;;;;;;;;;> 60;Female;$200,000+;Middle Atlantic;iOS Phone / Tablet
+2018-01-14 07:07;2018-01-14 07:09;Yes;Completed Undergraduate;Yes;No;1;No;No;Yes;No;No;0;0;Yes;Yes;30;No;No;0;Lack of concentration;Anxiety;;;;Panic attacks;;Tiredness;> 60;Male;$0-$9,999;West South Central;MacOS Desktop / Laptop
+2018-01-14 07:05;2018-01-14 07:07;No;High School or GED;Yes;No;0;Yes;No;Yes;Yes;Yes;12;31;No;Yes;0;No;No;0;;;;;;;;;18-29;Female;$25,000-$49,999;Mountain;Windows Desktop / Laptop
+2018-01-14 07:05;2018-01-14 07:08;No;Completed Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;100;Yes;Yes;0;No;No;0;;;;;;;;;> 60;Female;$150,000-$174,999;East North Central;iOS Phone / Tablet
+2018-01-14 07:04;2018-01-14 07:07;No;Completed Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;70;No;Yes;0;No;No;0;;;;;;;;;> 60;Male;$75,000-$99,999;East North Central;iOS Phone / Tablet
+2018-01-14 06:57;2018-01-14 07:03;No;Some Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;6;No;No;83;No;No;0;;;;;;;;Tiredness;45-60;Male;$75,000-$99,999;South Atlantic;iOS Phone / Tablet
+2018-01-14 06:57;2018-01-14 07:00;No;Some Phd;Yes;No;0;Yes;No;Yes;No;Yes;24;100;No;Yes;0;No;No;0;;;;;;;;;45-60;Female;$100,000-$124,999;South Atlantic;iOS Phone / Tablet
+2018-01-14 06:51;2018-01-14 06:52;No;Completed Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;4;No;No;0;No;No;0;;;;;;;;;30-44;Female;$50,000-$74,999;Middle Atlantic;Windows Desktop / Laptop
+2018-01-14 06:47;2018-01-14 06:50;Yes;Some Undergraduate;Yes;No;0;No;No;Yes;Yes;No;0;0;No;Yes;1;No;No;0;;Anxiety;Depression;;;;;;18-29;Female;$0-$9,999;East South Central;Windows Desktop / Laptop
+2018-01-14 06:46;2018-01-14 06:47;No;Some Undergraduate;Yes;No;2;No;No;Yes;No;No;2;50;Yes;Yes;1;No;No;0;;;;;;Panic attacks;;;> 60;Female;$50,000-$74,999;East North Central;Windows Desktop / Laptop
+2018-01-14 06:40;2018-01-14 06:44;No;High School or GED;No;No;;No;No;Yes;No;Yes;100;46;Yes;Yes;0;No;No;0;;Anxiety;;;;;;Tiredness;30-44;Female;$25,000-$49,999;Pacific;Android Phone / Tablet
+2018-01-14 06:37;2018-01-14 06:38;Yes;Completed Undergraduate;Yes;No;0;No;No;Yes;No;Yes;24;50;Yes;No;0;No;No;0;;Anxiety;Depression;;;Panic attacks;;;45-60;Female;$50,000-$74,999;West South Central;iOS Phone / Tablet
+2018-01-14 06:30;2018-01-14 06:40;No;Completed Undergraduate;Yes;Yes;;No;No;Yes;No;No;1;10;Yes;Yes;10;Yes;Yes;69;Lack of concentration;Anxiety;Depression;Obsessive thinking;Mood swings;Panic attacks;Compulsive behavior;Tiredness;30-44;Female;$25,000-$49,999;Pacific;Android Phone / Tablet
+2018-01-14 06:32;2018-01-14 06:34;Yes;Some Undergraduate;Yes;No;0;Yes;No;Yes;Yes;No;0;11;No;Yes;0;No;No;0;Lack of concentration;Anxiety;Depression;Obsessive thinking;Mood swings;;Compulsive behavior;Tiredness;18-29;Female;Prefer not to answer;Mountain;MacOS Desktop / Laptop
+2018-01-14 06:25;2018-01-14 06:26;No;Completed Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;93;No;Yes;0;No;No;0;;;;;;;;;30-44;Female;$100,000-$124,999;Pacific;Windows Desktop / Laptop
+2018-01-14 06:17;2018-01-14 06:19;No;Completed Undergraduate;Yes;No;0;No;Yes;Yes;No;No;0;9;Yes;Yes;0;No;No;0;;;;;;;;;> 60;Female;$10,000-$24,999;East South Central;Windows Desktop / Laptop
+2018-01-14 06:07;2018-01-14 06:10;Yes;Completed Undergraduate;Yes;Yes;28;Yes;No;Yes;No;Yes;59;16;No;Yes;0;No;No;1;Lack of concentration;Anxiety;Depression;Obsessive thinking;Mood swings;Panic attacks;Compulsive behavior;Tiredness;18-29;Female;$125,000-$149,999;South Atlantic;Android Phone / Tablet
+2018-01-14 06:01;2018-01-14 06:03;No;Completed Undergraduate;No;No;;Yes;No;Yes;No;Yes;2;30;No;Yes;0;No;No;0;Lack of concentration;;;;;;;;30-44;Female;$10,000-$24,999;South Atlantic;Windows Desktop / Laptop
+2018-01-14 05:59;2018-01-14 06:01;No;Some Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;1;No;No;0;No;No;0;;;;;;;;;45-60;Female;$25,000-$49,999;South Atlantic;Windows Desktop / Laptop
+2018-01-14 05:59;2018-01-14 06:02;No;Some Undergraduate;No;No;0;Yes;No;Yes;Yes;No;0;55;No;No;0;No;No;0;;;;;;;;;18-29;Female;$50,000-$74,999;Middle Atlantic;iOS Phone / Tablet
+2018-01-14 05:58;2018-01-14 05:59;No;Completed Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;54;Yes;Yes;0;No;No;0;;;;;;;;;> 60;Male;$100,000-$124,999;New England;Windows Desktop / Laptop
+2018-01-14 05:57;2018-01-14 05:58;Yes;Some Undergraduate;No;No;0;No;No;Yes;No;Yes;24;49;Yes;Yes;0;No;No;0;Lack of concentration;Anxiety;Depression;Obsessive thinking;Mood swings;Panic attacks;Compulsive behavior;Tiredness;30-44;Female;$50,000-$74,999;East North Central;Android Phone / Tablet
+2018-01-14 05:54;2018-01-14 05:56;No;High School or GED;No;No;0;Yes;No;Yes;No;No;0;35;No;Yes;0;No;No;0;;Anxiety;;;;Panic attacks;;;30-44;Female;Prefer not to answer;Middle Atlantic;MacOS Desktop / Laptop
+2018-01-14 05:49;2018-01-14 05:52;Yes;High School or GED;No;No;0;Yes;No;Yes;Yes;Yes;30;17;No;Yes;0;No;No;0;;Anxiety;Depression;Obsessive thinking;Mood swings;;Compulsive behavior;;30-44;Female;$10,000-$24,999;West South Central;Android Phone / Tablet
+2018-01-14 05:49;2018-01-14 05:50;Yes;Completed Masters;Yes;Yes;1;Yes;Yes;Yes;Yes;Yes;20;25;No;Yes;12;No;No;1;Lack of concentration;Anxiety;Depression;Obsessive thinking;;;Compulsive behavior;Tiredness;30-44;Male;$10,000-$24,999;Pacific;Windows Desktop / Laptop
+2018-01-14 05:45;2018-01-14 05:46;No;Some Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;42;No;Yes;0;No;No;0;;;;;;;;;18-29;Male;$50,000-$74,999;Pacific;iOS Phone / Tablet
+2018-01-14 05:43;2018-01-14 05:45;No;Completed Masters;Yes;No;0;Yes;No;Yes;No;No;1;82;No;Yes;0;No;No;1;;Anxiety;;;;;;;30-44;Female;$75,000-$99,999;Middle Atlantic;Windows Desktop / Laptop
+2018-01-14 05:42;2018-01-14 05:43;No;High School or GED;Yes;No;0;Yes;No;Yes;No;No;0;23;No;No;0;No;No;0;;Anxiety;Depression;;Mood swings;Panic attacks;;Tiredness;18-29;Female;$10,000-$24,999;West North Central;iOS Phone / Tablet
+2018-01-14 05:41;2018-01-14 05:42;No;Some highschool;Yes;No;;No;Yes;Yes;No;No;22;25;Yes;Yes;14;No;No;0;;Anxiety;Depression;;Mood swings;Panic attacks;;Tiredness;45-60;Female;$50,000-$74,999;East North Central;Windows Desktop / Laptop
+2018-01-14 05:38;2018-01-14 05:41;Yes;Completed Undergraduate;Yes;No;;No;No;Yes;No;Yes;28;0;Yes;Yes;0;Yes;No;0;Lack of concentration;Anxiety;Depression;Obsessive thinking;Mood swings;Panic attacks;Compulsive behavior;Tiredness;30-44;Female;$25,000-$49,999;East North Central;Android Phone / Tablet
+2018-01-14 05:29;2018-01-14 05:32;Yes;Some highschool;Yes;Yes;15;Yes;No;Yes;No;No;3;54;No;Yes;0;No;No;3;;Anxiety;;Obsessive thinking;Mood swings;;Compulsive behavior;;30-44;Female;$50,000-$74,999;Middle Atlantic;Android Phone / Tablet
+2018-01-14 05:27;2018-01-14 05:29;No;Completed Masters;Yes;No;0;Yes;No;Yes;No;No;0;75;No;Yes;0;No;No;0;;;;;;;;;45-60;Female;Prefer not to answer;Middle Atlantic;Android Phone / Tablet
+2018-01-14 05:27;2018-01-14 05:29;Yes;Some Undergraduate;Yes;No;0;Yes;No;Yes;No;Yes;100;36;No;Yes;0;No;No;0;Lack of concentration;;;;;;;Tiredness;> 60;Female;$25,000-$49,999;Middle Atlantic;iOS Phone / Tablet
+2018-01-14 05:21;2018-01-14 05:28;Yes;High School or GED;Yes;No;0;No;No;Yes;No;Yes;30;19;Yes;Yes;0;No;No;0;Lack of concentration;Anxiety;Depression;Obsessive thinking;Mood swings;Panic attacks;;Tiredness;30-44;Female;$10,000-$24,999;West South Central;Android Phone / Tablet
+2018-01-14 05:26;2018-01-14 05:27;Yes;Some Undergraduate;No;No;0;Yes;No;Yes;No;No;0;30;No;Yes;0;No;No;0;;Anxiety;Depression;;;;;Tiredness;30-44;Female;$25,000-$49,999;Pacific;iOS Phone / Tablet
+2018-01-14 05:20;2018-01-14 05:22;Yes;Completed Undergraduate;No;Yes;10;Yes;No;Yes;No;No;0;50;No;Yes;0;No;No;1;;Anxiety;Depression;;;;;;30-44;Female;$25,000-$49,999;Middle Atlantic;Android Phone / Tablet
+2018-01-14 05:18;2018-01-14 05:20;No;High School or GED;No;No;0;No;No;No;No;No;0;0;Yes;Yes;0;No;No;0;;Anxiety;;;;;;;18-29;Female;$0-$9,999;South Atlantic;Android Phone / Tablet
+2018-01-14 05:17;2018-01-14 05:19;No;Completed Phd;Yes;No;0;Yes;No;Yes;No;No;0;83;No;No;0;No;No;0;;;;;;;;;45-60;Female;$100,000-$124,999;South Atlantic;iOS Phone / Tablet
+2018-01-14 05:12;2018-01-14 05:16;No;Some highschool;Yes;No;0;Yes;No;Yes;No;No;0;0;No;Yes;0;No;No;0;;;;;;;;Tiredness;45-60;Female;$10,000-$24,999;East North Central;Android Phone / Tablet
+2018-01-14 05:12;2018-01-14 05:14;No;Some Undergraduate;Yes;No;;No;No;Yes;No;Yes;9;55;Yes;Yes;0;No;No;0;;;;;;;;;18-29;Female;$50,000-$74,999;East North Central;iOS Phone / Tablet
+2018-01-14 05:11;2018-01-14 05:14;Yes;Some Undergraduate;Yes;No;0;No;Yes;Yes;No;Yes;52;14;Yes;Yes;14;Yes;No;0;Lack of concentration;Anxiety;Depression;Obsessive thinking;;Panic attacks;Compulsive behavior;Tiredness;30-44;Female;$10,000-$24,999;East South Central;Android Phone / Tablet
+2018-01-14 05:02;2018-01-14 05:04;Yes;Completed Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;18;No;Yes;0;No;No;0;;Anxiety;Depression;Obsessive thinking;;Panic attacks;Compulsive behavior;Tiredness;30-44;Female;$25,000-$49,999;East North Central;Windows Desktop / Laptop
+2018-01-14 04:53;2018-01-14 04:56;No;Completed Undergraduate;Yes;No;0;Yes;No;Yes;No;Yes;2;51;No;Yes;0;No;No;0;;;;;;;;Tiredness;45-60;Female;$50,000-$74,999;Middle Atlantic;Android Phone / Tablet
+2018-01-14 04:53;2018-01-14 04:55;No;High School or GED;Yes;No;0;No;No;Yes;Yes;No;0;50;Yes;No;50;Yes;No;0;Lack of concentration;Anxiety;Depression;;;;;;18-29;Female;$50,000-$74,999;East South Central;Windows Desktop / Laptop
+2018-01-14 04:50;2018-01-14 04:52;Yes;Some Undergraduate;Yes;No;;Yes;No;Yes;No;Yes;36;20;No;Yes;0;No;No;0;;Anxiety;Depression;;Mood swings;Panic attacks;;Tiredness;30-44;Female;Prefer not to answer;West South Central;Android Phone / Tablet
+2018-01-14 04:45;2018-01-14 04:47;No;Some Undergraduate;Yes;No;0;No;No;Yes;No;No;0;31;Yes;Yes;1;No;No;0;;;;;;;;Tiredness;> 60;Female;Prefer not to answer;Mountain;Android Phone / Tablet
+2018-01-14 04:42;2018-01-14 04:47;No;Completed Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;50;No;Yes;0;No;No;0;;;;;;;;Tiredness;18-29;Female;$50,000-$74,999;East South Central;Android Phone / Tablet
+2018-01-14 04:42;2018-01-14 04:43;No;High School or GED;Yes;No;0;Yes;No;Yes;No;No;0;44;Yes;No;44;No;No;0;;;;;;;;;45-60;Male;$50,000-$74,999;East North Central;Windows Desktop / Laptop
+2018-01-14 04:41;2018-01-14 04:43;No;Some highschool;No;No;0;No;No;No;Yes;Yes;28;0;Yes;Yes;0;Yes;No;0;;;;;;;;;30-44;Female;$50,000-$74,999;Pacific;Android Phone / Tablet
+2018-01-14 04:30;2018-01-14 04:36;No;Completed Masters;Yes;No;0;No;No;Yes;No;No;0;38;Yes;Yes;0;No;No;0;;;;;;;;;> 60;Female;$75,000-$99,999;Pacific;MacOS Desktop / Laptop
+2018-01-14 04:33;2018-01-14 04:34;Yes;Some Undergraduate;Yes;No;0;Yes;No;Yes;Yes;No;0;2;No;Yes;0;No;No;0;Lack of concentration;Anxiety;Depression;Obsessive thinking;Mood swings;Panic attacks;Compulsive behavior;Tiredness;18-29;Female;$0-$9,999;West North Central;Windows Desktop / Laptop
+2018-01-14 04:25;2018-01-14 04:27;No;Completed Undergraduate;Yes;No;0;Yes;No;Yes;Yes;Yes;24;37;No;No;0;No;No;0;;;;;;;;;18-29;Female;$10,000-$24,999;Pacific;iOS Phone / Tablet
+2018-01-14 04:24;2018-01-14 04:27;Yes;High School or GED;Yes;Yes;27;No;Yes;Yes;No;Yes;73;12;Yes;Yes;13;Yes;No;4;Lack of concentration;;Depression;;;Panic attacks;;Tiredness;45-60;Female;$0-$9,999;East North Central;Android Phone / Tablet
+2018-01-14 04:23;2018-01-14 04:25;No;Some Undergraduate;No;No;0;Yes;No;Yes;No;Yes;5;47;No;Yes;0;No;No;0;;;;;;;;;18-29;Female;$50,000-$74,999;West South Central;Android Phone / Tablet
+2018-01-14 04:14;2018-01-14 04:20;No;Some Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;35;No;Yes;0;No;No;0;;;;;;;;;18-29;Female;$25,000-$49,999;Mountain;Android Phone / Tablet
+2018-01-14 04:14;2018-01-14 04:17;No;High School or GED;Yes;No;0;Yes;No;Yes;No;No;0;23;No;Yes;0;No;No;0;;;;;;;;Tiredness;30-44;Female;$10,000-$24,999;Pacific;Windows Desktop / Laptop
+2018-01-14 04:09;2018-01-14 04:11;Yes;Some Undergraduate;No;Yes;8;No;Yes;Yes;No;Yes;13;17;Yes;Yes;4;Yes;No;1;;Anxiety;Depression;Obsessive thinking;Mood swings;Panic attacks;;Tiredness;30-44;Female;$0-$9,999;West North Central;Android Phone / Tablet
+2018-01-14 04:06;2018-01-14 04:10;Yes;Completed Undergraduate;Yes;Yes;43;No;Yes;Yes;No;No;0;12;Yes;Yes;12;Yes;Yes;6;;;;;;;;Tiredness;> 60;Female;$10,000-$24,999;Middle Atlantic;Windows Desktop / Laptop
+2018-01-14 04:06;2018-01-14 04:09;No;High School or GED;Yes;No;0;No;No;Yes;No;Yes;66;0;Yes;Yes;2;No;No;0;;Anxiety;;;;Panic attacks;;;30-44;Female;$75,000-$99,999;Middle Atlantic;Android Phone / Tablet
+2018-01-14 04:05;2018-01-14 04:07;No;Completed Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;100;No;Yes;0;No;No;0;;;Depression;;;;;;30-44;Female;$100,000-$124,999;East South Central;iOS Phone / Tablet
+2018-01-14 04:02;2018-01-14 04:04;No;Some Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;25;No;Yes;0;No;No;0;;;Depression;Obsessive thinking;;;;;45-60;Male;$75,000-$99,999;Mountain;Windows Desktop / Laptop
+2018-01-14 04:02;2018-01-14 04:04;Yes;Completed Undergraduate;No;No;;Yes;No;Yes;No;No;0;46;No;Yes;0;No;No;0;;Anxiety;Depression;;;;;;30-44;Female;$25,000-$49,999;Pacific;iOS Phone / Tablet
+2018-01-14 04:01;2018-01-14 04:03;No;Completed Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;25;No;Yes;0;No;No;0;;;;;;;;Tiredness;45-60;Male;$25,000-$49,999;South Atlantic;Windows Desktop / Laptop
+2018-01-14 03:58;2018-01-14 04:00;No;Completed Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;35;No;Yes;0;No;No;0;;Anxiety;Depression;;;;;;30-44;Female;$25,000-$49,999;East North Central;iOS Phone / Tablet
+2018-01-14 03:58;2018-01-14 03:59;Yes;Some Undergraduate;Yes;No;0;Yes;No;Yes;No;Yes;7;24;Yes;No;0;No;No;1;Lack of concentration;Anxiety;Depression;Obsessive thinking;;;;Tiredness;18-29;Female;$0-$9,999;West South Central;Windows Desktop / Laptop
+2018-01-14 03:53;2018-01-14 03:55;No;Completed Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;54;No;Yes;0;No;No;0;;;;;;;;Tiredness;45-60;Female;$50,000-$74,999;Middle Atlantic;iOS Phone / Tablet
+2018-01-14 03:53;2018-01-14 03:55;No;Some highschool;No;No;0;Yes;No;Yes;Yes;No;0;36;No;Yes;25;No;No;0;;;;;Mood swings;;;Tiredness;30-44;Female;$50,000-$74,999;South Atlantic;iOS Phone / Tablet
+2018-01-14 03:51;2018-01-14 03:53;No;Completed Masters;Yes;No;0;Yes;No;Yes;No;No;0;24;No;No;0;No;No;0;;;;;;;;;> 60;Male;$175,000-$199,999;East North Central;Windows Desktop / Laptop
+2018-01-14 03:46;2018-01-14 03:48;Yes;High School or GED;Yes;Yes;1;No;No;Yes;No;No;0;33;Yes;Yes;6;No;No;2;;Anxiety;Depression;;Mood swings;Panic attacks;;Tiredness;18-29;Female;$25,000-$49,999;West North Central;Android Phone / Tablet
+2018-01-14 03:44;2018-01-14 03:46;No;High School or GED;No;No;0;No;No;Yes;Yes;Yes;24;18;Yes;Yes;0;Yes;No;0;;;;;;;;;18-29;Female;Prefer not to answer;West North Central;Android Phone / Tablet
+2018-01-14 03:44;2018-01-14 03:45;Yes;Completed Undergraduate;Yes;No;0;Yes;No;Yes;Yes;Yes;14;30;No;Yes;0;No;No;0;;Anxiety;Depression;;Mood swings;Panic attacks;;;18-29;Female;$25,000-$49,999;Mountain;Windows Desktop / Laptop
+2018-01-14 03:41;2018-01-14 03:42;Yes;Completed Masters;Yes;No;0;Yes;No;Yes;No;Yes;15;50;No;Yes;0;No;No;0;;Anxiety;Depression;;;;;;18-29;Female;$125,000-$149,999;Middle Atlantic;iOS Phone / Tablet
+2018-01-14 03:38;2018-01-14 03:40;No;Some Undergraduate;Yes;No;0;Yes;No;Yes;No;Yes;45;10;No;No;0;No;No;0;;;;;;;;;30-44;Female;$100,000-$124,999;Middle Atlantic;iOS Phone / Tablet
+2018-01-14 03:38;2018-01-14 03:40;No;Completed Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;35;No;Yes;0;No;No;0;;;;;;;;;45-60;Female;$75,000-$99,999;East North Central;Android Phone / Tablet
+2018-01-14 03:35;2018-01-14 03:37;No;Some Undergraduate;Yes;No;0;Yes;No;Yes;No;Yes;36;42;No;No;0;No;No;0;;;;;;;;;18-29;Female;$25,000-$49,999;Pacific;iOS Phone / Tablet
+2018-01-14 03:35;2018-01-14 03:37;Yes;Completed Undergraduate;No;No;0;No;No;Yes;No;No;0;40;Yes;Yes;0;No;No;0;;Anxiety;;;;;;;18-29;Female;$50,000-$74,999;Mountain;iOS Phone / Tablet
+2018-01-14 03:34;2018-01-14 03:36;No;High School or GED;Yes;No;;No;Yes;Yes;No;No;0;0;Yes;Yes;0;No;No;0;;;;;;;;Tiredness;45-60;Female;Prefer not to answer;Mountain;Android Phone / Tablet
+2018-01-14 03:34;2018-01-14 03:36;No;Some Undergraduate;Yes;No;0;Yes;No;Yes;Yes;No;0;62;No;Yes;0;No;No;0;;;;;;;;;18-29;Male;$50,000-$74,999;Pacific;Windows Desktop / Laptop
+2018-01-14 03:27;2018-01-14 03:33;No;Some Undergraduate;Yes;No;0;Yes;No;Yes;No;No;0;0;No;Yes;1;Yes;No;1;;;;;;;;;> 60;Female;$10,000-$24,999;West North Central;Windows Desktop / Laptop
+2018-01-14 03:29;2018-01-14 03:32;Yes;Some Undergraduate;No;Yes;1;No;Yes;Yes;Yes;Yes;30;12;Yes;Yes;12;Yes;No;3;Lack of concentration;Anxiety;Depression;Obsessive thinking;Mood swings;Panic attacks;Compulsive behavior;Tiredness;18-29;Female;$0-$9,999;West South Central;Android Phone / Tablet
+2018-01-14 03:24;2018-01-14 03:25;Yes;Some Undergraduate;Yes;No;0;Yes;Yes;Yes;No;No;0;25;No;Yes;0;No;No;0;;Anxiety;Depression;;;;;;18-29;Female;$10,000-$24,999;Pacific;Android Phone / Tablet
