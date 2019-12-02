@@ -49,8 +49,8 @@ class Classify:
 
     
 
-
-mainRun = Classify("Final_DataSet_No_Headings.csv", "")
+path = str(".\DataSets\Mental Illness Survey 1_Matched_Converted.csv")
+mainRun = Classify(path, "")
 mainRun.classifySVM()
 
 
