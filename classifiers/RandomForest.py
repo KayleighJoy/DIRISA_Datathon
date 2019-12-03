@@ -90,6 +90,12 @@ class classifyRF:
         self.confusion = confusion_matrix(self.y_test,y_pred2)
         self.report = classification_report(self.y_test,y_pred2)
 
+        metrics = [self.confusion, self.report]
+
+        with open("RandomForestLog.txt", mode='a') as writeDS:
+            ds_writer = csv.writer(writeDS, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL, lineterminator='\n')
+            ds_writer.writerows(metrics)
+
         onehot_encoder = OneHotEncoder(sparse=False)
         y_tests = onehot_encoder.fit_transform(self.y_test)
 
