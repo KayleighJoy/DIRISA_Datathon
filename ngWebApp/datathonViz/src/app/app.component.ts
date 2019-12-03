@@ -1,6 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-
-import { NgForm, NgModel } from '@angular/forms';
+import { NgForm, NgModel, NumberValueAccessor } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -10,8 +9,7 @@ import { NgForm, NgModel } from '@angular/forms';
 export class AppComponent {
   @ViewChild('RegisterF', {static: false}) RegisterForm : NgForm;
   @ViewChild('Chicken', {static: false}) ChickenEx : NgModel;
-
-
+  @ViewChild('Income' , {static: false}) Income : NgModel;
   //Try get this data and change it after pressing button
   PercNB:number = 50;
   PercRF:number = 50;
@@ -19,9 +17,8 @@ export class AppComponent {
   NB:String = "yes";
   RF:String = "no";
   SVM:String = "sixty nine";
+  IncomeRank:number = -1;
   
-  Income:number = 0;
-  IncomeRank = -1
 
   SortIncomer(){
     // 0-55599 -1
@@ -34,56 +31,51 @@ export class AppComponent {
     // 834000-972999-8
     // 973000-1111999-9
     // >1112000-10
-    switch(this.Income) { 
-      case 0-55599: { 
+    console.log("Chickens")
+    switch(true) { 
+      case (this.Income.value < 55600): 
         this.IncomeRank = 1;
          break; 
-      } 
-      case 55600-277999: { 
+      case ((this.Income.value >= 55600) && (this.Income.value < 139000)): 
         this.IncomeRank = 2;
         break; 
-      }
-      case 55600-277999: { 
+      case ((this.Income.value >= 139000) && (this.Income.value < 278000)):
         this.IncomeRank = 3;
         break; 
-      }
-      case 55600-277999: { 
+      case ((this.Income.value >= 278000) && (this.Income.value < 417000)): 
         this.IncomeRank = 4;
         break; 
-      }
-      case 55600-277999: { 
+      
+      case ((this.Income.value >= 417000) && (this.Income.value < 556000)): 
         this.IncomeRank = 5;
         break; 
-      }
-      case 55600-277999: { 
+      
+      case ((this.Income.value >= 55600) && (this.Income.value < 695000)): 
         this.IncomeRank = 6;
         break; 
-      }
-      case 55600-277999: { 
+      
+      case ((this.Income.value >= 695000) && (this.Income.value < 834000)): 
         this.IncomeRank = 7;
         break; 
-      }
-      case 55600-277999: { 
+      
+      case ((this.Income.value >= 834000) && (this.Income.value < 973000)): 
         this.IncomeRank = 8;
         break; 
-      }
-      case 55600-277999: { 
+      case ((this.Income.value >= 973000) && (this.Income.value < 1112000)): 
         this.IncomeRank = 9;
         break; 
-      }
-      case 55600-277999: { 
+      case (this.Income.value >= 1112000) : 
         this.IncomeRank = 10;
         break; 
-      } 
-      default: { 
+      default: 
         this.IncomeRank = -1;
-        break; 
-      } 
+        break;  
    }
   
   }
 
   OnPredict() {
+    
     this.SortIncomer();
     console.log(this.IncomeRank)
     if (this.IncomeRank == -1)

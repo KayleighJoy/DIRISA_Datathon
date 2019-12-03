@@ -25,37 +25,18 @@
 <!-- The first section-->
 <div class="container-fluid">
   <div class="row">
-  <div class="col-md-6">
-    <div class="jumbotron">
-      <h1 class="h2"> Number of Mental Illness Cases Reported </h1>
-    </div>
     <app-ProPie></app-ProPie>
-  </div>
 
-  <div class="col-md-6">
-    <div class="jumbotron">
-        <h1 class="h2"> Medicine Consumed per Provinces </h1>
-    </div>
-      <app-consume-pie></app-consume-pie>  
-   </div>
+    <app-consume-pie></app-consume-pie>  
   </div>
 </div>
 
 <br>
-
 <!-- The second section -->
-<div class="container-fluid w-100">
-  <div class="jumbotron">
-      <h1 style="text-align:center;" class="h2"> Display of bar graph for most risky province </h1>
-  </div>
-  <div class="w-100">
-      <app-bar-risk class></app-bar-risk>
-  </div>
-</div>
-
+      <app-bar-risk ></app-bar-risk>
 <br>
 
-<!-- The Fourth Section -->
+<!-- The Third Section -->
 <div class="jumbotron">
     <h1 style="text-align:center;" class="h2"> Predictions </h1>
 </div>
@@ -158,3 +139,5 @@
     </tr>
   </table>
 </div>
+
+<app-venn-chart></app-venn-chart>
