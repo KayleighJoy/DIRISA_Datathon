@@ -5,7 +5,7 @@
   </button>
   <div class="collapse navbar-collapse" id="navbarNavDropdown">
     
-    <div class="navbar-nav mx-auto">
+    <!-- <div class="navbar-nav mx-auto">
     <li class="nav-item dropdown">
       <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         Provinces
@@ -16,7 +16,7 @@
         <a class="dropdown-item" href="#">Something else here</a>
       </div>
     </li>
-    </div>
+    </div> -->
   </div>
 </nav>
 
@@ -25,37 +25,18 @@
 <!-- The first section-->
 <div class="container-fluid">
   <div class="row">
-  <div class="col-md-6">
-    <div class="jumbotron">
-      <h1 class="h2"> Number of Mental Illness Cases Reported </h1>
-    </div>
     <app-ProPie></app-ProPie>
-  </div>
 
-  <div class="col-md-6">
-    <div class="jumbotron">
-        <h1 class="h2"> Medicine Consumed per Provinces </h1>
-    </div>
-      <app-consume-pie></app-consume-pie>  
-   </div>
+    <app-consume-pie></app-consume-pie>  
   </div>
 </div>
 
 <br>
-
 <!-- The second section -->
-<div class="container-fluid w-100">
-  <div class="jumbotron">
-      <h1 style="text-align:center;" class="h2"> Display of bar graph for most risky province </h1>
-  </div>
-  <div class="w-100">
-      <app-bar-risk class></app-bar-risk>
-  </div>
-</div>
-
+      <app-bar-risk ></app-bar-risk>
 <br>
 
-<!-- The Fourth Section -->
+<!-- The Third Section -->
 <div class="jumbotron">
     <h1 style="text-align:center;" class="h2"> Predictions </h1>
 </div>
@@ -123,9 +104,34 @@
         <label> Yearly Income </label>      
         <br>
         <!-- INCOMPLETE FINISH THIS STUFF LINK IT TO THE TS -->
-        <input id="Income" type="number" class="" value="0" name="Income" ngModel>
+        <input id="Income" type="number" name="iIncome" [(ngModel)]="Income">
     </div>
 
+    <!-- Mobile Phones -->
+    <div class="form-group">
+        <label> Do you own a phone? </label>      
+        <div class="form-control">
+           <input id="YesPhone" type="radio" class="custom-control-input" value="Yes" name="Mobile" ngModel>
+           <label class="custom-control-label" for="YesPhone">Yes</label>
+        </div>  
+        <div class="form-control">
+           <input id="NoPhone" type="radio" class="custom-control-input" value="No" name="Mobile" ngModel>
+           <label class="custom-control-label" for="NoPhone">No</label>
+        </div>
+    </div>
+
+    <!-- Hospitalized -->
+    <div class="form-group">
+        <label> have you been Hospitalized </label>      
+        <div class="form-control">
+           <input id="YesHospital" type="radio" class="custom-control-input" value="Yes" name="Hospital" ngModel>
+           <label class="custom-control-label" for="YesHospital">Yes</label>
+        </div>  
+        <div class="form-control">
+           <input id="NoHospital" type="radio" class="custom-control-input" value="No" name="Hospital" ngModel>
+           <label class="custom-control-label" for="NoHospital">No</label>
+        </div>
+    </div>
   </div>
   <button type="submit" class="btn-primary btn"> Predict </button>
 

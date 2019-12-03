@@ -1,6 +1,5 @@
 import { Component, ViewChild } from '@angular/core';
-
-import { NgForm, NgModel } from '@angular/forms';
+import { NgForm, NgModel, NumberValueAccessor } from '@angular/forms';
 
 @Component({
   selector: 'app-root',
@@ -10,8 +9,7 @@ import { NgForm, NgModel } from '@angular/forms';
 export class AppComponent {
   @ViewChild('RegisterF', {static: false}) RegisterForm : NgForm;
   @ViewChild('Chicken', {static: false}) ChickenEx : NgModel;
-
-
+  
   //Try get this data and change it after pressing button
   PercNB:number = 50;
   PercRF:number = 50;
@@ -19,9 +17,8 @@ export class AppComponent {
   NB:String = "yes";
   RF:String = "no";
   SVM:String = "sixty nine";
-  
-  Income:number = 0;
-  IncomeRank = -1
+  IncomeRank:number = -1;
+  Income = 32
 
   SortIncomer(){
     // 0-55599 -1
@@ -34,67 +31,56 @@ export class AppComponent {
     // 834000-972999-8
     // 973000-1111999-9
     // >1112000-10
-    switch(this.Income) { 
-      case 0-55599: { 
+    switch(true) { 
+      case (this.Income < 55600): 
         this.IncomeRank = 1;
          break; 
-      } 
-      case 55600-277999: { 
+      case ((this.Income >= 55600) && (this.Income < 139000)): 
         this.IncomeRank = 2;
         break; 
-      }
-      case 55600-277999: { 
+      case ((this.Income >= 139000) && (this.Income < 278000)):
         this.IncomeRank = 3;
         break; 
-      }
-      case 55600-277999: { 
+      case ((this.Income >= 278000) && (this.Income < 417000)): 
         this.IncomeRank = 4;
         break; 
-      }
-      case 55600-277999: { 
+      
+      case ((this.Income >= 417000) && (this.Income < 556000)): 
         this.IncomeRank = 5;
         break; 
-      }
-      case 55600-277999: { 
+      
+      case ((this.Income >= 55600) && (this.Income < 695000)): 
         this.IncomeRank = 6;
         break; 
-      }
-      case 55600-277999: { 
+      
+      case ((this.Income >= 695000) && (this.Income < 834000)): 
         this.IncomeRank = 7;
         break; 
-      }
-      case 55600-277999: { 
+      
+      case ((this.Income >= 834000) && (this.Income < 973000)): 
         this.IncomeRank = 8;
         break; 
-      }
-      case 55600-277999: { 
+      case ((this.Income >= 973000) && (this.Income < 1112000)): 
         this.IncomeRank = 9;
         break; 
-      }
-      case 55600-277999: { 
+      case (this.Income >= 1112000) : 
         this.IncomeRank = 10;
         break; 
-      } 
-      default: { 
+      default: 
         this.IncomeRank = -1;
-        break; 
-      } 
+        break;  
    }
   
   }
 
   OnPredict() {
     this.SortIncomer();
-    console.log(this.IncomeRank)
+    console.log(this.RegisterForm)
     if (this.IncomeRank == -1)
     {
       alert("Did not fill information");
       return 0;
     }
-    
-    //COMPLETE THIS with the income
-
-
     //Values to work with the data
     // Values for Level Studies
     // IncHS CompHS IncUndergrad CompUndergrad IncMasters CompMasters IncPHD CompPHD
@@ -106,9 +92,9 @@ export class AppComponent {
     // Male Female
     
     console.log(this.RegisterForm);
-    console.log(this.ChickenEx.value);
+    console.log(this.IncomeRank);
 
-
+    
     // this.PercNB
     // this.PercRF
     // this.PercSVM
