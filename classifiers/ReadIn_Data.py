@@ -267,8 +267,8 @@ class Classify:
 #path = str(".\DataSets\Mental_Illness_Survey_Matched_Converted.csv")
 mainRun = Classify("..\DataSets\CensusData_Cleaned.csv", "")
 #mainRun.classifySVM()
-#mainRun.getAll_prov_RF()
-mainRun.classifyRF()
+mainRun.getAll_prov()
+#mainRun.classifyRF()
 
 
 

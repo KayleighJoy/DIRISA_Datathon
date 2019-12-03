@@ -20,6 +20,8 @@ from sklearn.multiclass import OneVsRestClassifier
 from scipy import interp
 from sklearn.ensemble import RandomForestClassifier
 
+from joblib import dump, load
+
 class ClassifySVM:
     def __init__(self, features, labels, X_test, X_train, y_test, y_train):
         self.paths = list(())
@@ -59,13 +61,14 @@ class ClassifySVM:
 
     def svmTrain(self, toPredict):
         print("Training")
-        self.svclassifier = SVC(C=10, cache_size=200, class_weight=None, coef0=0.0,
+        '''self.svclassifier = SVC(C=10, cache_size=200, class_weight=None, coef0=0.0,
     decision_function_shape='ovo', degree=3, gamma=0.01, kernel='rbf',
     max_iter=-1, probability=True, random_state=None, shrinking=True, tol=0.001,
-    verbose=False)
+    verbose=False)'''
         #self.svclassifier = self.findBestParameters(self.svclassifier) 
-        self.svclassifier.fit(self.X_train, self.y_train)
+        #self.svclassifier.fit(self.X_train, self.y_train)
         #toPredict.reshape(-1,1)
+        self.svclassifier = load('bestSVM.joblib')
         toPredict = np.asarray(toPredict)
         print(toPredict.shape)
         y_pred = self.svclassifier.predict(toPredict) 
@@ -82,6 +85,7 @@ class ClassifySVM:
         
         #self.svclassifier = self.findBestParameters(self.svclassifier)  
         self.svclassifier.fit(self.X_train, self.y_train)
+        dump(self.svclassifier, 'bestSVM.joblib')
         y_pred = self.svclassifier.predict_proba(self.X_test)
         y_pred2 = self.svclassifier.predict(self.X_test)
     
