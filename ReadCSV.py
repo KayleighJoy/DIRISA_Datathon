@@ -116,7 +116,7 @@ class ReadIn:
                 continue
             for i in range(3,6):
                 if person[i] == '1':
-                    person[i] == True
+                    disable = True
 
             if disable:
                 temp.append(1)

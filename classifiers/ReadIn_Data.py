@@ -88,6 +88,118 @@ class Classify:
         pred = temp.svmTrain(self.SA_features)
         return self.one_province(pred)
 
+    def country_percentage_weighted(self):
+        self.read_csv()
+        self.split_data()
+        self.read_csv_census()
+        self.split_provinces(self.SA_features)
+        ratioWC = len(self.wc)/len(self.SA_features)
+        ratioEC = len(self.ec)/len(self.SA_features)
+        ratioNC = len(self.nc)/len(self.SA_features)
+        ratioFS = len(self.fs)/len(self.SA_features)
+        ratioKZN = len(self.kzn)/len(self.SA_features)
+        ratioNW = len(self.nw)/len(self.SA_features)
+        ratioGau = len(self.gau)/len(self.SA_features)
+        ratioMpu = len(self.mpu)/len(self.SA_features)
+        ratioLim = len(self.lim)/len(self.SA_features)
+
+        real_ratioWC = 5822734/51770561
+        real_ratioEC = 11562053/51770561
+        real_ratioNC = 1145861/51770561
+        real_ratioFS = 2745590/51770561
+        real_ratioKZN = 10267300/51770561
+        real_ratioNW = 3509953/51770561
+        real_ratioGau = 12272263/51770561
+        real_ratioMpu = 4039939/51770561
+        real_ratioLim = 5404868/51770561
+
+        print(str(ratioWC) + ":" + str(real_ratioWC))
+        print(str(ratioEC) + ":" + str(real_ratioEC))
+        print(str(ratioNC) + ":" + str(real_ratioNC))
+        print(str(ratioFS) + ":" + str(real_ratioFS))
+        print(str(ratioKZN) + ":" + str(real_ratioKZN))
+        print(str(ratioNW) + ":" + str(real_ratioNW))
+        print(str(ratioGau) + ":" + str(real_ratioGau))
+        print(str(ratioMpu) + ":" + str(real_ratioMpu))
+        print(str(ratioLim) + ":" + str(real_ratioLim))
+
+        #temp = svm.ClassifySVM(self.features, self.labels,self.X_test,self.X_train,self.y_test,self.y_train)
+        #pred = temp.svmTrain(self.SA_features)
+    
+    def display_heatmap(self):
+        self.read_csv()
+        self.split_data()
+        self.read_csv_census()
+        self.split_provinces(self.SA_features)
+
+        t_wc = self.calcCounts(self.wc)
+        t_ec = self.calcCounts(self.ec)
+        t_nc = self.calcCounts(self.nc)
+        t_fs = self.calcCounts(self.fs)
+        t_kzn = self.calcCounts(self.kzn)
+        t_nw = self.calcCounts(self.nw)
+        t_gau = self.calcCounts(self.gau)
+        t_mp = self.calcCounts(self.mpu)
+        t_lim = self.calcCounts(self.lim)
+
+        info = []
+        info.append(t_wc)
+        info.append(t_ec)
+        info.append(t_nc)
+        info.append(t_fs)
+        info.append(t_kzn)
+        info.append(t_nw)
+        info.append(t_gau)
+        info.append(t_mp)
+        info.append(t_lim)
+        return info
+        
+
+    def calcCounts(self, array):
+        countWC = []
+        countDisable =0
+        countEmploy = 0
+        countGender = 0
+        countPhone=0
+        countHos=0
+        for person in array:
+            if person[1] == '1':
+                countDisable += 1
+            if person[2] == '0':
+                countEmploy += 1
+            if person[4] == '1':
+                countGender += 1
+            if person[len(person) - 2] == '1':
+                countPhone += 1
+            if person[len(person)-1] == '1':
+                countHos += 1
+        countWC.append(countDisable)
+        countWC.append(countEmploy)
+        countWC.append(countGender)
+        countWC.append(countPhone)
+        countWC.append(countHos)
+        return countWC
+
+    def split_provinces(self, pred):
+        for i in range (0,6553):
+            self.wc.append(pred[i])
+        for i in range(6553,15511):
+            self.ec.append(pred[i])
+        for i in range(15511,18737):
+            self.nc.append(pred[i])
+        for i in range(18737,22549):
+            self.fs.append(pred[i])
+        for i in range(22549,34800):
+            self.kzn.append(pred[i])
+        for i in range(34800,38975):
+            self.nw.append(pred[i])
+        for i in range(38975,53090):
+            self.gau.append(pred[i])
+        for i in range(53090,58736):
+            self.mpu.append(pred[i])
+        for i in range(58736,len(pred)):
+            self.lim.append(pred[i])
+
     def country_percentage_rf(self):
         temp = rf.classifyRF(self.features, self.labels,self.X_test,self.X_train,self.y_test,self.y_train)
         pred = temp.trainRF(self.SA_features)
@@ -269,6 +381,7 @@ class Classify:
 
 #path = str(".\DataSets\Mental_Illness_Survey_Matched_Converted.csv")
 #mainRun = Classify()
+#mainRun.country_percentage_weighted()
 #mainRun.classifySVM()
 #mainRun.getAll_prov_RF()
 #mainRun.classifyRF()

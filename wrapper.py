@@ -10,3 +10,9 @@ def getCountryPercentage():
     dataReader = Classify()
     return dataReader.country_percentage()
 
+def getHeatMapInfo():
+    dataReader = Classify()
+    return dataReader.display_heatmap()
+
+print(getHeatMapInfo())
+
