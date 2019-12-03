@@ -56,7 +56,7 @@ export class VennComponent implements OnInit
     colorAxis : 
     {
       min : 0,
-      minColor : '#EEC1B6',
+      minColor : '#ECDDD9',
       maxColor : '#790400'
     },
     legend : 
