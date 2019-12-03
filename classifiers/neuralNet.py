@@ -70,9 +70,8 @@ class neuralNet:
         model.add(Dense(8, input_dim=input_dim))
         model.add(Dense(16))
         model.add(Dense(32))
-        model.add(Activation('relu'))
-        model.add(Dense(8))
-        model.add(Dense(8))
+        model.add(Dense(64))
+        model.add(Dense(32))
         model.add(Activation('relu'))
         model.add(Dense(numClasses))
         model.add(Activation('softmax'))
@@ -84,7 +83,7 @@ class neuralNet:
         model.compile(loss='binary_crossentropy',  optimizer=keras.optimizers.Adam(lr=0.001), metrics=['accuracy'])
         
         print("Training...")
-        model.fit(self.x_train, self.y_train, epochs=100, batch_size=16, verbose=1, validation_data=(self.x_test,self.y_test))
+        model.fit(self.x_train, self.y_train, epochs=300, batch_size=16, verbose=1, validation_data=(self.x_test,self.y_test))
 
         print("Generating test predictions...")
         preds = model.predict_classes(self.x_test, verbose=0)

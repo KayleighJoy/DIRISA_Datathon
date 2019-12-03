@@ -14,5 +14,4 @@ def getHeatMapInfo():
     dataReader = Classify()
     return dataReader.display_heatmap()
 
-print(getHeatMapInfo())
 
