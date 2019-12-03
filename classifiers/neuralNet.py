@@ -67,7 +67,7 @@ class neuralNet:
         numClasses = 2
         print("Input Dimension: ",input_dim)
         model = Sequential()
-        model.add(Dense(8, input_dim=input_dim))
+        model.add(Dense(16, input_dim=input_dim))
         model.add(Dense(16))
         model.add(Dense(32))
         model.add(Dense(64))

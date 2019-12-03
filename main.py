@@ -15,6 +15,15 @@ class getCountryPercentage(Resource):
         riskAve = wrapper.getCountryPercentage()
         return{"Country Risk": riskAve}
 
+class predictRisk(Resource):
+    def get(self, education, disabled, unemployed, age, gender, income, mobile, hospital):
+        riskAve = wrapper.predictRisk(education, disabled, unemployed, age, gender, income, mobile, hospital)
+        print(riskAve[0][0])
+        if riskAve[0][0]>riskAve[0][1]:
+            return {'status': 'At Risk', 'prob': riskAve[0][0]}
+        else:
+            return {'status': 'Not At Risk', 'prob': riskAve[0][1]}
+
 class getHeatMap(Resource):
     def get(self):
         provData = wrapper.getHeatMapInfo()
@@ -24,6 +33,7 @@ class getHeatMap(Resource):
 api.add_resource(getAllProvince, '/getAllProvinceData')
 api.add_resource(getCountryPercentage, '/getCountryRisk')
 api.add_resource(getHeatMap, '/getHeatMapData')
+api.add_resource(predictRisk, '/predict/<education>/<disabled>/<unemployed>/<age>/<gender>/<income>/<mobile>/<hospital>')
 
 if __name__ == '__main__':
      app.run()

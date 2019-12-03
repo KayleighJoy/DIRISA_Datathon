@@ -12,14 +12,15 @@ import { BarRiskComponent } from './bar-risk/bar-risk.component';
 
 import { FormsModule } from '@angular/forms';
 import { ConnectService } from './connect.service'
-
 import { HttpClientModule } from '@angular/common/http';
+import { VennComponent } from './venn/venn.component';
 @NgModule({
   declarations: [
     AppComponent,
     ChartComponent,
     ConsumePieComponent,
-    BarRiskComponent
+    BarRiskComponent,
+    VennComponent
   ],
   imports: [
     HttpClientModule,

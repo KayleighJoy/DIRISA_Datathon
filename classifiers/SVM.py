@@ -74,6 +74,22 @@ class ClassifySVM:
         print(y_pred)
         return y_pred
 
+    def svmPredictProb(self, toPredict):
+        print("Training")
+        '''self.svclassifier = SVC(C=10, cache_size=200, class_weight=None, coef0=0.0,
+    decision_function_shape='ovo', degree=3, gamma=0.01, kernel='rbf',
+    max_iter=-1, probability=True, random_state=None, shrinking=True, tol=0.001,
+    verbose=False)'''
+        #self.svclassifier = self.findBestParameters(self.svclassifier) 
+        #self.svclassifier.fit(self.X_train, self.y_train)
+        #toPredict.reshape(-1,1)
+        self.svclassifier = load('classifiers/bestSVM.joblib')
+        toPredict = np.asarray(toPredict)
+        print(toPredict.shape)
+        y_pred = self.svclassifier.predict_proba(toPredict)
+        print(y_pred)
+        return y_pred
+
     def svmTrainForMetrics(self, name):
         #self.svclassifier = LinearSVC()
         #self.svclassifier = SVC(kernel='rbf', probability=True, decision_function_shape ='ovo')
