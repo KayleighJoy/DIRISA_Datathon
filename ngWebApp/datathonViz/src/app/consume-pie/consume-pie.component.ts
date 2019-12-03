@@ -8,10 +8,25 @@ import * as Chart from 'chart.js';
 })
 export class ConsumePieComponent implements OnInit {
   // Number of Medicine Consumed per provinces
+  //Province Data
+  nmGP:number = 50;
+  nmL:number = 50;
+  nmWP:number = 50;
+  nmEP:number = 50;
+  nmNP:number = 50;
+  nmKZN:number = 50;
+  nmFS:number = 50;
+  nmMP:number = 50;
+  nmNW:number = 50;
   
   canvas: any;
   ctx: any;
+
+  
+
+
   ngAfterViewInit() {
+    
     this.canvas = document.getElementById('MedConsumedChart');
     this.ctx = this.canvas.getContext('2d');
     let myChart = new Chart(this.ctx, {
@@ -23,7 +38,7 @@ export class ConsumePieComponent implements OnInit {
           datasets: [{
               label: 'Number of Medicine bought/consumed per province',
               // Change data here
-              data: [32,123,20,43,69, 420, 44, 77, 56],
+              data: [this.nmGP, this.nmL, this.nmWP, this.nmNP, this.nmEP, this.nmKZN, this.nmNW, this.nmFS, this.nmMP],
               backgroundColor: [
                   'rgba(255, 0, 0, 1)',
                   'rgba(54, 162, 235, 1)',

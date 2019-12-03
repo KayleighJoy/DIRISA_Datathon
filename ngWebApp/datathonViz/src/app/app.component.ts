@@ -9,11 +9,19 @@ import { NgForm, NgModel } from '@angular/forms';
 })
 export class AppComponent {
   @ViewChild('RegisterF', {static: false}) RegisterForm : NgForm;
-  @ViewChild('PasswordRepeat', {static: false}) fPasswordRepeat :NgModel;
-  @ViewChild('Password', {static: false}) fPassword :NgModel;
-  @ViewChild('Name', {static: false}) fname :NgModel;
-  @ViewChild('Surname', {static: false}) fsurname :NgModel;
-  @ViewChild('ID_Number', {static: false}) fid :NgModel;
-  @ViewChild('Cell_num', {static: false}) fcell :NgModel;
-  @ViewChild('UserType', {static: false}) fusertype :NgModel;
+  @ViewChild('Chicken', {static: false}) ChickenEx : NgModel;
+
+  OnPredict() {
+    // Values for Level Studies
+    // IncHS CompHS IncUndergrad CompUndergrad IncMasters CompMasters IncPHD CompPHD
+    // Values for Legally Disabled
+    // NotDisabled Disabled
+    // Values for Age Group
+    // 1 = 18-29 2 = 30-44 3 = 45-60 4 = 60< 
+    // Values for Gender
+    // Male Female
+    
+    console.log(this.RegisterForm);
+    console.log(this.ChickenEx.value);
+  }
 }

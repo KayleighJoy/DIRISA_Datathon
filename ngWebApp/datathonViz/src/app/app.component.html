@@ -27,13 +27,13 @@
   <div class="row">
   <div class="col-md-6">
     <div class="jumbotron">
-      Provinces affected by mental illnesses
+      Number of Mental Illness Cases Reported
     </div>
     <app-ProPie></app-ProPie>
   </div>
   <div class="col-md-6">
     <div class="jumbotron">
-      Medicine consumed per Provinces
+      Medicine Consumed per Provinces
     </div>
     <!-- Display medical pills consumed per province Here-->
       <app-consume-pie></app-consume-pie>  
@@ -42,6 +42,7 @@
   </div>
 </div>
 
+<br>
 
 <!-- The second section -->
 <div class="container-fluid w-100">
@@ -53,56 +54,85 @@
   </div>
 </div>
 
+<br>
 
 <!-- The Fourth Section -->
-Do inputs with ngforms
+<form class="container" (ngSubmit)=OnPredict() #RegisterF="ngForm">
+  <div class="container form-content">
 
+    <!-- Level of Education -->
+    <div class="form-group">
+      <label> What is your level of studies? </label>
+      <br>
+      <select name="LevelEducation" ngModel #Chicken="ngModel">
+        <!-- High school some undergrad comp undergrad some master comp master some phd comp phd some high school -->
+        <option value="IncHS">High School (Incomplete)</option>
+        <option value="CompHS">High School (Complete)</option>
+        <option value="IncUndergrad">Undergraduate (Incomplete</option>
+        <option value="CompUndergrad">Undergraduate (Complete)</option>
+        <option value="IncMasters">Masters (Incomplete)</option>
+        <option value="CompMasters">Masters (Complete)</option>
+        <option value="IncPHD">PHD (Incomplete)</option>
+        <option value="CompPHD">PHD (Complete)</option>
+      </select>
+    </div>
+    
+    <!-- Legally Disabled -->
+    <div class="form-group">
+      <label> Are you disabled? </label>
+      <div class="form-control">
+         <input id="NotDisabled" type="radio" class="custom-control-input" value="NotDisabled" name="Disabled" ngModel>
+         <label class="custom-control-label" for="NotDisabled">Abled</label>
+      </div>  
+      <div class="form-control">
+         <input id="Disabled" type="radio" class="custom-control-input" value="Disabled" name="Disabled" ngModel>
+         <label class="custom-control-label" for="Disabled">Disabled</label>
+      </div>
+    </div>
 
-<!-- Third year form -->
-<form (ngSubmit)=onRegister(Password) #RegisterF="ngForm">
-  <div class="form-content">
-      <div class="form-group">
-          <input type="text" class="form-control input-underline input-lg" ngModel #Name="ngModel" name="Name" id="Name" placeholder="Name" required>
+    <!-- Age Group -->
+    <div class="form-group">
+        <label> Age Group </label>
+        <br>
+        <select name="AgeGroup" ngModel #AgeGroup="ngModel">
+          <!-- High school some undergrad comp undergrad some master comp master some phd comp phd some high school -->
+          <option value="1">18-29 years</option>
+          <option value="2">30-44 years</option>
+          <option value="3">45-60 years</option>
+          <option value="4">Above 60 years</option>
+        </select>
       </div>
 
-      <div class="form-group">
-              <input type="text" class="form-control input-underline input-lg" ngModel #Surname="ngModel" name="Surname" id="Surname" placeholder="Surname" required>
-      </div>
-      <div class = "form-group">
-          <input type="text" class="form-control input-underline input-lg" ngModel #Email="ngModel" name="Email" id="Email" placeholder="Email" email required>
-      </div>
-
-      <div class="form-group">
-          <input type="text" class="form-control input-underline input-lg" minlength="13" maxlength="13" ngModel #ID_Number="ngModel" name="ID_Number" id="ID_Number" placeholder="ID Number" required>
-      </div>
-
-      <div class="form-group">
-              <input type="text" class="form-control input-underline input-lg"  minlength="10" maxlength="10" ngModel #Cell_num="ngModel" name="Cell_Num" id="Cellphone_Number" placeholder="Cellphone number">
+    <!-- Gender -->
+    <div class="form-group">
+        <label> Sex </label>      
+        <div class="form-control">
+           <input id="Male" type="radio" class="custom-control-input" value="Male" name="Gender" ngModel>
+           <label class="custom-control-label" for="Male">Male</label>
+        </div>  
+        <div class="form-control">
+           <input id="Female" type="radio" class="custom-control-input" value="Female" name="Gender" ngModel>
+           <label class="custom-control-label" for="Female">Female</label>
+        </div>
       </div>
 
   </div>
-  <button type="submit" class="btn-primary"> Register </button>
+  <button type="submit" class="btn-primary btn"> Predict </button>
+
 </form>
+<br>
 
-
-
-
-<!-- standard form -->
-<!-- <div class="container">
-    <form>
-       <div class="form-group">
-         <label for="exampleInputEmail1">Email address</label>
-         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-       </div>
-       <div class="form-group">
-         <label for="exampleInputPassword1">Password</label>
-         <input type="password" class="form-control" id="exampleInputPassword1">
-       </div>
-       <div class="form-group form-check">
-        <input type="checkbox" class="form-check-input" id="exampleCheck1">
-        <label class="form-check-label" for="exampleCheck1">Check me out</label>
-      </div>
-       <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
-</div> -->
+<div class="container-fluid">
+  <table class="table">
+    <tr class="row">
+        <th class="col"> Naive Bayes </th>
+        <th class="col"> Support Vector Machines</th>
+        <th class="col"> Random Forest</th>
+    </tr>
+    <tr class="row">
+        <td class="col"><strong> YES </strong></td>
+        <td class="col"><strong> YES </strong></td>
+        <td class="col"><strong> 69 </strong></td>
+    </tr>
+  </table>
+</div>

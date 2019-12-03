@@ -10,8 +10,20 @@ export class ChartComponent implements OnInit {
   // Number of reported cases
   canvas: any;
   ctx: any;
-  ngAfterViewInit() {
 
+
+  //Province Data
+  ncGP:number = 50;
+  ncL:number = 50;
+  ncWP:number = 50;
+  ncEP:number = 50;
+  ncNP:number = 50;
+  ncKZN:number = 50;
+  ncFS:number = 50;
+  ncMP:number = 50;
+  ncNW:number = 50;
+
+  ngAfterViewInit() {
     this.canvas = document.getElementById('NumCasesChart');
     this.ctx = this.canvas.getContext('2d');
     let myChart = new Chart(this.ctx, {
@@ -23,7 +35,7 @@ export class ChartComponent implements OnInit {
           datasets: [{
               label: 'Number of Cases Reported',
               // Change data here
-              data: [32,123,20,43,69, 420, 44, 77, 56],
+              data: [this.ncGP, this.ncL, this.ncWP, this.ncNP, this.ncEP, this.ncKZN, this.ncNW, this.ncFS, this.ncMP],
               backgroundColor: [
                   'rgba(255, 0, 0, 1)',
                   'rgba(54, 162, 235, 1)',

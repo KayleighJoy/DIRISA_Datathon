@@ -10,6 +10,18 @@ export class BarRiskComponent implements OnInit {
   // Risk of illness
   canvas: any;
   ctx: any;
+
+  //Province Data
+  rGP:number = 50;
+  rL:number = 50;
+  rWP:number = 50;
+  rEP:number = 50;
+  rNP:number = 50;
+  rKZN:number = 50;
+  rFS:number = 50;
+  rMP:number = 50;
+  rNW:number = 50;
+
   ngAfterViewInit() {
 
     this.canvas = document.getElementById('BarRisk');
@@ -22,7 +34,8 @@ export class BarRiskComponent implements OnInit {
           ],
           datasets: [{
               label: '# of Votes',
-              data: [32,123,20,43,69, 420, 44, 77, 56],
+              // Change data here
+              data: [this.rGP, this.rL, this.rWP, this.rNP, this.rEP, this.rKZN, this.rNW, this.rFS, this.rMP],
               backgroundColor: [
                 'rgba(255, 0, 0, 1)',
                 'rgba(54, 162, 235, 1)',
