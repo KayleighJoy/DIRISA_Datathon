@@ -9,7 +9,7 @@ import { NgForm, NgModel, NumberValueAccessor } from '@angular/forms';
 export class AppComponent {
   @ViewChild('RegisterF', {static: false}) RegisterForm : NgForm;
   @ViewChild('Chicken', {static: false}) ChickenEx : NgModel;
-  @ViewChild('Income' , {static: false}) Income : NgModel;
+  
   //Try get this data and change it after pressing button
   PercNB:number = 50;
   PercRF:number = 50;
@@ -18,7 +18,7 @@ export class AppComponent {
   RF:String = "no";
   SVM:String = "sixty nine";
   IncomeRank:number = -1;
-  
+  Income = 32
 
   SortIncomer(){
     // 0-55599 -1
@@ -31,40 +31,39 @@ export class AppComponent {
     // 834000-972999-8
     // 973000-1111999-9
     // >1112000-10
-    console.log("Chickens")
     switch(true) { 
-      case (this.Income.value < 55600): 
+      case (this.Income < 55600): 
         this.IncomeRank = 1;
          break; 
-      case ((this.Income.value >= 55600) && (this.Income.value < 139000)): 
+      case ((this.Income >= 55600) && (this.Income < 139000)): 
         this.IncomeRank = 2;
         break; 
-      case ((this.Income.value >= 139000) && (this.Income.value < 278000)):
+      case ((this.Income >= 139000) && (this.Income < 278000)):
         this.IncomeRank = 3;
         break; 
-      case ((this.Income.value >= 278000) && (this.Income.value < 417000)): 
+      case ((this.Income >= 278000) && (this.Income < 417000)): 
         this.IncomeRank = 4;
         break; 
       
-      case ((this.Income.value >= 417000) && (this.Income.value < 556000)): 
+      case ((this.Income >= 417000) && (this.Income < 556000)): 
         this.IncomeRank = 5;
         break; 
       
-      case ((this.Income.value >= 55600) && (this.Income.value < 695000)): 
+      case ((this.Income >= 55600) && (this.Income < 695000)): 
         this.IncomeRank = 6;
         break; 
       
-      case ((this.Income.value >= 695000) && (this.Income.value < 834000)): 
+      case ((this.Income >= 695000) && (this.Income < 834000)): 
         this.IncomeRank = 7;
         break; 
       
-      case ((this.Income.value >= 834000) && (this.Income.value < 973000)): 
+      case ((this.Income >= 834000) && (this.Income < 973000)): 
         this.IncomeRank = 8;
         break; 
-      case ((this.Income.value >= 973000) && (this.Income.value < 1112000)): 
+      case ((this.Income >= 973000) && (this.Income < 1112000)): 
         this.IncomeRank = 9;
         break; 
-      case (this.Income.value >= 1112000) : 
+      case (this.Income >= 1112000) : 
         this.IncomeRank = 10;
         break; 
       default: 
@@ -75,18 +74,13 @@ export class AppComponent {
   }
 
   OnPredict() {
-    
     this.SortIncomer();
-    console.log(this.IncomeRank)
+    console.log(this.RegisterForm)
     if (this.IncomeRank == -1)
     {
       alert("Did not fill information");
       return 0;
     }
-    
-    //COMPLETE THIS with the income
-
-
     //Values to work with the data
     // Values for Level Studies
     // IncHS CompHS IncUndergrad CompUndergrad IncMasters CompMasters IncPHD CompPHD
@@ -98,9 +92,9 @@ export class AppComponent {
     // Male Female
     
     console.log(this.RegisterForm);
-    console.log(this.ChickenEx.value);
+    console.log(this.IncomeRank);
 
-
+    
     // this.PercNB
     // this.PercRF
     // this.PercSVM
