@@ -33,7 +33,7 @@ export class BarRiskComponent implements OnInit {
             "KwaZulu-Natal", "North-West", "Free State", "Mpumalanga"
           ],
           datasets: [{
-              label: '# of Votes',
+              // label: ['# of Votes'],
               // Change data here
               data: [this.rGP, this.rL, this.rWP, this.rNP, this.rEP, this.rKZN, this.rNW, this.rFS, this.rMP],
               backgroundColor: [

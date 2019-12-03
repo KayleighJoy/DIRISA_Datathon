@@ -19,8 +19,82 @@ export class AppComponent {
   NB:String = "yes";
   RF:String = "no";
   SVM:String = "sixty nine";
+  
+  Income:number = 0;
+  IncomeRank = -1
+
+  SortIncomer(){
+    // 0-55599 -1
+    // 55600-138999-2
+    // 139000-277999-3
+    // 278000-416999-4
+    // 417000-555999-5
+    // 556000-694999-6
+    // 695000-833999-7
+    // 834000-972999-8
+    // 973000-1111999-9
+    // >1112000-10
+    switch(this.Income) { 
+      case 0-55599: { 
+        this.IncomeRank = 1;
+         break; 
+      } 
+      case 55600-277999: { 
+        this.IncomeRank = 2;
+        break; 
+      }
+      case 55600-277999: { 
+        this.IncomeRank = 3;
+        break; 
+      }
+      case 55600-277999: { 
+        this.IncomeRank = 4;
+        break; 
+      }
+      case 55600-277999: { 
+        this.IncomeRank = 5;
+        break; 
+      }
+      case 55600-277999: { 
+        this.IncomeRank = 6;
+        break; 
+      }
+      case 55600-277999: { 
+        this.IncomeRank = 7;
+        break; 
+      }
+      case 55600-277999: { 
+        this.IncomeRank = 8;
+        break; 
+      }
+      case 55600-277999: { 
+        this.IncomeRank = 9;
+        break; 
+      }
+      case 55600-277999: { 
+        this.IncomeRank = 10;
+        break; 
+      } 
+      default: { 
+        this.IncomeRank = -1;
+        break; 
+      } 
+   }
+  
+  }
 
   OnPredict() {
+    this.SortIncomer();
+    console.log(this.IncomeRank)
+    if (this.IncomeRank == -1)
+    {
+      alert("Did not fill information");
+      return 0;
+    }
+    
+    //COMPLETE THIS with the income
+
+
     //Values to work with the data
     // Values for Level Studies
     // IncHS CompHS IncUndergrad CompUndergrad IncMasters CompMasters IncPHD CompPHD
