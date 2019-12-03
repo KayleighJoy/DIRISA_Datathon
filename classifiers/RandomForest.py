@@ -1,7 +1,6 @@
 #Class for random forest
 import pandas as pd  
 import numpy as np  
-import soundfile as sf
 import csv
 from sklearn.model_selection import train_test_split
 from sklearn.svm import SVC, LinearSVC
