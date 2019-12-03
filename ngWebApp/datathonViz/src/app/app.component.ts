@@ -16,4 +16,5 @@ export class AppComponent {
   @ViewChild('ID_Number', {static: false}) fid :NgModel;
   @ViewChild('Cell_num', {static: false}) fcell :NgModel;
   @ViewChild('UserType', {static: false}) fusertype :NgModel;
+  title = 'Mental Illness Heatmap';
 }
