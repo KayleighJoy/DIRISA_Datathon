@@ -28,12 +28,20 @@ class Convert_Medical_Data:
 
     def convert_to_num(self):
         for person in self.people:
-            print(person)
+            #print(person)
             temp = []
             income = person[5]
             if income == "Prefer not to answer":
                 continue
-
+            mental = False
+            for i in range (6,14):
+                if person[i] != '':
+                    mental = True
+            if mental == True:
+                temp.append(1)
+            else:
+                temp.append(2)
+                
             if person[0] == "Some highschool":
                 temp.append(1)
             if person[0] == "High School or GED":
@@ -98,15 +106,8 @@ class Convert_Medical_Data:
             elif income =="200000+":
                 temp.append(10)
 
-
-            for i in range (6,14):
-                mental = False
-                if person[i] != "":
-                    mental = True
-            if mental == True:
-                temp.append(1)
-            else:
-                temp.append(2)
+            #print(person)
+            
             self.newPeople.append(temp)
 
 

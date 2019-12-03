@@ -35,10 +35,7 @@ class Classify:
             for row in csv_reader:
                 print(row)
                 length = len(row)
-                temp2 = []
-                temp2.append(row[1])
-                temp2.append(row[6])
-                self.features.append(temp2)
+                self.features.append(row[1:length])
                 temp = []
                 temp.append(row[0])
                 self.labels.append(temp)
