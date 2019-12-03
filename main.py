@@ -23,7 +23,7 @@ class getHeatMap(Resource):
 
 api.add_resource(getAllProvince, '/getAllProvinceData')
 api.add_resource(getCountryPercentage, '/getCountryRisk')
-api.add_resource(getCountryPercentage, '/getHeatMapData')
+api.add_resource(getHeatMap, '/getHeatMapData')
 
 if __name__ == '__main__':
      app.run()
