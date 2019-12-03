@@ -71,9 +71,9 @@ class ClassifySVM:
 
     def svmTrainForMetrics(self, name):
         #self.svclassifier = LinearSVC()
-        #self.svclassifier = SVC(kernel='rbf', probability=True, decision_function_shape ='ovo')
-        self.svclassifier = SVC(C=1, cache_size=200, class_weight=None, coef0=0.0,
-    decision_function_shape='ovo', degree=3, gamma=0.1, kernel='rbf',
+        self.svclassifier = SVC(kernel='rbf', probability=True, decision_function_shape ='ovo')
+        self.svclassifier = SVC(C=10, cache_size=200, class_weight=None, coef0=0.0,
+    decision_function_shape='ovo', degree=3, gamma=0.01, kernel='rbf',
     max_iter=-1, probability=True, random_state=None, shrinking=True, tol=0.001,
     verbose=False)
         
@@ -167,7 +167,7 @@ class ClassifySVM:
         ax2.set_ylabel('True Positive Rate')
         ax2.legend(loc="lower right")
 
-        fig.suptitle('SVM ROC')
+        fig.suptitle('SVM ROC - More Data')
         plt.savefig(name)
 
         return plt.plot

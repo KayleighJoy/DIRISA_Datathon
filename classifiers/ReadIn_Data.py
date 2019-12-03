@@ -16,6 +16,16 @@ class Classify:
         self.X_test = list()
         self.y_test = list()
         self.y_train = list()
+        self.lim = list()
+        self.gau = list()
+        self.wc = list()
+        self.ec = list()
+        self.nc = list()
+        self.fs = list()
+        self.kzn = list()
+        self.nw = list()
+        self.mpu = list()
+
 
     def classifySVM(self):
         self.read_csv()
@@ -26,7 +36,7 @@ class Classify:
     def classifyRF(self):
         self.read_csv()
         self.split_data()
-        self.runSVM()
+        self.runRandomForest()
         plt.show()
 
     def read_csv(self):
@@ -60,11 +70,46 @@ class Classify:
             ds_writer = csv.writer(writeDS, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL, lineterminator='\n')
             ds_writer.writerows(toWrite)
 
+    def read_csv_census(self):
+        SA_features = []
+        with open(self.filename, mode='r') as csv_file:
+            csv_reader = csv.reader(csv_file, delimiter=',')
+            for row in csv_reader:
+                length = len(row)
+                SA_features.append(row)
+
+        for person in SA_features:
+            prov = person[0]
+            if prov == '1':
+                self.wc.append(person)
+            elif prov == '2':
+                self.ec.append(person)
+            elif prov == '3':
+                self.nc.append(person)
+            elif prov == '4':
+                self.fs.append(person)
+            elif prov == '5':
+                self.kzn.append(person)
+            elif prov == '6':
+                self.nw.append(person)
+            elif prov == '7':
+                self.gau.append(person)
+            elif prov == '8':
+                self.mpu.append(person)
+            elif prov == '9':
+                self.lim.append(person)
+            else:
+                print("Error:")
+                print(person)
+
+            
+
     
 
-path = str(".\DataSets\Mental_Illness_Survey_Matched_Converted.csv")
-mainRun = Classify("..\DataSets\Mental_Illness_Survey_Converted_Sequential.csv", "")
-mainRun.classifySVM()
+#path = str(".\DataSets\Mental_Illness_Survey_Matched_Converted.csv")
+mainRun = Classify("..\DataSets\CensusData_Cleaned.csv", "")
+#mainRun.classifySVM()
+mainRun.read_csv_census()
 #mainRun.classifyRF()
 
 
