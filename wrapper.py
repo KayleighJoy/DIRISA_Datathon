@@ -20,5 +20,8 @@ def predictRisk(education, disabled, unemployed, age, gender, income, mobile, ho
     pred = svm.svmPredictProb(data)
     return pred
 
+def getHeatMapInfo():
+    dataReader = Classify()
+    return dataReader.display_heatmap()
 
 

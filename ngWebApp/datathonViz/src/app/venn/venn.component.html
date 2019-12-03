@@ -1,0 +1,18 @@
+<!-- <div id="main-head" style="text-align:center">
+        <h1>
+          Welcome to {{ title }}!
+        </h1>
+        <div [chart] = 'venn'></div>
+      </div> -->
+
+<!-- <div id='container'></div> -->
+<highcharts-chart 
+   [Highcharts] = "highcharts" 
+   [options] = "chartOptions" 
+   style = "width: 50%; height: 400px; display: block; float: left;">
+</highcharts-chart>
+<highcharts-chart 
+   [Highcharts] = "highcharts1" 
+   [options] = "chartOptions1" 
+   style = "width: 50%; height: 400px; display: block; float: right;">
+</highcharts-chart>

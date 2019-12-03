@@ -9,23 +9,32 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ChartComponent } from './chart/chart.component';
 import { ConsumePieComponent } from './consume-pie/consume-pie.component';
 import { BarRiskComponent } from './bar-risk/bar-risk.component';
+import { HighchartsChartComponent } from 'highcharts-angular';
 
 import { FormsModule } from '@angular/forms';
+import { ConnectService } from './connect.service'
+import { HttpClientModule } from '@angular/common/http';
+import { VennComponent } from './venn/venn.component';
+import { ChartModule } from 'angular-highcharts';
 @NgModule({
   declarations: [
     AppComponent,
     ChartComponent,
     ConsumePieComponent,
-    BarRiskComponent
+    BarRiskComponent,
+    VennComponent,
+    HighchartsChartComponent
   ],
   imports: [
+    HttpClientModule,
     FormsModule,
     NgbModule,
     BrowserModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ChartModule // add ChartModule to your imports
   ],
-  providers: [],
+  providers: [ConnectService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

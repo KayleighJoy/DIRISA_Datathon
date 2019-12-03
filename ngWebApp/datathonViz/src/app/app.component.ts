@@ -1,6 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { NgForm, NgModel, NumberValueAccessor } from '@angular/forms';
-
+import { ConnectService } from './connect.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -10,6 +10,8 @@ export class AppComponent {
   @ViewChild('RegisterF', {static: false}) RegisterForm : NgForm;
   @ViewChild('Chicken', {static: false}) ChickenEx : NgModel;
   
+  constructor(private connect: ConnectService) { }
+
   //Try get this data and change it after pressing button
   PercNB:number = 50;
   PercRF:number = 50;
@@ -103,4 +105,13 @@ export class AppComponent {
     // this.SVM
 
   }
+  @ViewChild('PasswordRepeat', {static: false}) fPasswordRepeat :NgModel;
+  @ViewChild('Password', {static: false}) fPassword :NgModel;
+  @ViewChild('Name', {static: false}) fname :NgModel;
+  @ViewChild('Surname', {static: false}) fsurname :NgModel;
+  @ViewChild('ID_Number', {static: false}) fid :NgModel;
+  @ViewChild('Cell_num', {static: false}) fcell :NgModel;
+  @ViewChild('UserType', {static: false}) fusertype :NgModel;
+  title = 'Mental Illness Heatmap';
+
 }

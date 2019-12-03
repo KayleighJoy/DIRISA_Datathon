@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import * as Chart from 'chart.js';
+import { ConnectService } from '../connect.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-ProPie',
@@ -11,6 +13,8 @@ export class ChartComponent implements OnInit {
   canvas: any;
   ctx: any;
 
+  //Subscriptions
+  PieData : Subscription;
 
   //Province Data
   ncGP:number = 50;
@@ -24,7 +28,30 @@ export class ChartComponent implements OnInit {
   ncNW:number = 50;
 
   ngAfterViewInit() {
-    this.canvas = document.getElementById('NumCasesChart');
+  }
+
+  constructor(private connect: ConnectService) { }
+  //constructor() { }
+
+  ngOnInit() {
+    this.connect.getProvinceData()
+
+
+    this.PieData = this.connect.ProvinceData.subscribe(data => {
+       console.log(data);
+      //  this.ncGP, this.ncL, this.ncWP, this.ncNP, this.ncEP, this.ncKZN, this.ncNW, this.ncFS, this.ncMP
+      this.ncWP = data['Western Cape'][0];
+      this.ncGP = data['Gauteng'][0];
+      this.ncL = data['Limpopo'][0];
+      this.ncNP = data['Northern Cape'][0];
+      this.ncEP = data['Eastern Cape'][0];
+      this.ncKZN = data['KwaZulu Natal'][0];
+      this.ncNW = data['North West'][0];
+      this.ncFS = data['Free State'][0];
+      this.ncMP = data['Mpumalanga'][0];
+      console.log(this.ncWP);
+      
+      this.canvas = document.getElementById('NumCasesChart');
     this.ctx = this.canvas.getContext('2d');
     let myChart = new Chart(this.ctx, {
       type: 'pie',
@@ -55,11 +82,9 @@ export class ChartComponent implements OnInit {
         display:true
       }
     });
+     })
   }
 
-  constructor() { }
-
-  ngOnInit() {
-  }
+  
 
 }

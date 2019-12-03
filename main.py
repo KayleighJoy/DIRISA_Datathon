@@ -24,10 +24,16 @@ class predictRisk(Resource):
         else:
             return {'status': 'Not At Risk', 'prob': riskAve[0][1]}
 
+class getHeatMap(Resource):
+    def get(self):
+        provData = wrapper.getHeatMapInfo()
+        return {'Western Cape': provData[0], 'Eastern Cape': provData[1], 'Northern Cape': provData[2], 'Free State': provData[3], 'KwaZulu Natal': provData[4], 'North West': provData[5], 'Gauteng': provData[6], 'Mpumalanga': provData[7], 'Limpopo': provData[8],}
+
+
 api.add_resource(getAllProvince, '/getAllProvinceData')
 api.add_resource(getCountryPercentage, '/getCountryRisk')
+api.add_resource(getCountryPercentage, '/getHeatMapData')
 api.add_resource(predictRisk, '/predict/<education>/<disabled>/<unemployed>/<age>/<gender>/<income>/<mobile>/<hospital>')
-
 
 if __name__ == '__main__':
      app.run()
