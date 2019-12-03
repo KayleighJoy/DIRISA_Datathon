@@ -21,7 +21,132 @@
 </nav>
 
 
-<mat-drawer-container class="example-container">
-  <mat-drawer mode="side" opened>Drawer content</mat-drawer>
-  <mat-drawer-content>Main content</mat-drawer-content>
-</mat-drawer-container>
+
+<!-- The first section-->
+<div class="container-fluid">
+  <div class="row">
+  <div class="col-md-6">
+    <div class="jumbotron">
+      <h1 class="h2"> Number of Mental Illness Cases Reported </h1>
+    </div>
+    <app-ProPie></app-ProPie>
+  </div>
+
+  <div class="col-md-6">
+    <div class="jumbotron">
+        <h1 class="h2"> Medicine Consumed per Provinces </h1>
+    </div>
+      <app-consume-pie></app-consume-pie>  
+   </div>
+  </div>
+</div>
+
+<br>
+
+<!-- The second section -->
+<div class="container-fluid w-100">
+  <div class="jumbotron">
+      <h1 style="text-align:center;" class="h2"> Display of bar graph for most risky province </h1>
+  </div>
+  <div class="w-100">
+      <app-bar-risk class></app-bar-risk>
+  </div>
+</div>
+
+<br>
+
+<!-- The Fourth Section -->
+<div class="jumbotron">
+    <h1 style="text-align:center;" class="h2"> Predictions </h1>
+</div>
+<form class="container" (ngSubmit)=OnPredict() #RegisterF="ngForm">
+  <div class="container form-content">
+
+    <!-- Level of Education -->
+    <div class="form-group">
+      <label> What is your level of studies? </label>
+      <br>
+      <select name="LevelEducation" ngModel #Chicken="ngModel">
+        <!-- High school some undergrad comp undergrad some master comp master some phd comp phd some high school -->
+        <option value="IncHS">High School (Incomplete)</option>
+        <option value="CompHS">High School (Complete)</option>
+        <option value="IncUndergrad">Undergraduate (Incomplete</option>
+        <option value="CompUndergrad">Undergraduate (Complete)</option>
+        <option value="IncMasters">Masters (Incomplete)</option>
+        <option value="CompMasters">Masters (Complete)</option>
+        <option value="IncPHD">PHD (Incomplete)</option>
+        <option value="CompPHD">PHD (Complete)</option>
+      </select>
+    </div>
+    
+    <!-- Legally Disabled -->
+    <div class="form-group">
+      <label> Are you disabled? </label>
+      <div class="form-control">
+         <input id="NotDisabled" type="radio" class="custom-control-input" value="NotDisabled" name="Disabled" ngModel>
+         <label class="custom-control-label" for="NotDisabled">Abled</label>
+      </div>  
+      <div class="form-control">
+         <input id="Disabled" type="radio" class="custom-control-input" value="Disabled" name="Disabled" ngModel>
+         <label class="custom-control-label" for="Disabled">Disabled</label>
+      </div>
+    </div>
+
+    <!-- Age Group -->
+    <div class="form-group">
+        <label> Age Group </label>
+        <br>
+        <select name="AgeGroup" ngModel #AgeGroup="ngModel">
+          <!-- High school some undergrad comp undergrad some master comp master some phd comp phd some high school -->
+          <option value="1">18-29 years</option>
+          <option value="2">30-44 years</option>
+          <option value="3">45-60 years</option>
+          <option value="4">Above 60 years</option>
+        </select>
+      </div>
+
+    <!-- Gender -->
+    <div class="form-group">
+        <label> Sex </label>      
+        <div class="form-control">
+           <input id="Male" type="radio" class="custom-control-input" value="Male" name="Gender" ngModel>
+           <label class="custom-control-label" for="Male">Male</label>
+        </div>  
+        <div class="form-control">
+           <input id="Female" type="radio" class="custom-control-input" value="Female" name="Gender" ngModel>
+           <label class="custom-control-label" for="Female">Female</label>
+        </div>
+      </div>
+
+  </div>
+  <button type="submit" class="btn-primary btn"> Predict </button>
+
+</form>
+<br>
+
+<div class="container">
+  <table class="table">
+    <tr class="row">
+        <th class="col"> Naive Bayes </th>
+        <th class="col"> Support Vector Machines</th>
+        <th class="col"> Random Forest</th>
+    </tr>
+    <tr class="row">
+      <td class="mx-auto" colspan=2> <strong> Predictions </strong> </td>
+    </tr>
+    <tr class="row">
+        
+        <td class="col"><strong> {{ NB }} </strong></td>
+        <td class="col"><strong> {{ SVM }} </strong></td>
+        <td class="col"><strong> {{ RF }} </strong></td>
+    </tr>
+    <tr class="row">
+        <td class="mx-auto" colspan=2> <strong> Percentage </strong> </td>
+      </tr>
+    <tr class="row">
+        <td class="col"><strong> {{ PercNB}} </strong></td>
+        <td class="col"><strong> {{ PercSVM }} </strong></td>
+        <td class="col"><strong> {{ PercRF }} </strong></td>
+    </tr>
+  </table>
+</div>
