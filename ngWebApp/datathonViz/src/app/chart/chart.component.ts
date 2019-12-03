@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import * as Chart from 'chart.js';
+import { ConnectService } from '../connect.service';
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-ProPie',
@@ -10,9 +12,46 @@ export class ChartComponent implements OnInit {
   // Number of reported cases
   canvas: any;
   ctx: any;
-  ngAfterViewInit() {
 
-    this.canvas = document.getElementById('NumCasesChart');
+  //Subscriptions
+  PieData : Subscription;
+
+  //Province Data
+  ncGP:number = 50;
+  ncL:number = 50;
+  ncWP:number = 50;
+  ncEP:number = 50;
+  ncNP:number = 50;
+  ncKZN:number = 50;
+  ncFS:number = 50;
+  ncMP:number = 50;
+  ncNW:number = 50;
+
+  ngAfterViewInit() {
+  }
+
+  constructor(private connect: ConnectService) { }
+  //constructor() { }
+
+  ngOnInit() {
+    this.connect.getProvinceData()
+
+
+    this.PieData = this.connect.ProvinceData.subscribe(data => {
+       console.log(data);
+      //  this.ncGP, this.ncL, this.ncWP, this.ncNP, this.ncEP, this.ncKZN, this.ncNW, this.ncFS, this.ncMP
+      this.ncWP = data['Western Cape'][0];
+      this.ncGP = data['Gauteng'][0];
+      this.ncL = data['Limpopo'][0];
+      this.ncNP = data['Northern Cape'][0];
+      this.ncEP = data['Eastern Cape'][0];
+      this.ncKZN = data['KwaZulu Natal'][0];
+      this.ncNW = data['North West'][0];
+      this.ncFS = data['Free State'][0];
+      this.ncMP = data['Mpumalanga'][0];
+      console.log(this.ncWP);
+      
+      this.canvas = document.getElementById('NumCasesChart');
     this.ctx = this.canvas.getContext('2d');
     let myChart = new Chart(this.ctx, {
       type: 'pie',
@@ -23,17 +62,17 @@ export class ChartComponent implements OnInit {
           datasets: [{
               label: 'Number of Cases Reported',
               // Change data here
-              data: [32,123,20,43,69, 420, 44, 77, 56],
+              data: [this.ncGP, this.ncL, this.ncWP, this.ncNP, this.ncEP, this.ncKZN, this.ncNW, this.ncFS, this.ncMP],
               backgroundColor: [
-                  'rgba(255, 0, 0, 1)',
-                  'rgba(54, 162, 235, 1)',
-                  'rgba(255, 206, 86, 1)',
-                  'rgba(242, 31, 207, 1)',
-                  'rgba(22, 108, 27, 1)',
-                  'rgba(131, 0, 219, 1)',
-                  'rgba(66, 219, 0, 1)',
-                  'rgba(255, 136, 0, 1)',
-                  'rgba(4, 20, , 1)',
+                'rgba(255, 0, 0, 1)',
+                'rgba(54, 162, 235, 1)',
+                'rgba(255, 206, 86, 1)',
+                'rgba(242, 31, 207, 1)',
+                'rgba(22, 108, 27, 1)',
+                'rgba(177, 52, 235)',
+                'rgba(66, 219, 0, 1)',
+                'rgba(255, 136, 0, 1)',
+                'rgba(52, 58, 235)'
               ],
               borderWidth: 1
           }]
@@ -43,11 +82,9 @@ export class ChartComponent implements OnInit {
         display:true
       }
     });
+     })
   }
 
-  constructor() { }
-
-  ngOnInit() {
-  }
+  
 
 }

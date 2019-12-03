@@ -1,6 +1,5 @@
 import pandas as pd  
 import numpy as np  
-import soundfile as sf
 import csv
 from sklearn.model_selection import train_test_split
 from sklearn.svm import SVC, LinearSVC
@@ -19,6 +18,8 @@ from sklearn.preprocessing import label_binarize, OneHotEncoder, LabelEncoder
 from sklearn.multiclass import OneVsRestClassifier
 from scipy import interp
 from sklearn.ensemble import RandomForestClassifier
+
+from joblib import dump, load
 
 class ClassifySVM:
     def __init__(self, features, labels, X_test, X_train, y_test, y_train):
@@ -59,12 +60,16 @@ class ClassifySVM:
 
     def svmTrain(self, toPredict):
         print("Training")
-        self.svclassifier = SVC(C=10, cache_size=200, class_weight=None, coef0=0.0,
-    decision_function_shape='ovo', degree=3, gamma=1e-05, kernel='rbf',
-    max_iter=-1, probability=True, random_state=None, shrinking=True, tol=0.001, verbose=False)
+        '''self.svclassifier = SVC(C=10, cache_size=200, class_weight=None, coef0=0.0,
+    decision_function_shape='ovo', degree=3, gamma=0.01, kernel='rbf',
+    max_iter=-1, probability=True, random_state=None, shrinking=True, tol=0.001,
+    verbose=False)'''
         #self.svclassifier = self.findBestParameters(self.svclassifier) 
-        self.svclassifier.fit(self.X_train, self.y_train)
+        #self.svclassifier.fit(self.X_train, self.y_train)
         #toPredict.reshape(-1,1)
+        self.svclassifier = load('classifiers/bestSVM.joblib')
+        toPredict = np.asarray(toPredict)
+        print(toPredict.shape)
         y_pred = self.svclassifier.predict(toPredict) 
         print(y_pred)
         return y_pred
@@ -72,13 +77,14 @@ class ClassifySVM:
     def svmTrainForMetrics(self, name):
         #self.svclassifier = LinearSVC()
         #self.svclassifier = SVC(kernel='rbf', probability=True, decision_function_shape ='ovo')
-        self.svclassifier = SVC(C=1, cache_size=200, class_weight=None, coef0=0.0,
-    decision_function_shape='ovo', degree=3, gamma=0.1, kernel='rbf',
+        self.svclassifier = SVC(C=10, cache_size=200, class_weight=None, coef0=0.0,
+    decision_function_shape='ovo', degree=3, gamma=0.01, kernel='rbf',
     max_iter=-1, probability=True, random_state=None, shrinking=True, tol=0.001,
     verbose=False)
         
         #self.svclassifier = self.findBestParameters(self.svclassifier)  
         self.svclassifier.fit(self.X_train, self.y_train)
+        dump(self.svclassifier, 'bestSVM.joblib')
         y_pred = self.svclassifier.predict_proba(self.X_test)
         y_pred2 = self.svclassifier.predict(self.X_test)
     
@@ -95,6 +101,11 @@ class ClassifySVM:
         self.confusion = confusion_matrix(self.y_test,y_pred2)
         self.report = classification_report(self.y_test,y_pred2)
         #y_score = self.svclassifier.decision_function(X_test) 
+        metrics = [self.confusion, self.report]
+        with open("SVMLog.txt", mode='a') as writeDS:
+            ds_writer = csv.writer(writeDS, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL, lineterminator='\n')
+            ds_writer.writerows(metrics)
+
         onehot_encoder = OneHotEncoder(sparse=False)
         y_tests = onehot_encoder.fit_transform(self.y_test)
 
@@ -167,7 +178,7 @@ class ClassifySVM:
         ax2.set_ylabel('True Positive Rate')
         ax2.legend(loc="lower right")
 
-        fig.suptitle('SVM ROC')
+        fig.suptitle('SVM ROC - More Data')
         plt.savefig(name)
 
         return plt.plot

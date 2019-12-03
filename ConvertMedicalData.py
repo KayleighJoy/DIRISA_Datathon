@@ -41,9 +41,9 @@ class Convert_Medical_Data:
                 temp.append(1)
             else:
                 temp.append(2)
-                
+
             if person[0] == "Some highschool":
-                temp.append(1)
+                temp.append(0)
             if person[0] == "High School or GED":
                 temp.append(1)
             elif person[0] == "Some Undergraduate":
@@ -107,12 +107,22 @@ class Convert_Medical_Data:
                 temp.append(10)
 
             #print(person)
+
+            if "Phone" in person[14]:
+                temp.append(1)
+            else:
+                temp.append(2)
+
+            if person[15] == "Yes":
+                temp.append(1)
+            else:
+                temp.append(2)
             
             self.newPeople.append(temp)
 
 
 
-mainRun = Convert_Medical_Data("DataSets\Mental_Illness_Survey_2.csv", "DataSets\Mental_Binary_Labels.csv")
+mainRun = Convert_Medical_Data("DataSets\Mental_Illness_Survey_2.csv", "DataSets\Mental_Binary_Labels_More.csv")
 mainRun.process()
 
 
