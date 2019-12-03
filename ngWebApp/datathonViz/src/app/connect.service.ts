@@ -26,12 +26,12 @@ export class ConnectService {
     this.BarChart.next(dt)
   }
 
-  getPieChart(){
-    this.http.get(this.Link +'/getAllProvinceData').subscribe(response => {
-        catchError(this.handleError)
-        this.UpdatePieChart(JSON.parse(JSON.stringify(response)));
-    })
-  }
+   getPieChart(){
+     this.http.get(this.Link +'/getAllProvinceData').subscribe(response => {
+         catchError(this.handleError)
+         this.UpdatePieChart(JSON.parse(JSON.stringify(response)));
+     })
+   }
 
   getBarChart(){
     this.http.get(this.Link +'/AllTeams').subscribe(response => {
