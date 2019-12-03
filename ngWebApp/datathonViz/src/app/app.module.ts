@@ -14,13 +14,14 @@ import { BarRiskComponent } from './bar-risk/bar-risk.component';
 import { FormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
-    FormsModule,
+    
     AppComponent,
     ChartComponent,
     ConsumePieComponent,
     BarRiskComponent
   ],
   imports: [
+    FormsModule,
     NgbModule,
     BrowserModule,
     AppRoutingModule,
