@@ -14,7 +14,7 @@ export class ChartComponent implements OnInit {
   ctx: any;
 
   //Subscriptions
-  PieData : Subscription;
+  //PieData : Subscription;
 
   //Province Data
   ncGP:number = 50;
@@ -62,18 +62,19 @@ export class ChartComponent implements OnInit {
   }
 
   constructor(private connect: Connect) { }
+  //constructor() { }
 
   ngOnInit() {
-    this.connect.getPieChart()
+    // this.connect.getPieChart()
 
 
-    this.PieData = this.connect.PieChart.subscribe(data => {
-      console.log(data);
-      // for (var result in data) {
-      //   this.arDrills.push(new Drill(data[result]['ID'], data[result]['Name'], data[result]['Description'], data[result]['Link'], data[result]['CoachID']))
-      //   this.arDrills[result].setSessionID(data[result]['SessionID'])
-      // }
-    })
+    // this.PieData = this.connect.PieChart.subscribe(data => {
+    //   console.log(data);
+    //   // for (var result in data) {
+    //   //   this.arDrills.push(new Drill(data[result]['ID'], data[result]['Name'], data[result]['Description'], data[result]['Link'], data[result]['CoachID']))
+    //   //   this.arDrills[result].setSessionID(data[result]['SessionID'])
+    //   // }
+    // })
   }
 
   

@@ -4,13 +4,15 @@ import { catchError, retry, subscribeOn } from 'rxjs/operators';
 import { HttpErrorResponse } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { HttpHeaders } from '@angular/common/http';
-import { runInThisContext } from 'vm';
+//import { runInThisContext } from 'vm';
 
 @Injectable({
   providedIn: 'root'
 })
+
 export class ConnectService {
-  Link = "http://localhost:5000/api";
+  // http://127.0.0.1:5000/getAllProvinceData
+  Link = "http://localhost:5000";
   PieChart = new Subject<JSON>();
   BarChart = new Subject<JSON>();
   constructor(private http: HttpClient) { }
@@ -25,7 +27,7 @@ export class ConnectService {
   }
 
   getPieChart(){
-    this.http.get(this.Link +'/AllTeams').subscribe(response => {
+    this.http.get(this.Link +'/getAllProvinceData').subscribe(response => {
         catchError(this.handleError)
         this.UpdatePieChart(JSON.parse(JSON.stringify(response)));
     })
@@ -38,16 +40,16 @@ export class ConnectService {
     })
   }
 
-Predict(LevelEdu, Disabled, Unemployed, Age, Gender, Income, Mobile, Hospitalized) {
-    var data = {
-        "playerID": PlayerID,
-        "teamID": TeamID
-    }
-    this.http.post(this.Link + "/addPlayer", data).subscribe(response => {
-        catchError(this.handleError) //send to catcherror
-        console.log(response)
-    })
-}
+// Predict(LevelEdu, Disabled, Unemployed, Age, Gender, Income, Mobile, Hospitalized) {
+//     var data = {
+//         "playerID": PlayerID,
+//         "teamID": TeamID
+//     }
+//     this.http.post(this.Link + "/addPlayer", data).subscribe(response => {
+//         catchError(this.handleError) //send to catcherror
+//         console.log(response)
+//     })
+// }
 
 handleError(error: HttpErrorResponse) {
   if (error.error instanceof ErrorEvent) {
