@@ -21,7 +21,88 @@
 </nav>
 
 
-<mat-drawer-container class="example-container">
-  <mat-drawer mode="side" opened>Drawer content</mat-drawer>
-  <mat-drawer-content>Main content</mat-drawer-content>
-</mat-drawer-container>
+
+<!-- The first section-->
+<div class="container-fluid">
+  <div class="row">
+  <div class="col-md-6">
+    <div class="jumbotron">
+      Provinces affected by mental illnesses
+    </div>
+    <app-ProPie></app-ProPie>
+  </div>
+  <div class="col-md-6">
+    <div class="jumbotron">
+      Medicine consumed per Provinces
+    </div>
+    <!-- Display medical pills consumed per province Here-->
+      <app-consume-pie></app-consume-pie>  
+    <!-- <P> Still in progress Display medical pills consumed per province Here</P> -->
+  </div>
+  </div>
+</div>
+
+
+<!-- The second section -->
+<div class="container-fluid w-100">
+  <div class="jumbotron">
+    Display of bar graph for most risky province
+  </div>
+  <div class="w-100">
+      <app-bar-risk class></app-bar-risk>
+  </div>
+</div>
+
+
+<!-- The Fourth Section -->
+Do inputs with ngforms
+
+
+<!-- Third year form -->
+<form (ngSubmit)=onRegister(Password) #RegisterF="ngForm">
+  <div class="form-content">
+      <div class="form-group">
+          <input type="text" class="form-control input-underline input-lg" ngModel #Name="ngModel" name="Name" id="Name" placeholder="Name" required>
+      </div>
+
+      <div class="form-group">
+              <input type="text" class="form-control input-underline input-lg" ngModel #Surname="ngModel" name="Surname" id="Surname" placeholder="Surname" required>
+      </div>
+      <div class = "form-group">
+          <input type="text" class="form-control input-underline input-lg" ngModel #Email="ngModel" name="Email" id="Email" placeholder="Email" email required>
+      </div>
+
+      <div class="form-group">
+          <input type="text" class="form-control input-underline input-lg" minlength="13" maxlength="13" ngModel #ID_Number="ngModel" name="ID_Number" id="ID_Number" placeholder="ID Number" required>
+      </div>
+
+      <div class="form-group">
+              <input type="text" class="form-control input-underline input-lg"  minlength="10" maxlength="10" ngModel #Cell_num="ngModel" name="Cell_Num" id="Cellphone_Number" placeholder="Cellphone number">
+      </div>
+
+  </div>
+  <button type="submit" class="btn-primary"> Register </button>
+</form>
+
+
+
+
+<!-- standard form -->
+<div class="container">
+    <form>
+       <div class="form-group">
+         <label for="exampleInputEmail1">Email address</label>
+         <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+         <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+       </div>
+       <div class="form-group">
+         <label for="exampleInputPassword1">Password</label>
+         <input type="password" class="form-control" id="exampleInputPassword1">
+       </div>
+       <div class="form-group form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div>
+       <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
