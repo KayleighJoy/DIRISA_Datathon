@@ -12,7 +12,8 @@ class ReadIn:
     def process(self):
         self.read_csv()
         #self.filter_Over99()
-        self.filter_9()
+        #self.filter_9()
+        self.clean_data()
         self.write_csv()
 
     def read_csv(self):
@@ -74,8 +75,125 @@ class ReadIn:
                 people2.append(person)
         self.newPeople = people2
 
+    def classifyIncome(self, num):
+        if num <= 55599:
+            return 1
+        elif num >= 55600 and num <= 138999:
+            return 2
+        elif num >= 139000 and num <= 277999:
+            return 3
+        elif num >= 278000 and num <= 416999:
+            return 4
+        elif num >= 417000 and num <= 555999:
+            return 5
+        elif num >= 556000 and num <= 694999:
+            return 6
+        elif num >= 695000 and num <= 833999:
+            return 7
+        elif num >= 834000 and num <= 972999:
+            return 8
+        elif num >= 973000 and num <= 1111999:
+            return 9
+        else:
+            return 10
+    
+    def clean_data(self):
+        filterPeople = []
+        for person in self.people:
+            temp = []
+            temp.append(int(person[1]))
+            if person[2]== '99':
+                continue
+            elif person[2] > '8' and person[1] < '12' or person[1] == '88':
+                temp.append(0)
+            elif person[2] >= '12' and person[1] < '88':
+                temp.append(1)
+            
+            disable = False
+            if person[3] == '9' or person[4] =='9' or person[5] =='9':
+                continue
+            for i in range(3,6):
+                if person[i] == '1':
+                    person[i] == True
 
-mainRun = ReadIn("Output_Filter_9.csv", "Output_Filter_9_Take2.csv")
+            if disable:
+                temp.append(1)
+            else:
+                temp.append(2)
+
+            if person[6] == '3' or person[6] == '9':
+                continue
+            elif person[6] == '1' or person[6] == '2':
+                temp.append(0)
+            elif person[6] == '8':
+                temp.append(1)
+            
+            ages = [1,2,3,4]
+            age1 = [5,6]
+            age2 = [7,8,9]
+            age3 = [10,11,12]
+            if person[7] in ages:
+                continue
+            elif person[7] in age1:
+                temp.append(1)
+            elif person[7] in age2:
+                temp.append(2)
+            elif person[7] in age3:
+                temp.append(3)
+            else:
+                temp.append(4)
+
+            if person[8] == '1':
+                temp.append(1)
+            else:
+                temp.append(2)
+
+            if person[9] == '999999999':
+                continue
+            elif person[9] == '888888888':
+                houseID = person[0]
+                total = 0
+                for p in self.people:
+                    if p[0] == houseID:
+                        if p[9] == '999999999' or p[9] == '888888888':
+                            total = total + 0
+                        else:
+                            num = int(p[9]) * 12
+                            total = total + num
+                toAppend = self.classifyIncome(total)
+                temp.append(toAppend)
+            else:
+                num = int(person[9]) * 12
+                toAppend = self.classifyIncome(num)
+                temp.append(toAppend)
+
+            if person[10] == '9':
+                continue
+            elif person[10] == '1':
+                temp.append(1)
+            else:
+                temp.append(2)
+            
+            deleted = False
+            found = False
+            for i in range(11,29):
+                if person[i] == '9':
+                    deleted = True
+                elif person[i] == '1':
+                    found = True
+            
+            if deleted == True:
+                continue
+            if found == True:
+                temp.append(1)
+            else:
+                temp.append(2)
+            
+            filterPeople.append(temp)
+
+        self.newPeople = filterPeople
+
+mainRun = ReadIn("DataSets\CensusData_Uncleaned.csv", "DataSets\CensusData_Cleaned.csv")
 
 mainRun.process()
 

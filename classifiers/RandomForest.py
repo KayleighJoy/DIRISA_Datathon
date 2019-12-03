@@ -34,9 +34,9 @@ class classifyRF:
         self.misclassifiedIndex = None
 
     def findBestParameters(self, rf):
-        param_grid = {'n_estimators': [100, 150, 200],
+        param_grid = {'n_estimators': [1000, 750, 500, 200, 100],
                     'max_features': ['auto', 'sqrt'],
-                    'max_depth' : [int(x) for x in np.linspace(72, 105, num = 11)],
+                    'max_depth' : [int(x) for x in np.linspace(10, 110, num = 11)],
                     'criterion' :['gini', 'entropy'],
                     }
 
@@ -69,13 +69,14 @@ class classifyRF:
         print("Train for metrics")
         #X_train, X_test, y_train, y_test = train_test_split(self.featuredData, self.proper_labels, test_size = 0.20)
         #model = RandomForestClassifier(n_estimators=500, criterion="entropy")
-        model = RandomForestClassifier(bootstrap=True, class_weight=None, criterion='gini',
-                       max_depth=85, max_features='auto', max_leaf_nodes=None,
+        model = RandomForestClassifier(bootstrap=True, class_weight=None, criterion='entropy',
+                       max_depth=110, max_features='auto', max_leaf_nodes=None,
                        min_impurity_decrease=0.0, min_impurity_split=None,
                        min_samples_leaf=1, min_samples_split=2,
                        min_weight_fraction_leaf=0.0, n_estimators=200,
                        n_jobs=None, oob_score=False, random_state=None,
                        verbose=0, warm_start=False)
+        #model = self.findBestParameters(model)
         model.fit(self.X_train, self.y_train)
 
         y_pred = model.predict_proba(self.X_test)
@@ -128,7 +129,7 @@ class classifyRF:
         fig, (ax1, ax2) = plt.subplots(nrows=1,ncols=2,figsize=(10,5))
         ax1= plt.subplot(1,2,1)
         index = ['Mental','Healthy']  
-        columns = ['Mental','Mental']  
+        columns = ['Mental','Healthy']  
         cm_df = pd.DataFrame(self.confusion,columns,index)
         sns.heatmap(cm_df, annot=True, ax = ax1, fmt='g')
 
@@ -154,7 +155,7 @@ class classifyRF:
         ax2.set_ylim([0.0, 1.05])
         ax2.set_xlabel('False Positive Rate')
         ax2.set_ylabel('True Positive Rate')
-        fig.suptitle('ROC - RF')
+        fig.suptitle('ROC - RF More Data')
         ax2.legend(loc="lower right")
         plt.savefig(name)
         
