@@ -1,6 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { NgForm, NgModel, NumberValueAccessor } from '@angular/forms';
-
+import { ConnectService } from './connect.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -10,6 +10,8 @@ export class AppComponent {
   @ViewChild('RegisterF', {static: false}) RegisterForm : NgForm;
   @ViewChild('Chicken', {static: false}) ChickenEx : NgModel;
   
+  constructor(private connect: ConnectService) { }
+
   //Try get this data and change it after pressing button
   PercNB:number = 50;
   PercRF:number = 50;
