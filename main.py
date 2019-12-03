@@ -15,8 +15,15 @@ class getCountryPercentage(Resource):
         riskAve = wrapper.getCountryPercentage()
         return{"Country Risk": riskAve}
 
+class getHeatMap(Resource):
+    def get(self):
+        provData = wrapper.getHeatMapInfo()
+        return {'Western Cape': provData[0], 'Eastern Cape': provData[1], 'Northern Cape': provData[2], 'Free State': provData[3], 'KwaZulu Natal': provData[4], 'North West': provData[5], 'Gauteng': provData[6], 'Mpumalanga': provData[7], 'Limpopo': provData[8],}
+
+
 api.add_resource(getAllProvince, '/getAllProvinceData')
 api.add_resource(getCountryPercentage, '/getCountryRisk')
+api.add_resource(getCountryPercentage, '/getHeatMapData')
 
 if __name__ == '__main__':
      app.run()
