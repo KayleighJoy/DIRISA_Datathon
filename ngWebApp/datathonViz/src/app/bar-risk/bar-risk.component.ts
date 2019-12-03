@@ -38,14 +38,14 @@ export class BarRiskComponent implements OnInit {
               data: [this.rGP, this.rL, this.rWP, this.rNP, this.rEP, this.rKZN, this.rNW, this.rFS, this.rMP],
               backgroundColor: [
                 'rgba(255, 0, 0, 1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(242, 31, 207, 1)',
-                'rgba(22, 108, 27, 1)',
-                'rgba(131, 0, 219, 1)',
-                'rgba(66, 219, 0, 1)',
-                'rgba(255, 136, 0, 1)',
-                'rgba(4, 20, , 1)',
+                  'rgba(54, 162, 235, 1)',
+                  'rgba(255, 206, 86, 1)',
+                  'rgba(242, 31, 207, 1)',
+                  'rgba(22, 108, 27, 1)',
+                  'rgba(177, 52, 235)',
+                  'rgba(66, 219, 0, 1)',
+                  'rgba(255, 136, 0, 1)',
+                  'rgba(52, 58, 235)'
               ],
              borderWidth: 1
           }]

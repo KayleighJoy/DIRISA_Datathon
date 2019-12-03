@@ -12,13 +12,15 @@ import { BarRiskComponent } from './bar-risk/bar-risk.component';
 
 
 import { FormsModule } from '@angular/forms';
+import { TimelineComponent } from './timeline/timeline.component';
 @NgModule({
   declarations: [
     
     AppComponent,
     ChartComponent,
     ConsumePieComponent,
-    BarRiskComponent
+    BarRiskComponent,
+    TimelineComponent
   ],
   imports: [
     FormsModule,

@@ -11,7 +11,17 @@ export class AppComponent {
   @ViewChild('RegisterF', {static: false}) RegisterForm : NgForm;
   @ViewChild('Chicken', {static: false}) ChickenEx : NgModel;
 
+
+  //Try get this data and change it after pressing button
+  PercNB:number = 50;
+  PercRF:number = 50;
+  PercSVM:number = 69;
+  NB:String = "yes";
+  RF:String = "no";
+  SVM:String = "sixty nine";
+
   OnPredict() {
+    //Values to work with the data
     // Values for Level Studies
     // IncHS CompHS IncUndergrad CompUndergrad IncMasters CompMasters IncPHD CompPHD
     // Values for Legally Disabled
@@ -23,5 +33,14 @@ export class AppComponent {
     
     console.log(this.RegisterForm);
     console.log(this.ChickenEx.value);
+
+
+    // this.PercNB
+    // this.PercRF
+    // this.PercSVM
+    // this.NB
+    // this.RF
+    // this.SVM
+
   }
 }

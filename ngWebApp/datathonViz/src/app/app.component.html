@@ -27,18 +27,17 @@
   <div class="row">
   <div class="col-md-6">
     <div class="jumbotron">
-      Number of Mental Illness Cases Reported
+      <h1 class="h2"> Number of Mental Illness Cases Reported </h1>
     </div>
     <app-ProPie></app-ProPie>
   </div>
+
   <div class="col-md-6">
     <div class="jumbotron">
-      Medicine Consumed per Provinces
+        <h1 class="h2"> Medicine Consumed per Provinces </h1>
     </div>
-    <!-- Display medical pills consumed per province Here-->
       <app-consume-pie></app-consume-pie>  
-    <!-- <P> Still in progress Display medical pills consumed per province Here</P> -->
-  </div>
+   </div>
   </div>
 </div>
 
@@ -47,7 +46,7 @@
 <!-- The second section -->
 <div class="container-fluid w-100">
   <div class="jumbotron">
-    Display of bar graph for most risky province
+      <h1 style="text-align:center;" class="h2"> Display of bar graph for most risky province </h1>
   </div>
   <div class="w-100">
       <app-bar-risk class></app-bar-risk>
@@ -57,6 +56,9 @@
 <br>
 
 <!-- The Fourth Section -->
+<div class="jumbotron">
+    <h1 style="text-align:center;" class="h2"> Predictions </h1>
+</div>
 <form class="container" (ngSubmit)=OnPredict() #RegisterF="ngForm">
   <div class="container form-content">
 
@@ -122,7 +124,7 @@
 </form>
 <br>
 
-<div class="container-fluid">
+<div class="container">
   <table class="table">
     <tr class="row">
         <th class="col"> Naive Bayes </th>
@@ -130,9 +132,21 @@
         <th class="col"> Random Forest</th>
     </tr>
     <tr class="row">
-        <td class="col"><strong> YES </strong></td>
-        <td class="col"><strong> YES </strong></td>
-        <td class="col"><strong> 69 </strong></td>
+      <td class="mx-auto" colspan=2> <strong> Predictions </strong> </td>
+    </tr>
+    <tr class="row">
+        
+        <td class="col"><strong> {{ NB }} </strong></td>
+        <td class="col"><strong> {{ SVM }} </strong></td>
+        <td class="col"><strong> {{ RF }} </strong></td>
+    </tr>
+    <tr class="row">
+        <td class="mx-auto" colspan=2> <strong> Percentage </strong> </td>
+      </tr>
+    <tr class="row">
+        <td class="col"><strong> {{ PercNB}} </strong></td>
+        <td class="col"><strong> {{ PercSVM }} </strong></td>
+        <td class="col"><strong> {{ PercRF }} </strong></td>
     </tr>
   </table>
 </div>
