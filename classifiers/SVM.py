@@ -71,12 +71,13 @@ class ClassifySVM:
 
     def svmTrainForMetrics(self, name):
         #self.svclassifier = LinearSVC()
-        self.svclassifier = SVC(kernel='rbf', probability=True, decision_function_shape ='ovo')
-        '''self.svclassifier = SVC(C=10, cache_size=200, class_weight=None, coef0=0.0,
-    decision_function_shape='ovo', degree=3, gamma=1e-05, kernel='rbf',
-    max_iter=-1, probability=True, random_state=None, shrinking=True, tol=0.001, verbose=False)'''
+        #self.svclassifier = SVC(kernel='rbf', probability=True, decision_function_shape ='ovo')
+        self.svclassifier = SVC(C=1, cache_size=200, class_weight=None, coef0=0.0,
+    decision_function_shape='ovo', degree=3, gamma=0.1, kernel='rbf',
+    max_iter=-1, probability=True, random_state=None, shrinking=True, tol=0.001,
+    verbose=False)
         
-        self.svclassifier = self.findBestParameters(self.svclassifier)  
+        #self.svclassifier = self.findBestParameters(self.svclassifier)  
         self.svclassifier.fit(self.X_train, self.y_train)
         y_pred = self.svclassifier.predict_proba(self.X_test)
         y_pred2 = self.svclassifier.predict(self.X_test)

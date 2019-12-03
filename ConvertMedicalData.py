@@ -30,76 +30,88 @@ class Convert_Medical_Data:
         for person in self.people:
             print(person)
             temp = []
-            income = person[8]
+            income = person[5]
             if income == "Prefer not to answer":
                 continue
-            if person[0] == "Yes":
+
+            if person[0] == "Some highschool":
+                temp.append(1)
+            if person[0] == "High School or GED":
+                temp.append(1)
+            elif person[0] == "Some Undergraduate":
+                temp.append(2)
+            elif person[0] == "Completed Undergraduate":
+                temp.append(3)
+            elif person[0] == "Some Masters":
+                temp.append(4)
+            elif person[0] == "Completed Masters":
+                temp.append(5)
+            elif person[0] == "Some Phd":
+                temp.append(6)
+            elif person[0] == "Completed Phd":
+                temp.append(2)
+
+            if person[1] == "Yes":
                 temp.append(1)
             else:
                 temp.append(2)
-            
-            if person[1] == "High School or GED":
-                temp.append(12)
-            elif person[1] == "Some Undergraduate":
-                temp.append(12)
-            else:
-                temp.append(16)
 
             if person[2] == "Yes":
                 temp.append(1)
             else:
                 temp.append(2)
 
-            if person[3] == "Yes":
+            if person[3] == "18-29":
                 temp.append(1)
-            else:
+            elif person[3] == "30-44":
                 temp.append(2)
-
-            if person[4] == "Yes":
-                temp.append(1)
-            else:
-                temp.append(2)
-
-            if person[5] == "Yes":
-                temp.append(1)
-            else:
-                temp.append(2)
-
-            if person[6] == "18-29":
-                temp.append(1)
-            elif person[6] == "30-44":
-                temp.append(2)
-            elif person[6] == "45-60":
+            elif person[3] == "45-60":
                 temp.append(3)
             else:
                 temp.append(4)
 
-            if person[7] == "Male":
+            if person[4] == "Male":
                 temp.append(1)
             else:
                 temp.append(2)
 
-            if "+" in income:
-                income = income.replace("+", "")
-                income = income.replace("$","")
-                income = income.replace(",","")
-                average = int(income)
-            else:
-                income = income.replace("$","")
-                income = income.replace(",","")
-                incomes = income.split("-")
-                incomes[0] = int(incomes[0])
-                incomes[1] = int(incomes[1])
-                #print(incomes)
-                average = (incomes[0] + incomes[1])/2
+            income = income.replace("$","")
+            income = income.replace(",","")
+            if income == "0-9999":
+                temp.append(1)
+            elif income =="10000-24999":
+                temp.append(2)
+            elif income =="25000-49999":
+                temp.append(3)
+            elif income =="50000-74999":
+                temp.append(4)
+            elif income =="75000-99999":
+                temp.append(5)
+            elif income =="100000-124999":
+                temp.append(6)
+            elif income =="125000-149999":
+                temp.append(7)
+            elif income =="150000-174999":
+                temp.append(8)
+            elif income =="175000-199999":
+                temp.append(9)
+            elif income =="200000+":
+                temp.append(10)
 
-            southAfrican = average * 5.56
-            temp.append(southAfrican)
+
+            for i in range (6,14):
+                mental = False
+                if person[i] != "":
+                    mental = True
+            if mental == True:
+                temp.append(1)
+            else:
+                temp.append(2)
             self.newPeople.append(temp)
 
 
 
-mainRun = Convert_Medical_Data("DataSets\Mental Illness Survey 1 Matched.csv", "DataSets\Mental Illness Survey 1_Matched_Converted.csv")
+mainRun = Convert_Medical_Data("DataSets\Mental_Illness_Survey_2.csv", "DataSets\Mental_Binary_Labels.csv")
 mainRun.process()
 
 
