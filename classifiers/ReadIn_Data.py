@@ -2,15 +2,15 @@
 
 import csv
 from sklearn.model_selection import train_test_split
-import SVM as svm
-import RandomForest as rf
+import classifiers.SVM as svm
+import classifiers.RandomForest as rf
 import matplotlib.pyplot as plt
 import numpy as np
 
 class Classify:
-    def __init__(self, filename, filename2):
-        self.filename = filename
-        self.filename2 = filename2
+    def __init__(self):
+        self.filename = ".\DataSets\CensusData_Cleaned.csv"
+        self.filename2 = ""
         self.features = list()
         self.labels = list()
         self.X_train = list()
@@ -43,7 +43,7 @@ class Classify:
         plt.show()
 
     def read_csv(self):
-        with open("..\DataSets\Mental_Binary_Labels_More.csv", mode='r') as csv_file:
+        with open(".\DataSets\Mental_Binary_Labels_More.csv", mode='r') as csv_file:
             csv_reader = csv.reader(csv_file, delimiter=',')
             for row in csv_reader:
                 length = len(row)
@@ -66,7 +66,7 @@ class Classify:
         self.read_csv()
         self.split_data()
         self.read_csv_census()
-        self.provinces_percentage_svm()
+        return self.provinces_percentage_svm()
 
     def getAll_prov_RF(self):
         self.read_csv()
@@ -81,6 +81,9 @@ class Classify:
         return plot  
 
     def country_percentage(self):
+        self.read_csv()
+        self.split_data()
+        self.read_csv_census()
         temp = svm.ClassifySVM(self.features, self.labels,self.X_test,self.X_train,self.y_test,self.y_train)
         pred = temp.svmTrain(self.SA_features)
         return self.one_province(pred)
@@ -125,7 +128,7 @@ class Classify:
         percent.append(self.one_province(self.mpu))
         percent.append(self.one_province(self.lim))
 
-        print(percent)
+        return percent
 
     def provinces_percentage_rf(self):
         percent = []
@@ -265,10 +268,10 @@ class Classify:
     
 
 #path = str(".\DataSets\Mental_Illness_Survey_Matched_Converted.csv")
-mainRun = Classify("..\DataSets\CensusData_Cleaned.csv", "")
+#mainRun = Classify()
 #mainRun.classifySVM()
 #mainRun.getAll_prov_RF()
-mainRun.classifyRF()
+#mainRun.classifyRF()
 
 
 

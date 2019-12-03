@@ -7,7 +7,7 @@ import random
 from statistics import mean, median
 
 class nbClassifier:
-    dataPath = "..\\DataSets\\Mental_Binary_Labels.csv"
+    dataPath = "..\\DataSets\\Mental_Binary_Labels_More.csv"
     x_train = None
     x_test = None
     y_train = None
