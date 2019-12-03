@@ -67,7 +67,7 @@ class ClassifySVM:
         #self.svclassifier = self.findBestParameters(self.svclassifier) 
         #self.svclassifier.fit(self.X_train, self.y_train)
         #toPredict.reshape(-1,1)
-        self.svclassifier = load('bestSVM.joblib')
+        self.svclassifier = load('classifiers/bestSVM.joblib')
         toPredict = np.asarray(toPredict)
         print(toPredict.shape)
         y_pred = self.svclassifier.predict(toPredict) 
