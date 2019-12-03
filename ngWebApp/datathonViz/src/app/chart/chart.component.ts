@@ -1,5 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import * as Chart from 'chart.js';
+import { Connect } from 'Connect'
+import { Subscription } from 'rxjs';
 
 @Component({
   selector: 'app-ProPie',
@@ -11,6 +13,8 @@ export class ChartComponent implements OnInit {
   canvas: any;
   ctx: any;
 
+  //Subscriptions
+  PieData : Subscription;
 
   //Province Data
   ncGP:number = 50;
@@ -57,9 +61,21 @@ export class ChartComponent implements OnInit {
     });
   }
 
-  constructor() { }
+  constructor(private connect: Connect) { }
 
   ngOnInit() {
+    this.connect.getPieChart()
+
+
+    this.PieData = this.connect.PieChart.subscribe(data => {
+      console.log(data);
+      // for (var result in data) {
+      //   this.arDrills.push(new Drill(data[result]['ID'], data[result]['Name'], data[result]['Description'], data[result]['Link'], data[result]['CoachID']))
+      //   this.arDrills[result].setSessionID(data[result]['SessionID'])
+      // }
+    })
   }
+
+  
 
 }
