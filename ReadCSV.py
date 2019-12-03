@@ -108,6 +108,8 @@ class ReadIn:
                 temp.append(0)
             elif person[2] >= '12' and person[1] < '88':
                 temp.append(1)
+            else:
+                temp.append(1)
             
             disable = False
             if person[3] == '9' or person[4] =='9' or person[5] =='9':
