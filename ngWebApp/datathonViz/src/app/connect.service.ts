@@ -13,23 +13,23 @@ import { HttpHeaders } from '@angular/common/http';
 export class ConnectService {
   // http://127.0.0.1:5000/getAllProvinceData
   Link = "http://localhost:5000";
-  PieChart = new Subject<JSON>();
+  ProvinceData = new Subject<JSON>();
   BarChart = new Subject<JSON>();
   constructor(private http: HttpClient) { }
 
 
-  UpdatePieChart(dt: JSON) {
-    this.PieChart.next(dt)
+  UpdateProvincedata(dt: JSON) {
+    this.ProvinceData.next(dt)
   }
 
   UpdateBarChart(dt: JSON) {
     this.BarChart.next(dt)
   }
 
-   getPieChart(){
+   getProvinceData(){
      this.http.get(this.Link +'/getAllProvinceData').subscribe(response => {
          catchError(this.handleError)
-         this.UpdatePieChart(JSON.parse(JSON.stringify(response)));
+         this.UpdateProvincedata(JSON.parse(JSON.stringify(response)));
      })
    }
 
@@ -40,16 +40,12 @@ export class ConnectService {
     })
   }
 
-// Predict(LevelEdu, Disabled, Unemployed, Age, Gender, Income, Mobile, Hospitalized) {
-//     var data = {
-//         "playerID": PlayerID,
-//         "teamID": TeamID
-//     }
-//     this.http.post(this.Link + "/addPlayer", data).subscribe(response => {
-//         catchError(this.handleError) //send to catcherror
-//         console.log(response)
-//     })
-// }
+ Predict(LevelEdu, Disabled, Unemployed, Age, Gender, Income, Mobile, Hospitalized) {
+     this.http.get(this.Link +'/predict/'+LevelEdu+'/'+Disabled+'/'+Unemployed+'/'+Age+'/'+Gender+'/'+Income+'/'+Mobile+'/'+Hospitalized).subscribe(response => {
+      catchError(this.handleError)
+      this.UpdateBarChart(JSON.parse(JSON.stringify(response)));
+      })
+  }
 
 handleError(error: HttpErrorResponse) {
   if (error.error instanceof ErrorEvent) {

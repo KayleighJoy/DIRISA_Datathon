@@ -34,10 +34,10 @@ export class ChartComponent implements OnInit {
   //constructor() { }
 
   ngOnInit() {
-    this.connect.getPieChart()
+    this.connect.getProvinceData()
 
 
-    this.PieData = this.connect.PieChart.subscribe(data => {
+    this.PieData = this.connect.ProvinceData.subscribe(data => {
        console.log(data);
       //  this.ncGP, this.ncL, this.ncWP, this.ncNP, this.ncEP, this.ncKZN, this.ncNW, this.ncFS, this.ncMP
       this.ncWP = data['Western Cape'][0];
