@@ -2,6 +2,7 @@ import { Component, ViewChild } from '@angular/core';
 import { NgForm, NgModel, NumberValueAccessor } from '@angular/forms';
 import { ConnectService } from './connect.service';
 import { Subscription } from 'rxjs';
+import { stringify } from 'querystring';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -45,20 +46,16 @@ export class AppComponent {
         break; 
       case ((this.Income >= 278000) && (this.Income < 417000)): 
         this.IncomeRank = 4;
-        break; 
-      
+        break;
       case ((this.Income >= 417000) && (this.Income < 556000)): 
         this.IncomeRank = 5;
-        break; 
-      
+        break;
       case ((this.Income >= 55600) && (this.Income < 695000)): 
         this.IncomeRank = 6;
-        break; 
-      
+        break;
       case ((this.Income >= 695000) && (this.Income < 834000)): 
         this.IncomeRank = 7;
-        break; 
-      
+        break;
       case ((this.Income >= 834000) && (this.Income < 973000)): 
         this.IncomeRank = 8;
         break; 
@@ -81,7 +78,9 @@ export class AppComponent {
       // SVM:String = "sixty nine";
       //       prob: 0.7186360464140141
       // status: "At Risk"
-      this.PercSVM = data['prob'];
+      
+      this.PercSVM = data['prob'] * 100;
+      
       this.SVM = data['status']
     })
   }
@@ -97,7 +96,6 @@ export class AppComponent {
     }
     
     // Setup data for prediction API
-
     console.log(this.RegisterForm);
     this.LvlEdu = this.RegisterForm.value.LevelEducation
     this.Disabled = this.RegisterForm.value.Disabled
@@ -109,20 +107,8 @@ export class AppComponent {
     this.Hospitalized = this.RegisterForm.value.Hospital
     
     this.connect.Predict(this.LvlEdu,this.Disabled,this.Unemployed,this.Age,this.Gender,this.IncomeRank,this.Mobile,this.Hospitalized);
-
-    //Values to work with the data
-    // Values for Level Studies
-    // IncHS CompHS IncUndergrad CompUndergrad IncMasters CompMasters IncPHD CompPHD
-    // Values for Legally Disabled
-    // NotDisabled Disabled
-    // Values for Age Group
-    // 1 = 18-29 2 = 30-44 3 = 45-60 4 = 60< 
-    // Values for Gender
-    // Male Female
-    
     
     console.log(this.IncomeRank);
-
   }
 
 }
