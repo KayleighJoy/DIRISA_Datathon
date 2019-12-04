@@ -15,6 +15,8 @@ export class ConnectService {
   Link = "http://localhost:5000";
   ProvinceData = new Subject<JSON>();
   BarChart = new Subject<JSON>();
+  Prediction = new Subject<JSON>();
+
   constructor(private http: HttpClient) { }
 
 
@@ -24,6 +26,11 @@ export class ConnectService {
 
   UpdateBarChart(dt: JSON) {
     this.BarChart.next(dt)
+  }
+
+  FindPredict(dt: JSON) {
+    // 0: Prediction, 1: Probability
+    this.Prediction.next(dt)
   }
 
    getProvinceData(){
@@ -43,7 +50,7 @@ export class ConnectService {
  Predict(LevelEdu, Disabled, Unemployed, Age, Gender, Income, Mobile, Hospitalized) {
      this.http.get(this.Link +'/predict/'+LevelEdu+'/'+Disabled+'/'+Unemployed+'/'+Age+'/'+Gender+'/'+Income+'/'+Mobile+'/'+Hospitalized).subscribe(response => {
       catchError(this.handleError)
-      this.UpdateBarChart(JSON.parse(JSON.stringify(response)));
+      this.FindPredict(JSON.parse(JSON.stringify(response)));
       })
   }
 
