@@ -18,6 +18,7 @@ class getCountryPercentage(Resource):
 class getCountryWeightedPercentage(Resource):
     def get(self):
         risk = wrapper.getCountryWeightedPercentage()
+        print(risk)
         return {"CountryRisk": risk}
 
 class predictRisk(Resource):
@@ -29,7 +30,15 @@ class predictRisk(Resource):
 class getHeatMap(Resource):
     def get(self):
         provData = wrapper.getHeatMapInfo()
-        return {'Western Cape': provData[0], 'Eastern Cape': provData[1], 'Northern Cape': provData[2], 'Free State': provData[3], 'KwaZulu Natal': provData[4], 'North West': provData[5], 'Gauteng': provData[6], 'Mpumalanga': provData[7], 'Limpopo': provData[8],}
+        return {'Western Cape': str(provData[0][0])+'-'+str(provData[0][1])+'-'+str(provData[0][2])+'-'+str(provData[0][3])+'-'+str(provData[0][4]), 
+        'Eastern Cape': str(provData[1][0])+'-'+str(provData[1][1])+'-'+str(provData[1][2])+'-'+str(provData[1][3])+'-'+str(provData[1][4]), 
+        'Northern Cape': str(provData[2][0])+'-'+str(provData[2][1])+'-'+str(provData[2][2])+'-'+str(provData[2][3])+'-'+str(provData[2][4]), 
+        'Free State': str(provData[3][0])+'-'+str(provData[3][1])+'-'+str(provData[3][2])+'-'+str(provData[3][3])+'-'+str(provData[3][4]), 
+        'KwaZulu Natal': str(provData[4][0])+'-'+str(provData[4][1])+'-'+str(provData[4][2])+'-'+str(provData[4][3])+'-'+str(provData[4][4]), 
+        'North West': str(provData[5][0])+'-'+str(provData[5][1])+'-'+str(provData[5][2])+'-'+str(provData[5][3])+'-'+str(provData[5][4]), 
+        'Gauteng': str(provData[6][0])+'-'+str(provData[6][1])+'-'+str(provData[6][2])+'-'+str(provData[6][3])+'-'+str(provData[6][4]), 
+        'Mpumalanga': str(provData[7][0])+'-'+str(provData[7][1])+'-'+str(provData[7][2])+'-'+str(provData[7][3])+'-'+str(provData[7][4]), 
+        'Limpopo': str(provData[8][0])+'-'+str(provData[8][1])+'-'+str(provData[8][2])+'-'+str(provData[8][3])+'-'+str(provData[8][4])}
 
 
 api.add_resource(getAllProvince, '/getAllProvinceData')
