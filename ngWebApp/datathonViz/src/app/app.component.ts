@@ -105,13 +105,5 @@ export class AppComponent {
     // this.SVM
 
   }
-  @ViewChild('PasswordRepeat', {static: false}) fPasswordRepeat :NgModel;
-  @ViewChild('Password', {static: false}) fPassword :NgModel;
-  @ViewChild('Name', {static: false}) fname :NgModel;
-  @ViewChild('Surname', {static: false}) fsurname :NgModel;
-  @ViewChild('ID_Number', {static: false}) fid :NgModel;
-  @ViewChild('Cell_num', {static: false}) fcell :NgModel;
-  @ViewChild('UserType', {static: false}) fusertype :NgModel;
-  title = 'Mental Illness Heatmap';
 
 }
