@@ -76,13 +76,13 @@ export class BarRiskComponent implements OnInit {
     let myChart = new Chart(this.ctx, {
       type: 'bar',
       data: {
-          labels: ["Gauteng", "Limpopo", "Western Cape", "Northern Cape", "Eastern Cape", 
-            "KwaZulu-Natal", "North-West", "Free State", "Mpumalanga"
+          labels: ["Eastern Cape", "North-West", "Western Cape", "Free State", "KwaZulu-Natal",
+          "Gauteng", "Limpopo",  "Northern Cape", "Mpumalanga"
           ],
           datasets: [{
                label: ["Provincial population at risk"],
               // Change data here
-              data: [this.pGP, this.pL, this.pWP, this.pNP, this.pEP, this.pKZN, this.pNW, this.pFS, this.pMP],
+              data: [this.pEP, this.pNW, this.pWP, this.pFS, this.pKZN, this.pGP, this.pL, this.pNP, this.pMP],
               backgroundColor: [
                 'rgba(54, 162, 235, 1)',
                 'rgba(54, 162, 235, 1)',

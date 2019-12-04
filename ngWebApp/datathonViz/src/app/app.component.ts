@@ -17,11 +17,7 @@ export class AppComponent {
   Prediction : Subscription;
 
   //Try get this data and change it after pressing button
-  PercNB:number = 50;
-  PercRF:number = 50;
-  PercSVM:number = 69;
-  NB:String = "yes";
-  RF:String = "no";
+  PercSVM:number = 0;
   SVM:String = "sixty nine";
   Income = 32
 
@@ -81,7 +77,12 @@ export class AppComponent {
 
   ngOnInit() {
     this.Prediction = this.connect.Prediction.subscribe(data => {
-      console.log(data);
+      //     PercSVM:number = 69;
+      // SVM:String = "sixty nine";
+      //       prob: 0.7186360464140141
+      // status: "At Risk"
+      this.PercSVM = data['prob'];
+      this.SVM = data['status']
     })
   }
     
@@ -98,8 +99,16 @@ export class AppComponent {
     // Setup data for prediction API
 
     console.log(this.RegisterForm);
-
-    //this.connect.Predict()
+    this.LvlEdu = this.RegisterForm.value.LevelEducation
+    this.Disabled = this.RegisterForm.value.Disabled
+    this.Unemployed = this.RegisterForm.value.Employed
+    this.Age = this.RegisterForm.value.AgeGroup
+    this.Gender = this.RegisterForm.value.Gender
+    // IncomeRank
+    this.Mobile = this.RegisterForm.value.Mobile
+    this.Hospitalized = this.RegisterForm.value.Hospital
+    
+    this.connect.Predict(this.LvlEdu,this.Disabled,this.Unemployed,this.Age,this.Gender,this.IncomeRank,this.Mobile,this.Hospitalized);
 
     //Values to work with the data
     // Values for Level Studies
@@ -113,14 +122,6 @@ export class AppComponent {
     
     
     console.log(this.IncomeRank);
-
-    
-    // this.PercNB
-    // this.PercRF
-    // this.PercSVM
-    // this.NB
-    // this.RF
-    // this.SVM
 
   }
 
