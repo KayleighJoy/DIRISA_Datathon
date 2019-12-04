@@ -92,6 +92,7 @@ class Classify:
         self.read_csv()
         self.split_data()
         self.read_csv_census()
+        expectedWeight = self.provinces_percentage_svm()
         self.split_provinces(self.SA_features)
         ratioWC = len(self.wc)/len(self.SA_features)
         ratioEC = len(self.ec)/len(self.SA_features)
@@ -104,7 +105,7 @@ class Classify:
         ratioLim = len(self.lim)/len(self.SA_features)
 
         real_ratioWC = 5822734/51770561
-        real_ratioEC = 11562053/51770561
+        real_ratioEC = 6562053/51770561
         real_ratioNC = 1145861/51770561
         real_ratioFS = 2745590/51770561
         real_ratioKZN = 10267300/51770561
@@ -125,6 +126,43 @@ class Classify:
 
         #temp = svm.ClassifySVM(self.features, self.labels,self.X_test,self.X_train,self.y_test,self.y_train)
         #pred = temp.svmTrain(self.SA_features)
+
+        numWC = real_ratioWC * 100
+        numEC = real_ratioEC * 100
+        numNC = real_ratioNC * 100
+        numFS = real_ratioFS * 100
+        numKZN = real_ratioKZN * 100
+        numNW = real_ratioNW * 100
+        numGau = real_ratioGau * 100
+        numMpu = real_ratioMpu * 100
+        numLim = real_ratioLim * 100
+
+        lstRatios = [numWC,numEC,numNC,numFS,numKZN,numNW,numGau,numMpu,numLim]
+        print(sum(lstRatios))
+        # calculate how many of the 100 people would have mental illness
+        #calculate num of of the 100 that would have
+        # to do this first calculate illness risk for each province
+        provs = list()
+        totalIll = list()
+        provsHealthy = list()
+        totalHealthy = list()
+        for provIdx in range(0,len(expectedWeight)):
+            provs.append((expectedWeight[provIdx][0]/(expectedWeight[provIdx][0]+expectedWeight[provIdx][1]))*lstRatios[provIdx]) #this is how many people out of the province percentage would be ill
+            totalIll.append(provs[provIdx]*len(self.SA_features)/100)
+            provsHealthy.append((expectedWeight[provIdx][1]/(expectedWeight[provIdx][0]+expectedWeight[provIdx][1]))*lstRatios[provIdx]) #how many would be healthy per province if 100 people
+            totalHealthy.append(provsHealthy[provIdx]*len(self.SA_features)/100)
+
+        
+        print(expectedWeight)
+        print(lstRatios)
+        print(provs)
+        #print(totalIll) 
+        print(provsHealthy)
+        print(totalHealthy)
+
+        print(sum(totalIll)/(sum(totalHealthy)+sum(totalIll)))
+
+
     
     def display_heatmap(self):
         self.read_csv()

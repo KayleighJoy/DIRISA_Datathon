@@ -12,6 +12,11 @@ def getCountryPercentage():
     dataReader = Classify()
     return dataReader.country_percentage()
 
+#weighted average risk for SA
+def getCountryWeightedPercentage():
+    dataReader = Classify()
+    return dataReader.country_percentage_weighted()
+
 #predict the person's risk 
 def predictRisk(education, disabled, unemployed, age, gender, income, mobile, hospital):
     svm = ClassifySVM(0,0,0,0,0,0)
@@ -24,4 +29,6 @@ def getHeatMapInfo():
     dataReader = Classify()
     return dataReader.display_heatmap()
 
+getCountryWeightedPercentage()
+print(getCountryPercentage())
 
