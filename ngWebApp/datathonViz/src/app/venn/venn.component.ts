@@ -20,6 +20,53 @@ export class VennComponent implements OnInit
   //HeatChart 
   HeatChart : Subscription;
 
+  constructor(private connect: ConnectService){ }
+
+  arrEP = []
+  arrGau = []
+  arrNP = []
+  arrWP = []
+  arrNW = []
+  arrMP = []
+  arrKZN = []
+  arrL = []
+  arrFS = []
+  high
+  ngOnInit() {
+    this.connect.getHeatChart()
+
+    this.HeatChart = this.connect.HeatChart.subscribe(data => {
+      console.log(data);
+//       Eastern Cape: (2) [3431, 5527]
+// Free State: (2) [1229, 2583]
+// Gauteng: (2) [4832, 9283]
+// KwaZulu Natal: (2) [3861, 8390]
+// Limpopo: (2) [1994, 5809]
+// Mpumalanga: (2) [1551, 4095]
+// North West: (2) [1453, 2722]
+// Northern Cape: (2) [1004, 2222]
+// Western Cape: (2) [2438, 4115]
+      this.arrEP = data["Eastern Cape"].split("-");
+      this.arrNP = data["Northern Cape"].split("-");
+      this.arrWP = data["Western Cape"].split("-");
+      this.arrFS = data["Free State"].split("-");
+      this.arrGau = data["Gauteng"].split("-");
+      this.arrL = data["Limpopo"].split("-");
+      this.arrMP = data["Mpumalanga"].split("-");
+      this.arrNW = data["North West"].split("-");
+      this.arrKZN = data["KwaZulu Natal"].split("-");
+
+      //this.chartOptions.series[0].data[0][2]
+      console.log(this.arrGau);
+      //this.chartOptions.series
+
+      
+      
+    })
+  }
+
+
+
   provinces = ['Gauteng', 'Eastern Cape', 'Free State', 'KwaZulu-Natal',
   'Limpopo', 'Mpumalanga', 'Northern Cape', 'North West', 'Western Cape'];
   factors = ['Disabled', 'Unemployed', 'Male', 'Has Phone', 'Hospitalized'];
@@ -77,19 +124,19 @@ export class VennComponent implements OnInit
     series : 
     [
       {
-        name: 'Sales per employee',
+        name: 'HeatMapFactors',
         borderWidth: 1,
         data: 
         [
-          [0, 0, 10], [0, 1, 19], [0, 2, 8], [0, 3, 24], [0, 4, 67],
-          [1, 0, 92], [1, 1, 58], [1, 2, 78], [1, 3, 117], [1, 4, 48],
-          [2, 0, 35], [2, 1, 15], [2, 2, 123], [2, 3, 64], [2, 4, 52],
-          [3, 0, 72], [3, 1, 132], [3, 2, 114], [3, 3, 19], [3, 4, 16],
-          [4, 0, 38], [4, 1, 5], [4, 2, 8], [4, 3, 117], [4, 4,  115],
-          [5, 0, 88], [5, 1, 32], [5, 2, 12], [5, 3, 6], [5, 4, 120],
-          [6, 0, 13], [6, 1, 44], [6, 2, 88], [6, 3, 98], [6, 4, 96],
-          [7, 0, 31], [7, 1, 1], [7, 2, 82], [7, 3, 32], [7, 4, 30],
-          [8, 0, 85], [8, 1, 97], [8, 2, 123], [8, 3, 64], [8, 4, 84]
+          [0, 0, 3], [0, 1, 34], [0, 2, 19], [0, 3, 33], [0, 4, 6],
+          [1, 0, 4], [1, 1, 21], [1, 2, 18], [1, 3, 28], [1, 4, 10],
+          [2, 0, 6], [2, 1, 26], [2, 2, 16], [2, 3, 28], [2, 4, 10],
+          [3, 0, 3], [3, 1, 23], [3, 2, 15], [3, 3, 27], [3, 4, 7],
+          [4, 0, 3], [4, 1, 21], [4, 2, 13], [4, 3, 22], [4, 4,  4],
+          [5, 0, 3], [5, 1, 25], [5, 2, 15], [5, 3, 27], [5, 4, 6],
+          [6, 0, 5], [6, 1, 25], [6, 2, 15], [6, 3, 24], [6, 4, 9],
+          [7, 0, 5], [7, 1, 24], [7, 2, 19], [7, 3, 28], [7, 4, 9],
+          [8, 0, 2], [8, 1, 37], [8, 2, 20], [8, 3, 35], [8, 4, 8]
         ],   
         dataLabels: 
         {
@@ -100,90 +147,6 @@ export class VennComponent implements OnInit
     ]
   };
   
-  highcharts1= Highcharts;
-  chartOptions1 = {
-    chart : 
-    {
-      type: 'heatmap',
-      marginTop: 40,
-      marginBottom: 80,
-      style : {
-        textShadow : false,
-        textOutline : false
-      }
-    },
-    title : 
-    {
-      text: 'Factors per province(no)'
-    },
-    xAxis : 
-    { 
-      categories: this.provinces
-    },
-    yAxis : 
-    {
-      categories: this.factors1,
-      title : null
-    },
-    colorAxis : 
-    {
-      min : 0,
-      minColor : '#EEC1B6',
-      maxColor : '#790400'
-    },
-    legend : 
-    {
-      align : 'right',
-      layout : 'vertical',
-      margin : 0,
-      verticalAlign : 'top',
-      y : 25,
-      symbolHeight : 280
-    },
-    tooltip : 
-    {
-      formatter: function () 
-      {
-         return this.point.value +
-            '</b> People said no in<br><b>' +
-            this.series.xAxis.categories[this.point.x] + '</b>';
-      }
-    },
-    series : 
-    [
-      {
-        name: 'Sales per employee',
-        borderWidth: 1,
-        data: 
-        [
-          [0, 0, 10], [0, 1, 19], [0, 2, 8], [0, 3, 24], [0, 4, 67],
-          [1, 0, 92], [1, 1, 58], [1, 2, 78], [1, 3, 117], [1, 4, 48],
-          [2, 0, 35], [2, 1, 15], [2, 2, 123], [2, 3, 64], [2, 4, 52],
-          [3, 0, 72], [3, 1, 132], [3, 2, 114], [3, 3, 19], [3, 4, 16],
-          [4, 0, 38], [4, 1, 5], [4, 2, 8], [4, 3, 117], [4, 4,  115],
-          [5, 0, 88], [5, 1, 32], [5, 2, 12], [5, 3, 6], [5, 4, 120],
-          [6, 0, 13], [6, 1, 44], [6, 2, 88], [6, 3, 98], [6, 4, 96],
-          [7, 0, 31], [7, 1, 1], [7, 2, 82], [7, 3, 32], [7, 4, 30],
-          [8, 0, 85], [8, 1, 97], [8, 2, 123], [8, 3, 64], [8, 4, 84]
-        ],   
-        dataLabels: 
-        {
-          enabled: true,
-          color: '#000000'
-        }
-      }
-    ]
-  };
-
-  constructor(private connect: ConnectService){ }
-
-  ngOnInit() {
-    this.connect.getHeatChart()
-
-    this.HeatChart = this.connect.HeatChart.subscribe(data => {
-      console.log(data);
-    })
-  }
 }
 
 

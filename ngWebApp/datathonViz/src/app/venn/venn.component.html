@@ -1,25 +1,5 @@
-<!-- <div id="main-head" style="text-align:center">
-        <h1>
-          Welcome to {{ title }}!
-        </h1>
-        <div [chart] = 'venn'></div>
-      </div> -->
-
-<!-- <div id='container'></div> -->
-<div class="container-fluid">
-      <div class="row">
-         <div class="col-md-6">
-            <highcharts-chart 
+            <highcharts-chart
+               style="width:100%;"
                [Highcharts] = "highcharts" 
                [options] = "chartOptions" >
             </highcharts-chart>
-         </div>
-         <div class="col-md-6">
-            <!-- style = "width: 50%; height: 400px; display: block; float: right;" -->
-         <highcharts-chart 
-            [Highcharts] = "highcharts1" 
-            [options] = "chartOptions1" >
-         </highcharts-chart>
-         </div>
-      </div>
-</div>
