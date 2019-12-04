@@ -160,7 +160,7 @@ class Classify:
         print(provsHealthy)
         print(totalHealthy)
 
-        print(sum(totalIll)/(sum(totalHealthy)+sum(totalIll)))
+        return sum(totalIll)/(sum(totalHealthy)+sum(totalIll)) * 100
 
 
     

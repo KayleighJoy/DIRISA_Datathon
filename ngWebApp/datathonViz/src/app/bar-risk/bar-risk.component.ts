@@ -106,7 +106,9 @@ export class BarRiskComponent implements OnInit {
              borderWidth: 1
           },{
             label: 'MedianRisk',
-            data: [],
+            fill: false,
+            data: [32.97,32.97,32.97,32.97,32.97,32.97,32.97,32.97,32.97],
+            borderColor: ['rgba(0, 0, 0, 1)'],
             type: 'line'
           }]
       },
