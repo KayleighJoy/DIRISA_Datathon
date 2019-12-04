@@ -40,6 +40,11 @@ class ClassifySVM:
         self.y_train = y_train
         self.classifyR = None
         self.misclassifiedIndex = None
+    
+    def findBestFeatures(self):
+        self.svclassifier = load('classifiers/bestSVM.joblib')
+        print(self.svclassifier.coef_)
+
 
     def findBestParameters(self, svc):
         Cs = [0.001, 0.01, 0.1, 1, 10]
@@ -57,7 +62,6 @@ class ClassifySVM:
         print(best)
         print(bestParams)
         return best
-
     def svmTrain(self, toPredict):
         print("Training")
         '''self.svclassifier = SVC(C=10, cache_size=200, class_weight=None, coef0=0.0,

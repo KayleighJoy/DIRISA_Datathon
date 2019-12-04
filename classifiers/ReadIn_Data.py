@@ -170,28 +170,87 @@ class Classify:
         self.read_csv_census()
         self.split_provinces(self.SA_features)
 
-        t_wc = self.calcCounts(self.wc)
-        t_ec = self.calcCounts(self.ec)
-        t_nc = self.calcCounts(self.nc)
-        t_fs = self.calcCounts(self.fs)
-        t_kzn = self.calcCounts(self.kzn)
-        t_nw = self.calcCounts(self.nw)
-        t_gau = self.calcCounts(self.gau)
-        t_mp = self.calcCounts(self.mpu)
-        t_lim = self.calcCounts(self.lim)
+        temp = svm.ClassifySVM(self.features, self.labels,self.X_test,self.X_train,self.y_test,self.y_train)
+        pred = temp.svmTrain(self.SA_features)
+        
+        pred_wc = []
+        pred_ec = []
+        pred_nc = []
+        pred_fs = []
+        pred_kzn = []
+        pred_nw = []
+        pred_gau = []
+        pred_mpu = []
+        pred_lim = []
+
+        for i in range (0,6553):
+            pred_wc.append(pred[i])
+        for i in range(6553,15511):
+            pred_ec.append(pred[i])
+        for i in range(15511,18737):
+            pred_nc.append(pred[i])
+        for i in range(18737,22549):
+            pred_fs.append(pred[i])
+        for i in range(22549,34800):
+            pred_kzn.append(pred[i])
+        for i in range(34800,38975):
+            pred_nw.append(pred[i])
+        for i in range(38975,53090):
+            pred_gau.append(pred[i])
+        for i in range(53090,58736):
+            pred_mpu.append(pred[i])
+        for i in range(58736,len(pred)):
+            pred_lim.append(pred[i])
+
+        matched_wc = self.calc_parallel(pred_wc, self.wc)
+        matched_ec = self.calc_parallel(pred_ec, self.ec)
+        matched_nc = self.calc_parallel(pred_nc, self.nc)
+        matched_fs = self.calc_parallel(pred_fs, self.fs)
+        matched_kzn = self.calc_parallel(pred_kzn, self.kzn)
+        matched_nw = self.calc_parallel(pred_nw, self.nw)
+        matched_gau = self.calc_parallel(pred_gau, self.gau)
+        matched_mpu = self.calc_parallel(pred_mpu, self.mpu)
+        matched_lim = self.calc_parallel(pred_lim, self.lim)
+
+
+        t_wc = self.calcCounts(matched_wc)
+        t_ec = self.calcCounts(matched_ec)
+        t_nc = self.calcCounts(matched_nc)
+        t_fs = self.calcCounts(matched_fs)
+        t_kzn = self.calcCounts(matched_kzn)
+        t_nw = self.calcCounts(matched_nw)
+        t_gau = self.calcCounts(matched_gau)
+        t_mp = self.calcCounts(matched_mpu)
+        t_lim = self.calcCounts(matched_lim)
 
         info = []
-        info.append(t_wc)
-        info.append(t_ec)
-        info.append(t_nc)
-        info.append(t_fs)
-        info.append(t_kzn)
-        info.append(t_nw)
-        info.append(t_gau)
-        info.append(t_mp)
-        info.append(t_lim)
-        return info
+        t_wc = np.asarray(t_wc)
+        t_ec = np.asarray(t_ec)
+        t_nc = np.asarray(t_nc)
+        t_fs = np.asarray(t_fs)
+        t_kzn = np.asarray(t_kzn)
+        t_nw = np.asarray(t_nw)
+        t_gau = np.asarray(t_gau)
+        t_mp = np.asarray(t_mp)
+        t_lim = np.asarray(t_lim)
         
+        info.append(t_wc/len(self.wc) *100)
+        info.append(t_ec/len(self.ec) *100)
+        info.append(t_nc/len(self.nc) *100)
+        info.append(t_fs/len(self.fs) *100)
+        info.append(t_kzn/len(self.kzn) *100)
+        info.append(t_nw/len(self.nw) *100)
+        info.append(t_gau/len(self.gau) *100)
+        info.append(t_mp/len(self.mpu) *100)
+        info.append(t_lim/len(self.lim) *100)
+        return info
+
+    def calc_parallel(self, array1, array2):
+        temp = []
+        for i in range(len(array1)):
+            if array1[i] == '1':
+                temp.append(array2[i])
+        return temp
 
     def calcCounts(self, array):
         countWC = []
@@ -203,7 +262,7 @@ class Classify:
         for person in array:
             if person[1] == '1':
                 countDisable += 1
-            if person[2] == '0':
+            if person[2] == '1':
                 countEmploy += 1
             if person[4] == '1':
                 countGender += 1
@@ -217,6 +276,7 @@ class Classify:
         countWC.append(countPhone)
         countWC.append(countHos)
         return countWC
+
 
     def split_provinces(self, pred):
         for i in range (0,6553):

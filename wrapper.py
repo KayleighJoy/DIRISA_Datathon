@@ -29,6 +29,9 @@ def getHeatMapInfo():
     dataReader = Classify()
     return dataReader.display_heatmap()
 
-getCountryWeightedPercentage()
-print(getCountryPercentage())
+#get important features for svm
+def featureImportance():
+    svm = ClassifySVM(0,0,0,0,0,0)
+    svm.findBestFeatures()
+
 

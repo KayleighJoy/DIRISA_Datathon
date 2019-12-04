@@ -15,6 +15,11 @@ class getCountryPercentage(Resource):
         riskAve = wrapper.getCountryPercentage()
         return{"Country Risk": riskAve}
 
+class getCountryWeightedPercentage(Resource):
+    def get(self):
+        risk = wrapper.getCountryWeightedPercentage()
+        return {"CountryRisk": risk}
+
 class predictRisk(Resource):
     def get(self, education, disabled, unemployed, age, gender, income, mobile, hospital):
         riskAve = wrapper.predictRisk(education, disabled, unemployed, age, gender, income, mobile, hospital)
@@ -34,6 +39,7 @@ api.add_resource(getAllProvince, '/getAllProvinceData')
 api.add_resource(getCountryPercentage, '/getCountryRisk')
 api.add_resource(getHeatMap, '/getHeatMapData')
 api.add_resource(predictRisk, '/predict/<education>/<disabled>/<unemployed>/<age>/<gender>/<income>/<mobile>/<hospital>')
+api.add_resource(getCountryWeightedPercentage, '/countryWeightedRisk')
 
 if __name__ == '__main__':
      app.run()

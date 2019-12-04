@@ -126,16 +126,16 @@ class ReadIn:
             if person[6] == '3' or person[6] == '9':
                 continue
             elif person[6] == '1' or person[6] == '2':
-                temp.append(0)
-            elif person[6] == '8':
                 temp.append(1)
+            elif person[6] == '8':
+                temp.append(2)
             
             ages = [1,2,3,4]
             age1 = [5,6]
             age2 = [7,8,9]
             age3 = [10,11,12]
             if person[7] in ages:
-                continue
+                temp.append(0)
             elif person[7] in age1:
                 temp.append(1)
             elif person[7] in age2:
