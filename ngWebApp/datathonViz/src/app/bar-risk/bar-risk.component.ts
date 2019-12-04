@@ -58,6 +58,19 @@ export class BarRiskComponent implements OnInit {
       this.tFS = data['Free State'][0] + data['Free State'][1];
       this.tMP = data['Mpumalanga'][0] + data['Mpumalanga'][1];
       
+
+      //Percentage
+      this.pWP = (data['Western Cape'][0] / this.tWP) * 100;
+      this.pGP = (data['Gauteng'][0] / this.tGP) * 100;
+      this.pL = (data['Limpopo'][0] / this.tL) * 100;
+      this.pNP = (data['Northern Cape'][0] / this.tNP) * 100;
+      this.pEP = (data['Eastern Cape'][0] / this.tEP) * 100;
+      this.pKZN = (data['KwaZulu Natal'][0] / this.tKZN) * 100;
+      this.pNW = (data['North West'][0] / this.tNW) * 100;
+      this.pFS = (data['Free State'][0] / this.tFS) * 100;
+      this.pMP = (data['Mpumalanga'][0] / this.tMP) * 100;
+
+      
       this.canvas = document.getElementById('BarRisk');
       this.ctx = this.canvas.getContext('2d');
     let myChart = new Chart(this.ctx, {
@@ -69,7 +82,7 @@ export class BarRiskComponent implements OnInit {
           datasets: [{
                label: ["Provincial population at risk"],
               // Change data here
-              data: [this.tGP, this.tL, this.tWP, this.tNP, this.tEP, this.tKZN, this.tNW, this.tFS, this.tMP],
+              data: [this.pGP, this.pL, this.pWP, this.pNP, this.pEP, this.pKZN, this.pNW, this.pFS, this.pMP],
               backgroundColor: [
                 'rgba(54, 162, 235, 1)',
                 'rgba(54, 162, 235, 1)',
@@ -94,6 +107,13 @@ export class BarRiskComponent implements OnInit {
           }]
       },
       options: {
+        scales: {
+          yAxes: [{
+              ticks: {
+                  beginAtZero: true
+              }
+          }]
+      },
        responsive: false,
         display:true
       }

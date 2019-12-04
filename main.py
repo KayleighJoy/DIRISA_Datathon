@@ -32,7 +32,7 @@ class getHeatMap(Resource):
 
 api.add_resource(getAllProvince, '/getAllProvinceData')
 api.add_resource(getCountryPercentage, '/getCountryRisk')
-api.add_resource(getCountryPercentage, '/getHeatMapData')
+api.add_resource(getHeatMap, '/getHeatMapData')
 api.add_resource(predictRisk, '/predict/<education>/<disabled>/<unemployed>/<age>/<gender>/<income>/<mobile>/<hospital>')
 
 if __name__ == '__main__':
