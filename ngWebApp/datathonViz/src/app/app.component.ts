@@ -1,6 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { NgForm, NgModel, NumberValueAccessor } from '@angular/forms';
 import { ConnectService } from './connect.service';
+import { Subscription } from 'rxjs';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -12,27 +13,26 @@ export class AppComponent {
   
   constructor(private connect: ConnectService) { }
 
+  //Prediction
+  Prediction : Subscription;
+
   //Try get this data and change it after pressing button
-  PercNB:number = 50;
-  PercRF:number = 50;
-  PercSVM:number = 69;
-  NB:String = "yes";
-  RF:String = "no";
+  PercSVM:number = 0;
   SVM:String = "sixty nine";
-  IncomeRank:number = -1;
   Income = 32
 
+  //LevelEdu, Disabled, Unemployed, Age, Gender, Income, Mobile, Hospitalized
+  //Prediction Values
+  LvlEdu:number = 0;
+  Disabled:number = 0;
+  Unemployed:number = 0;
+  Age:number = 0;
+  Gender:number = 0;
+  IncomeRank:number = -1;
+  Mobile:number = 0;
+  Hospitalized:number = 0;
+
   SortIncomer(){
-    // 0-55599 -1
-    // 55600-138999-2
-    // 139000-277999-3
-    // 278000-416999-4
-    // 417000-555999-5
-    // 556000-694999-6
-    // 695000-833999-7
-    // 834000-972999-8
-    // 973000-1111999-9
-    // >1112000-10
     switch(true) { 
       case (this.Income < 55600): 
         this.IncomeRank = 1;
@@ -75,14 +75,41 @@ export class AppComponent {
   
   }
 
+  ngOnInit() {
+    this.Prediction = this.connect.Prediction.subscribe(data => {
+      //     PercSVM:number = 69;
+      // SVM:String = "sixty nine";
+      //       prob: 0.7186360464140141
+      // status: "At Risk"
+      this.PercSVM = data['prob'];
+      this.SVM = data['status']
+    })
+  }
+    
+
   OnPredict() {
     this.SortIncomer();
-    console.log(this.RegisterForm)
+    // Check if grouping is correct for income
     if (this.IncomeRank == -1)
     {
       alert("Did not fill information");
       return 0;
     }
+    
+    // Setup data for prediction API
+
+    console.log(this.RegisterForm);
+    this.LvlEdu = this.RegisterForm.value.LevelEducation
+    this.Disabled = this.RegisterForm.value.Disabled
+    this.Unemployed = this.RegisterForm.value.Employed
+    this.Age = this.RegisterForm.value.AgeGroup
+    this.Gender = this.RegisterForm.value.Gender
+    // IncomeRank
+    this.Mobile = this.RegisterForm.value.Mobile
+    this.Hospitalized = this.RegisterForm.value.Hospital
+    
+    this.connect.Predict(this.LvlEdu,this.Disabled,this.Unemployed,this.Age,this.Gender,this.IncomeRank,this.Mobile,this.Hospitalized);
+
     //Values to work with the data
     // Values for Level Studies
     // IncHS CompHS IncUndergrad CompUndergrad IncMasters CompMasters IncPHD CompPHD
@@ -93,25 +120,9 @@ export class AppComponent {
     // Values for Gender
     // Male Female
     
-    console.log(this.RegisterForm);
+    
     console.log(this.IncomeRank);
 
-    
-    // this.PercNB
-    // this.PercRF
-    // this.PercSVM
-    // this.NB
-    // this.RF
-    // this.SVM
-
   }
-  @ViewChild('PasswordRepeat', {static: false}) fPasswordRepeat :NgModel;
-  @ViewChild('Password', {static: false}) fPassword :NgModel;
-  @ViewChild('Name', {static: false}) fname :NgModel;
-  @ViewChild('Surname', {static: false}) fsurname :NgModel;
-  @ViewChild('ID_Number', {static: false}) fid :NgModel;
-  @ViewChild('Cell_num', {static: false}) fcell :NgModel;
-  @ViewChild('UserType', {static: false}) fusertype :NgModel;
-  title = 'Mental Illness Heatmap';
 
 }
