@@ -24,10 +24,7 @@ class predictRisk(Resource):
     def get(self, education, disabled, unemployed, age, gender, income, mobile, hospital):
         riskAve = wrapper.predictRisk(education, disabled, unemployed, age, gender, income, mobile, hospital)
         print(riskAve[0][0])
-        if riskAve[0][0]>riskAve[0][1]:
-            return {'status': 'At Risk', 'prob': riskAve[0][0]}
-        else:
-            return {'status': 'Not At Risk', 'prob': riskAve[0][1]}
+        return {'status': 'At Risk', 'prob': riskAve[0][0]}
 
 class getHeatMap(Resource):
     def get(self):
