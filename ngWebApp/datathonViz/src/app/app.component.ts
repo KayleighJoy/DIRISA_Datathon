@@ -18,7 +18,7 @@ export class AppComponent {
   Prediction : Subscription;
 
   //Try get this data and change it after pressing button
-  PercSVM:number = 0;
+  PercSVM:String = "";
   SVM:String = "sixty nine";
   Income = 0;
 
@@ -69,7 +69,6 @@ export class AppComponent {
         this.IncomeRank = -1;
         break;  
    }
-  
   }
 
   ngOnInit() {
@@ -79,9 +78,8 @@ export class AppComponent {
       //       prob: 0.7186360464140141
       // status: "At Risk"
       
-      this.PercSVM = data['prob'] * 100;
-      
-      this.SVM = data['status']
+      var SVMnum = data['prob'] * 100;
+      this.PercSVM = SVMnum.toFixed(2)
     })
   }
     

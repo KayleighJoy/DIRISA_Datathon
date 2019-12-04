@@ -31,21 +31,10 @@ export class VennComponent implements OnInit
   arrKZN = []
   arrL = []
   arrFS = []
-  high
   ngOnInit() {
     this.connect.getHeatChart()
 
     this.HeatChart = this.connect.HeatChart.subscribe(data => {
-      console.log(data);
-//       Eastern Cape: (2) [3431, 5527]
-// Free State: (2) [1229, 2583]
-// Gauteng: (2) [4832, 9283]
-// KwaZulu Natal: (2) [3861, 8390]
-// Limpopo: (2) [1994, 5809]
-// Mpumalanga: (2) [1551, 4095]
-// North West: (2) [1453, 2722]
-// Northern Cape: (2) [1004, 2222]
-// Western Cape: (2) [2438, 4115]
       this.arrEP = data["Eastern Cape"].split("-");
       this.arrNP = data["Northern Cape"].split("-");
       this.arrWP = data["Western Cape"].split("-");
@@ -56,11 +45,7 @@ export class VennComponent implements OnInit
       this.arrNW = data["North West"].split("-");
       this.arrKZN = data["KwaZulu Natal"].split("-");
 
-      //this.chartOptions.series[0].data[0][2]
-      console.log(this.arrGau);
-      //this.chartOptions.series
-
-      
+      console.log(this.arrGau);   
       
     })
   }
@@ -72,17 +57,24 @@ export class VennComponent implements OnInit
   factors = ['Disabled', 'Unemployed', 'Male', 'Has Phone', 'Hospitalized'];
   factors1 = ['Disabled', 'Unemployed', 'Female', 'Has Phone', 'Hospitalized'];
   highcharts= Highcharts;
+   
+  // //marginTop: 40,
+  //     width : 700,
+  //     height: 800
+  //marginBottom: 80
   chartOptions = 
   {
     chart : 
     {
       type: 'heatmap',
       marginTop: 40,
+      width: 1400,
+      height: 700,
       marginBottom: 80,
       style : {
         textShadow : false,
         textOutline : false
-      }
+      },
     },
     title : 
     {
