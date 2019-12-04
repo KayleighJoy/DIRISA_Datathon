@@ -74,7 +74,7 @@ class nbClassifier:
 
     def classifyComplement(self):
         print("starting Complement")
-        cnb = GaussianNB()
+        cnb = ComplementNB()
         cnb.fit(self.x_train, self.y_train)
         y_predict = cnb.predict(self.x_test)
         y_prob = cnb.predict_proba(self.x_test)
@@ -106,7 +106,7 @@ class nbClassifier:
 
     def classifyMultinomial(self):
         print("starting Multinomial")
-        mnb = GaussianNB()
+        mnb = MultinomialNB()
         mnb.fit(self.x_train, self.y_train)
         y_predict = mnb.predict(self.x_test)
         countRight = 0
