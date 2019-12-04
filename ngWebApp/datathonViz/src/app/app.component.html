@@ -164,6 +164,9 @@
   </h1>
   <br>
   <h1 class="h1">
-    Percentage Accuracy: {{ PercSVM }}
+    Percentage Accuracy: <span [ngClass]="{
+      'positive' : PercSVM > 50,
+      'negative' : PercSVM <= 50}">
+      {{ PercSVM }}</span>
   </h1>
 </div>

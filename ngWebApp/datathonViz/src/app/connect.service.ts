@@ -16,7 +16,7 @@ export class ConnectService {
   ProvinceData = new Subject<JSON>();
   BarChart = new Subject<JSON>();
   Prediction = new Subject<JSON>();
-
+  HeatChart = new Subject<JSON>();
   constructor(private http: HttpClient) { }
 
 
@@ -26,6 +26,10 @@ export class ConnectService {
 
   UpdateBarChart(dt: JSON) {
     this.BarChart.next(dt)
+  }
+
+  UpdateHeat(dt: JSON) {
+    this.HeatChart.next(dt)
   }
 
   FindPredict(dt: JSON) {
@@ -40,19 +44,21 @@ export class ConnectService {
      })
    }
 
-  getBarChart(){
-    this.http.get(this.Link +'/AllTeams').subscribe(response => {
-        catchError(this.handleError)
-        this.UpdateBarChart(JSON.parse(JSON.stringify(response)));
-    })
-  }
-
  Predict(LevelEdu, Disabled, Unemployed, Age, Gender, Income, Mobile, Hospitalized) {
      this.http.get(this.Link +'/predict/'+LevelEdu+'/'+Disabled+'/'+Unemployed+'/'+Age+'/'+Gender+'/'+Income+'/'+Mobile+'/'+Hospitalized).subscribe(response => {
       catchError(this.handleError)
       this.FindPredict(JSON.parse(JSON.stringify(response)));
       })
   }
+
+  getHeatChart(){
+    // (getHeatMap, '/getHeatMapData')
+    this.http.get(this.Link +'/getHeatMapData').subscribe(response => {
+        catchError(this.handleError)
+        this.UpdateHeat(JSON.parse(JSON.stringify(response)));
+    })
+  }
+
 
 handleError(error: HttpErrorResponse) {
   if (error.error instanceof ErrorEvent) {

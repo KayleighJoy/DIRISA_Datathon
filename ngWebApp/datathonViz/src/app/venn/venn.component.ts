@@ -1,20 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 import * as Highcharts from 'highcharts';
 import * as highchartsHeatmap from 'highcharts/modules/heatmap';
+import { ConnectService } from '../connect.service';
+import { Subscription } from 'rxjs';
+
 declare var require: any;
 const heatmap = require("highcharts/modules/heatmap.js");
 heatmap(Highcharts)
 const treemap = require("highcharts/modules/treemap.js");
 treemap(Highcharts)
-// highchartsHeatmap(Highcharts);
-// let Boost = require('highcharts/modules/boost');
-// let noData = require('highcharts/modules/no-data-to-display');
-// let More = require('highcharts/highcharts-more');
-
-// Boost(Highcharts);
-// noData(Highcharts);
-// More(Highcharts);
-// noData(Highcharts);
 
 @Component({
   selector: 'app-venn',
@@ -23,6 +17,9 @@ treemap(Highcharts)
 })
 export class VennComponent implements OnInit 
 {
+  //HeatChart 
+  HeatChart : Subscription;
+
   provinces = ['Gauteng', 'Eastern Cape', 'Free State', 'KwaZulu-Natal',
   'Limpopo', 'Mpumalanga', 'Northern Cape', 'North West', 'Western Cape'];
   factors = ['Disabled', 'Unemployed', 'Male', 'Has Phone', 'Hospitalized'];
@@ -177,10 +174,15 @@ export class VennComponent implements OnInit
       }
     ]
   };
+
+  constructor(private connect: ConnectService){ }
+
   ngOnInit() {
-   // Highcharts.chart('container', this.options);
-  
-  
+    this.connect.getHeatChart()
+
+    this.HeatChart = this.connect.HeatChart.subscribe(data => {
+      console.log(data);
+    })
   }
 }
 

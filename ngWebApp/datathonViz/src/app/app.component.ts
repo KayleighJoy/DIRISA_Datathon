@@ -20,7 +20,7 @@ export class AppComponent {
   //Try get this data and change it after pressing button
   PercSVM:number = 0;
   SVM:String = "sixty nine";
-  Income = 32
+  Income = 0;
 
   //LevelEdu, Disabled, Unemployed, Age, Gender, Income, Mobile, Hospitalized
   //Prediction Values
